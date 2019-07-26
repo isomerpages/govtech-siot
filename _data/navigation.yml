@@ -1,0 +1,32 @@
+##################################
+#                                #
+# Feel free to edit this file :) #
+#                                #
+##################################
+
+- title: Starter Kit
+  url: /starter-kit/quickstart/
+  sub-links:
+  - title: Quickstart
+    url: /starter-kit/quickstart/
+  - title: Riots Board Setup
+    url: /starter-kit/riots-board-setup/
+  - title: Decada Setup
+    url: /starter-kit/decada-setup/
+  - title: Flashing Code
+    url: /starter-kit/flashing-code/
+  - title: Next Steps
+    url: /starter-kit/next-steps/
+  - title: Troubleshooting
+    url: /starter-kit/troubleshooting/
+- title: Tech Stack
+  url: /tech-stack/riots-dk/
+  sub-links:
+  - title: Riots Dk
+    url: /tech-stack/riots-dk/
+  - title: Decada Edge
+    url: /tech-stack/decada-edge/
+  - title: Decada Cloud
+    url: /tech-stack/decada-cloud/
+- title: Contact Us
+  url: /contact-us/
