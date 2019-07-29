@@ -75,7 +75,7 @@ Proceed with the following steps, depending on which OS your computer is running
 
 </details>
 
-
+<br><br>
 
 <details markdown="1">
   
@@ -117,7 +117,7 @@ Proceed with the following steps, depending on which OS your computer is running
 
 </details>
 
-
+<br><br>
 
 <details markdown="1">
   
