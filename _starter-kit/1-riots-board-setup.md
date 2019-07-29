@@ -75,6 +75,8 @@ Proceed with the following steps, depending on which OS your computer is running
 
 </details>
 
+
+
 <details markdown="1">
   
   <summary markdown='span'>MacOS</summary>
@@ -114,6 +116,8 @@ Proceed with the following steps, depending on which OS your computer is running
   You can run minicom again by typing `sudo minicom` into the Terminal.
 
 </details>
+
+
 
 <details markdown="1">
   
