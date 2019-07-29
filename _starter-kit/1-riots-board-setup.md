@@ -28,7 +28,7 @@ collection_name: starter-kit
 
 ## Setting up your RIOTS Board Serial Debug Program
 Proceed with the following steps, depending on which OS your computer is running on.
-<details>
+<details markdown="1">
   
   <summary markdown='span'>Linux</summary>
   
@@ -75,7 +75,7 @@ Proceed with the following steps, depending on which OS your computer is running
 
 </details>
 
-<details>
+<details markdown="1">
   
   <summary markdown='span'>MacOS</summary>
   
@@ -115,7 +115,7 @@ Proceed with the following steps, depending on which OS your computer is running
 
 </details>
 
-<details>
+<details markdown="1">
   
   <summary markdown='span'>Windows</summary>
   
