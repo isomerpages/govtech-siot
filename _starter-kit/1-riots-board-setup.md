@@ -29,6 +29,7 @@ collection_name: starter-kit
 ## Setting up your RIOTS Board Serial Debug Program
 Proceed with the following steps, depending on which OS your computer is running on.
 <details>
+  
   <summary>Linux</summary>
 
   1. Find out which serial port your **TTL-USB Cable** is connected to by disconnecting your **TTL-USB Cable**, then entering `dmesg | grep tty` into Terminal.
@@ -75,6 +76,7 @@ Proceed with the following steps, depending on which OS your computer is running
 </details>
 
 <details>
+  
   <summary>MacOS</summary>
 
   1. Find out which serial port your **TTL-USB Cable** is connected to by disconnecting your **TTL-USB Cable**, then entering `ls /dev/tty*` into Terminal.
@@ -114,6 +116,7 @@ Proceed with the following steps, depending on which OS your computer is running
 </details>
 
 <details>
+  
   <summary>Windows</summary>
 
   1. Download [Tera Term](https://osdn.net/projects/ttssh2/releases/) for Windows. This tutorial is for Tera Term, though you can use PuTTY as well.
