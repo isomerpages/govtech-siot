@@ -30,8 +30,8 @@ collection_name: starter-kit
 Proceed with the following steps, depending on which OS your computer is running on.
 <details>
   
-  <summary>Linux</summary>
-
+  <summary markdown='span'>Linux</summary>
+  
   1. Find out which serial port your **TTL-USB Cable** is connected to by disconnecting your **TTL-USB Cable**, then entering `dmesg | grep tty` into Terminal.
 
   Reconnect your TTL-USB Cable and reenter the `dmesg | grep tty` command.
@@ -77,8 +77,8 @@ Proceed with the following steps, depending on which OS your computer is running
 
 <details>
   
-  <summary>MacOS</summary>
-
+  <summary markdown='span'>MacOS</summary>
+  
   1. Find out which serial port your **TTL-USB Cable** is connected to by disconnecting your **TTL-USB Cable**, then entering `ls /dev/tty*` into Terminal.
 
   Reconnect your TTL-USB Cable and reenter the `ls /dev/tty*` command. You should see an extra port displayed, `/dev/tty.usbserial-FT9J98X2`
@@ -117,8 +117,8 @@ Proceed with the following steps, depending on which OS your computer is running
 
 <details>
   
-  <summary>Windows</summary>
-
+  <summary markdown='span'>Windows</summary>
+  
   1. Download [Tera Term](https://osdn.net/projects/ttssh2/releases/) for Windows. This tutorial is for Tera Term, though you can use PuTTY as well.
 
   2. Run the Tera Term `.exe` file and install the software.
