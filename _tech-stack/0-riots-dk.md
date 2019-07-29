@@ -51,8 +51,8 @@ Additional Details:
 
 **Additional Tools** (not included in RIOTS DK)
 
-![ST-Link v2](/images/riots-dk/intro/stlink-v2.jpg "ST-Link Programmer v2")
-![ST-Link v3](/images/riots-dk/intro/stlink-v3.jpg "ST-Link Programmer v3")
+![ST-Link v2](/images/riots-dk/intro/stlink-v2.jpg "ST-Link Programmer v2" =x150)
+![ST-Link v3](/images/riots-dk/intro/stlink-v3.jpg "ST-Link Programmer v3" =x150)
 
 | Components | Description |
 |---|---|
