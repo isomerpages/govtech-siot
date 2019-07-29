@@ -44,3 +44,15 @@ collection_name: starter-kit
 
 1. Locate the binary file in the BUILD folder e.g. `./BUILD/NUCLEO_F767ZI/ARMC6/stack_riots-os-example.bin`
 2. Using ST-Link V3 programmer, simply drag-and-drop the binary into the hardware folder (similar to copying a file into a USB stick). 
+
+# Verify flash success
+
+1. The ST-Link programmer should flash red and green as the binary is being flashed on the RIOTS Board.
+
+2. Open your serial debug program and press the hardware reset button on your board. Then press space in your serial debug program. You should see the boot manager screen 
+
+![boot](/images/riots-dk/flashing-code/flash_success.png)
+
+3. Enter the passphrase `example-pass` 
+
+4. The program should be able to register with DECADA and send the on-board temperature sensor readings upstream onto your DECADA dashboard
