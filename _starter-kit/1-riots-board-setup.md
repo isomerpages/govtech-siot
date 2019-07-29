@@ -6,14 +6,6 @@ breadcrumb: Riots Board Setup
 collection_name: starter-kit
 ---
 
----
-layout: leftnav-page-content
-title: Riots Board Setup
-permalink: /starter-kit/riots-board-setup/
-breadcrumb: Riots Board Setup
-collection_name: starter-kit
----
-
 # Set up your Hardware
 ## Wiring up the RIOTS Board
 1. Connect the **ESP32 WiFi Module** onto the **WIRELESS MODULE** port on the board
