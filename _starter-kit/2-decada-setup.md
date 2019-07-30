@@ -101,7 +101,7 @@ Select **Json** for **Data Type** and **enable** the **Certificate-based bi-dire
 
 3. Once your product is created, click on **View** on the rightmost column for your product.
 
-Activate the **Enable Dynamic Activation** (outlined in red below). This allows devices to register itself without having to manually on-board each individual device on DECADA.
+Activate the **Enable Dynamic Activation** (outlined in red below). This allows devices to register themselves without you manually on-boarding each individual device on DECADA, provided that the devices have the appropriate credentials. (This will be elaborated further in the section **Configuring your Device(s)**)
 
 ![product](/images/riots-dk/decada-setup/decada_setup_product_3.png)
 
@@ -121,7 +121,7 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
 
 ![application](/images/riots-dk/decada-setup/decada_setup_application_3.png)
 
-4. Once your application has been created, you will be redirected to App Details, which displays your application name, *application access key* and *secret key*, as shown in the image below. (Some information has been omitted)
+4. Once your application has been created, you will be redirected to App Details, which displays your application name, *application access key* and *secret key*, as shown in the image below. (Some information has been omitted in the image below)
 
 ![application](/images/riots-dk/decada-setup/decada_setup_application_4.png)
 
