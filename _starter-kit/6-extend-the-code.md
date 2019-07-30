@@ -136,17 +136,59 @@ The below diagram shows how you can connect your own I2C/SPI sensors to the RIOT
 ![External I2C Connectors](/images/riots-dk/extend-the-code/external_connectors_reference_i2c.png)
 ![External SPI Connectors](/images/riots-dk/extend-the-code/external_connectors_reference_spi.png)
 
-|I2C|SDA|SCL|
-|---|---|---|
-| 1 |PB_9|PB_6|
-| 2 |PF_0|PF_1|
-| 4 |PF_15|PF_14|
+<table>
+  <tr>
+    <th>I2C</th>
+    <th>SDA</th>
+    <th>SCL</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>PB_9</td>
+    <td>PB_6</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>PF_0</td>
+    <td>PF_1</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>PF_15</td>
+    <td>PF_14</td>
+  </tr>
+</table>
 
-|SPI|MISO|MOSI|CLK|NSS|
-|---|----|----|---|---|
-| 1 |PA_6|PB_5|PA_5|PA_4|
-| 2 |PC_2|PC_3|PB_10|PB_12|
-| 4 |PE_5|PE_6|PE_12|PE_4|
+<table>
+  <tr>
+    <th>SPI</th>
+    <th>MISO</th>
+    <th>MOSI</th>
+    <th>CLK</th>
+    <th>NSS</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>PA_6</td>
+    <td>PB_5</td>
+    <td>PA_5</td>
+    <td>PA_4</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>PC_2</td>
+    <td>PC_3</td>
+    <td>PB_10</td>
+    <td>PB_12</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>PE_5</td>
+    <td>PE_6</td>
+    <td>PE_12</td>
+    <td>PE_4</td>
+  </tr>
+</table>
 
 You can use these ports by using the mbed PinName enumerator, for example:
 
