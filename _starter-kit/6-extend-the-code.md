@@ -138,36 +138,19 @@ The below diagram shows how you can connect your own I2C/SPI sensors to the RIOT
 
 <table>
   <tr>
-    <th>I2C</th>
-    <th>SDA</th>
-    <th>SCL</th>
+    <th width="50">I2C</th>
+    <th width="50">SDA</th>
+    <th width="200">SCL</th>
+    <th width="50">SPI</th>
+    <th width="50">MISO</th>
+    <th width="50">MOSI</th>
+    <th width="50">CLK</th>
+    <th>NSS</th>
   </tr>
   <tr>
     <td>1</td>
     <td>PB_9</td>
     <td>PB_6</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>PF_0</td>
-    <td>PF_1</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>PF_15</td>
-    <td>PF_14</td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th>SPI</th>
-    <th>MISO</th>
-    <th>MOSI</th>
-    <th>CLK</th>
-    <th>NSS</th>
-  </tr>
-  <tr>
     <td>1</td>
     <td>PA_6</td>
     <td>PB_5</td>
@@ -176,12 +159,18 @@ The below diagram shows how you can connect your own I2C/SPI sensors to the RIOT
   </tr>
   <tr>
     <td>2</td>
+    <td>PF_0</td>
+    <td>PF_1</td>
+    <td>2</td>
     <td>PC_2</td>
     <td>PC_3</td>
     <td>PB_10</td>
     <td>PB_12</td>
   </tr>
   <tr>
+    <td>4</td>
+    <td>PF_15</td>
+    <td>PF_14</td>
     <td>4</td>
     <td>PE_5</td>
     <td>PE_6</td>
