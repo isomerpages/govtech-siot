@@ -1,8 +1,8 @@
 ---
 layout: leftnav-page-content
-title: Riots Board Setup
+title: RIOTS Board Setup
 permalink: /starter-kit/riots-board-setup/
-breadcrumb: Riots Board Setup
+breadcrumb: RIOTS Board Setup
 collection_name: starter-kit
 ---
 
