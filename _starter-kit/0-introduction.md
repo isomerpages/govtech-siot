@@ -6,7 +6,7 @@ breadcrumb: Introduction
 collection_name: starter-kit
 ---
 
-## What you will achieve at the end of this guide:
+## Sypnosis
 The starter kit enables you to send sensor measure points directly to the government cloud, DECADA Cloud, using the RIOTS Board. At the end of this getting started guide, you would be pumping ambient temperature data using the on-board temperature sensor to your DECADA Cloud account, and be able to see it on your DECADA dashboard.
 
 ![System](/images/riots-dk/intro/starter_kit_system.png)
