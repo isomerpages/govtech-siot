@@ -121,6 +121,7 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
 
 ![application](/images/riots-dk/decada-setup/decada_setup_application_3.png)
 
+<a id="ApplicationDetails"></a>
 4. Once your application has been created, you will be redirected to App Details, which displays your application name, *application access key* and *secret key*, as shown in the image below. (Some information has been omitted in the image below)
 
 ![application](/images/riots-dk/decada-setup/decada_setup_application_4.png)
@@ -139,7 +140,7 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
 
    ![device](/images/riots-dk/decada-setup/decada_setup_device_1.png)
 
-  b. Go to **Application Registration** and select your Application (see *Creating your Application step 4*), you should be able to get your:
+  b. Go to **Application Registration** and select your Application (see *[Creating your Application step 4](#ApplicationDetails)*), you should be able to get your:
    - Access Key (under accessKey)
    - Access Secret (under secretKey)
 
