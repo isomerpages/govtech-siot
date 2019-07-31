@@ -17,7 +17,7 @@ hero-banner: /images/hero-banner.png
     
 key-highlights:
   - title: RIOTS Development Kit
-    description: Sensor Nodes
+    description: Sensor Node
     url: /tech-stack/riots-dk
   - title: DECADA Edge
     description: Gateway
