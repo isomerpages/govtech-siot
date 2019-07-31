@@ -6,15 +6,21 @@ breadcrumb: Extend the Code
 collection_name: starter-kit
 ---
 
-Now that you know how to build the RIOTS Operating System and flash it into your RIOTS Board, you can further extend your RIOTS Development Kit for further applications.
+Now that you know how to build the RIOTS Operating System and flash it into your RIOTS Board,  
+you can further extend your RIOTS Development Kit for further applications.
 
-An example case-study is SensorPod, a project deployed at CETRAN in NTU, which was built on the RIOTS DK. 
+An example case-study is SensorPod, a project deployed at CETRAN in NTU, which was built on  
+the RIOTS DK. 
 
-We have extended RIOTS Operating System to include advanced features like physical tamper sensing, hot plug for sensors, bootloader, and over-the-air updating for environmental sensing of the vehicle test track. The possibilities enabled by building on the RIOTS DK are boundless. Below are simple guides to help users get started with connecting to external sensors via RIOTS Operating System.
+We have extended RIOTS Operating System to include advanced features like physical tamper  
+sensing, hot plug for sensors, bootloader, and over-the-air updating for environmental sensing  
+of the vehicle test track. The possibilities enabled by building on the RIOTS DK are boundless.  
+Below are simple guides to help users get started with connecting to external sensors via  
+RIOTS Operating System.
 
 ## Adding external sensors onto RIOTS
 
-We will be using a CO<sub>2</sub> and RH/T Sensor Module, named SCD30. More details can be found on [Sensirion's website for SCD30](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors-co2/).
+We will demonstrate this feature of the RIOTS DK by using a CO<sub>2</sub> and RH/T Sensor Module, named SCD30. More details can be found on [Sensirion's website for SCD30](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors-co2/).
 
 ### Connection Diagram
 ![Connection Diagram of SCD30](/images/riots-dk/extend-the-code/ext_sensor_1_connection_diagram.png)
