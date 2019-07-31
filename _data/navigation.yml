@@ -4,26 +4,33 @@
 #                                #
 ##################################
 
-- title: Starter Kit
-  url: /starter-kit/quickstart/
-  sub-links:
-  - title: Quickstart
-    url: /starter-kit/quickstart/
-  - title: Riots Board Setup
-    url: /starter-kit/riots-board-setup/
-  - title: Decada Setup
-    url: /starter-kit/decada-setup/
-  - title: Flashing Code
-    url: /starter-kit/flashing-code/
-  - title: Next Steps
-    url: /starter-kit/next-steps/
-  - title: Troubleshooting
-    url: /starter-kit/troubleshooting/
 - title: Tech Stack
   url: /tech-stack/riots-dk/
   sub-links:
-  - title: Riots Dk
+  - title: RIOTS Development Kit
     url: /tech-stack/riots-dk/
+    sub-links: 
+    - title: Getting Started
+      url: /tech-stack/riots-dk/introduction/
+      sub-links:
+      - title: Introduction
+        url: /tech-stack/riots-dk/introduction/
+      - title: Set up your Hardware
+        url: /tech-stack/riots-dk/set-up-your-hardware/
+      - title: Set up your Cloud Service
+        url: /tech-stack/riots-dk/set-up-your-cloud-service/
+      - title: Set up your Software
+        url: /tech-stack/riots-dk/set-up-your-software/
+      - title: Build and Flash
+        url: /tech-stack/riots-dk/build-and-flash/
+      - title: Cloud Commands
+        url: /tech-stack/riots-dk/cloud-commands/
+      - title: Extend the Code
+        url: /tech-stack/riots-dk/extend-the-code/
+      - title: Troubleshooting
+        url: /tech-stack/riots-dk/troubleshooting/
+      - title: Licensing
+        url: /tech-stack/riots-dk/licensing/
   - title: Decada Edge
     url: /tech-stack/decada-edge/
   - title: Decada Cloud
