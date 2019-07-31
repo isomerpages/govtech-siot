@@ -14,11 +14,6 @@ agency-logo: /images/isomer-logo.svg
 hero-title: Sensors and IoT
 hero-subtitle: Capability Centre | GovTech
 hero-banner: /images/hero-banner.png
-
-#Call to Action Button
-button:
-  - text: Learn More
-    url: /who-we-are/
     
 key-highlights:
   - title: Highlight A
