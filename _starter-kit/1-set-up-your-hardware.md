@@ -1,7 +1,7 @@
 ---
 layout: leftnav-page-content
 title: Set up your Hardware
-permalink: /tech-stack/riots-dk/set-up-your-hardware/
+permalink: /starter-kit/set-up-your-hardware/
 breadcrumb: Set up your Hardware
 collection_name: starter-kit
 ---
