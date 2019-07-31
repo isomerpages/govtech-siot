@@ -1,7 +1,7 @@
 ---
 layout: leftnav-page-content
 title: Introduction
-permalink: /starter-kit/introduction/
+permalink: /tech-stack/riots-dk/introduction/
 breadcrumb: Introduction
 collection_name: starter-kit
 ---
