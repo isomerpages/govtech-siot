@@ -1,8 +1,8 @@
 ---
 layout: leftnav-page-content
-title: RIOTS Board Setup
-permalink: /starter-kit/riots-board-setup/
-breadcrumb: RIOTS Board Setup
+title: Set up your Hardware
+permalink: /starter-kit/set-up-your-hardware/
+breadcrumb: Set up your Hardware
 collection_name: starter-kit
 ---
 
