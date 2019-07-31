@@ -1,8 +1,8 @@
 ---
 layout: leftnav-page-content
-title: Sending Commands Downstream
-permalink: /starter-kit/sending-commands-downstream/
-breadcrumb: Sending Commands Downstream
+title: Cloud Commands
+permalink: /starter-kit/cloud-commands/
+breadcrumb: Cloud Commands
 collection_name: starter-kit
 ---
 
