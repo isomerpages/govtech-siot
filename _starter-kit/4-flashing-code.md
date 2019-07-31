@@ -53,6 +53,6 @@ collection_name: starter-kit
 
 ![boot](/images/riots-dk/flashing-code/flash_success.png)
 
-3. Enter the passphrase `example-pass` 
+3. Enter the passphrase `stackx2019` 
 
 4. The program should be able to register with DECADA and send the on-board temperature sensor readings upstream onto your DECADA dashboard
