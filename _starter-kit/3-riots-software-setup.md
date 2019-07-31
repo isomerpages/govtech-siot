@@ -1,8 +1,8 @@
 ---
 layout: leftnav-page-content
-title: Riots Software Setup
+title: RIOTS Software Setup
 permalink: /starter-kit/riots-software-setup/
-breadcrumb: Riots Software Setup
+breadcrumb: RIOTS Software Setup
 collection_name: starter-kit
 ---
 
