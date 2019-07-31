@@ -7,7 +7,7 @@ collection_name: starter-kit
 ---
 
 # Sending service request
-*These steps will show how to send commands from DECADA to device through a service request*
+*These steps will demonstrate how to send commands from DECADA Cloud to your device through a service request*
 
 1. Login to DECADA
 
