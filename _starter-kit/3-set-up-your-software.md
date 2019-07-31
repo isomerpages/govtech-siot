@@ -1,9 +1,9 @@
 ---
 layout: leftnav-page-content
-title: RIOTS Software Setup
-permalink: /starter-kit/riots-software-setup/
-breadcrumb: RIOTS Software Setup
-collection_name: starter-kit
+title: Set up your Software
+permalink: /starter-kit/set-up-your-software/
+breadcrumb: Set up your Software
+collection_name: starter-kit  
 ---
 
 # Set up your Software
