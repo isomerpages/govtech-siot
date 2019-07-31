@@ -11,7 +11,7 @@ The starter kit enables you to send sensor measure points directly to the govern
 
 ![System](/images/riots-dk/intro/starter_kit_system.png)
 
-#### [Pre-order](go.gov.sg/iotkit-preorder) is available now.
+[Pre-order](https://go.gov.sg/iotkit-preorder) is available now.
 
 ## Contents of Starter Kit
 
