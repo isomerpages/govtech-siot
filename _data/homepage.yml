@@ -8,7 +8,7 @@
 favicon: /images/favicon-isomer.ico
 
 # Agency logo
-agency-logo: /images/isomer-logo.svg
+agency-logo: /images/logo.png
 
 # Hero Banner
 hero-title: Sensors and IoT
@@ -16,15 +16,13 @@ hero-subtitle: Capability Centre | GovTech
 hero-banner: /images/hero-banner.png
     
 key-highlights:
-  - title: Highlight A
-    description: Important highlight A is important
-    url: https://google.com
-    external: true
-  - title: Highlight B
-    description: Important highlight B is equally important
-    url: https://yahoo.com
-    external: true
-  - title: Page A
-    description: Page A is important too
-    url: /page-A/
+  - title: RIOTS Development Kit
+    description: Sensor Nodes
+    url: /tech-stack/riots-dk
+  - title: DECADA Edge
+    description: Gateway
+    url: /tech-stack/decada-edge
+  - title: DECADA Cloud
+    description: Cloud
+    url: /tech-stack/decada-edge
 
