@@ -17,6 +17,7 @@ Resale of GovTech products with provisions different from the information set fo
 ### RIOTS Board Schematics
 <details>
   <summary> End User License Agreement for RIOTS Board </summary>
+  
   ~~~
   THIS END USER LICENCE AGREEMENT ("LICENCE") IS A LEGAL AGREEMENT BETWEEN YOU (EITHER A SINGLE INDIVIDUAL, OR SINGLE LEGAL ENTITY) AND GOVERNMENT TECHNOLOGY AGENCY OF SINGAPORE ("GOVTECH") FOR THE USE OF THE HARDWARE DEVELOPMENT KIT ACCOMPANYING THIS LICENCE. GOVTECH IS ONLY WILLING TO LICENSE THE HARDWARE DEVELOPMENT KIT TO YOU ON CONDITION THAT YOU ACCEPT ALL OF THE TERMS IN THIS LICENCE. BY INSTALLING OR OTHERWISE USING OR COPYING THE HARDWARE DEVELOPMENT KIT YOU INDICATE THAT YOU AGREE TO BE BOUND BY ALL OF THE TERMS OF THIS LICENCE. IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENCE, GOVTECH IS UNWILLING TO LICENSE THE HARDWARE DEVELOPMENT KIT TO YOU AND YOU MAY NOT INSTALL, USE OR COPY THE RIOTS DEVELOPMENT KIT.
 
@@ -49,6 +50,7 @@ Resale of GovTech products with provisions different from the information set fo
 
   Mbed Hardware Development Kit v1.0 < insert reference number of this user license agreement >
   ~~~
+</details>
 
 ### RIOTS Operating System - Source Code
 Unless specifically indicated otherwise in a file, the repository stack-riots-os-example is licensed under the Apache 2.0 license, as can be found in [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
