@@ -26,3 +26,10 @@ key-highlights:
     description: Cloud
     url: /tech-stack/decada-edge
 
+info-sections:
+  - section-title: Starter Kit
+    section-subtitle:
+    section-description: Get your hand on our Starter Kit today
+    section-more-button: Preorder Now
+    section-more-button-url: https://go.gov.sg/iotkit-preorder
+    section-image-path: /images/riots-dk/intro/contents.png
