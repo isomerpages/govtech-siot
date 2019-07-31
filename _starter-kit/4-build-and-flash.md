@@ -1,8 +1,8 @@
 ---
 layout: leftnav-page-content
-title: Flashing Code
-permalink: /starter-kit/flashing-code/
-breadcrumb: Flashing Code
+title: Build and Flash
+permalink: /starter-kit/build-and-flash/
+breadcrumb: Build and Flash
 collection_name: starter-kit
 ---
 
