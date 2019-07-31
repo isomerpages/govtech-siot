@@ -1,8 +1,8 @@
 ---
 layout: leftnav-page-content
-title: Decada Setup
-permalink: /starter-kit/decada-setup/
-breadcrumb: Decada Setup
+title: Set up your Cloud Service
+permalink: /starter-kit/set-up-your-cloud-service/
+breadcrumb: Set up your Cloud Service
 collection_name: starter-kit
 ---
 
