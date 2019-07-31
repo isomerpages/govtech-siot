@@ -13,9 +13,7 @@
     url: /tech-stack/decada-edge/
   - title: Decada Cloud
     url: /tech-stack/decada-cloud/
-- title: Contact Us
-  url: /contact-us/
-
+    
 - title: Starter Kit
   url: /starter-kit/introduction/
   sub-links:
@@ -37,3 +35,6 @@
     url: /starter-kit/troubleshooting/
   - title: Licensing
     url: /starter-kit/licensing/
+    
+- title: Contact Us
+  url: /contact-us/
