@@ -1,6 +1,6 @@
 ---
 layout: resources-alt
-title: Capability Centre
+title: Featured Projects
 permalink: /media-centre/featured-projects/
 breadcrumb: Featured Projects
 ---

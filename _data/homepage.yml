@@ -11,9 +11,10 @@ favicon: /images/favicon-isomer.ico
 agency-logo: /images/logo.png
 
 # Hero Banner
-hero-title: <font size=10>Welcome to Sensors and IoT</font>
+hero-title: <font size=10>Sensors and IoT</font>
 hero-subtitle: Capability Centre | GovTech
-hero-banner: /images/hero-banner.png
+hero-banner: /images/riots-dk/intro/contents.png
+#hero-banner: /images/hero-banner.png
     
 key-highlights:
   - title: RIOTS Development Kit
@@ -27,20 +28,20 @@ key-highlights:
     url: /tech-stack/decada-edge
 
 #Call to Action Button 
-#button:
-#  - text: Preorder Now
-#    url: https://go.gov.sg/iotkit-preorder  
+button:
+  - text: Preorder Now
+    url: https://go.gov.sg/iotkit-preorder  
     
 # Resources Section
-resources-title: SIOT
+resources-title: 
 resources-subtitle: Latest News
 resources-more-button: More Media
 resources-more-button-url: media-centre/
 
-info-sections:
-  - section-title: 
-    section-subtitle: Starter Kit
-    section-description: Get your hand on our Starter Kit today
-    section-more-button: Preorder Now
-    section-more-button-url: https://go.gov.sg/iotkit-preorder
-    section-image-path: /images/riots-dk/intro/contents.png
+#info-sections:
+#  - section-title: 
+#    section-subtitle: Starter Kit
+#    section-description: Get your hand on our Starter Kit today
+#    section-more-button: Preorder Now
+#    section-more-button-url: https://go.gov.sg/iotkit-preorder
+#    section-image-path: /images/riots-dk/intro/contents.png
