@@ -23,7 +23,7 @@ Additional Details:
 
 ### RIOTS Board Layout
 
-![RIOTS Board Layout](/images/riots-dk/intro/riots_board_front_labelled.png)
+![RIOTS Board Layout](/images/riots-dk/intro/layout.png)
 
 <table>
   <tr>
@@ -47,8 +47,8 @@ Additional Details:
     <td>Header for powering the RIOTS board; Not necessary if TTL Serial is in use</td>
   </tr>
   <tr>
-    <td>Ethernet</td>
-    <td>Socket for wired Local Area Network (LAN) connection</td>
+    <td>Programmable LEDs</td>
+    <td>Software controlled GPIO LEDs; Programmable by user</td>
   </tr>
   <tr>
     <td>STM32F767ZI</td>
