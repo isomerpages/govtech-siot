@@ -1,143 +1,98 @@
 ---
 layout: leftnav-page-content
-title: Set up your Cloud Service
-permalink: /starter-kit/set-up-your-cloud-service/
-breadcrumb: Set up your Cloud Service
-collection_name: starter-kit
+title: Set up your Software
+permalink: /starter-kit/set-up-your-software/
+breadcrumb: Set up your Software
+collection_name: starter-kit  
 ---
 
-# Setup your DECADA for MANUCA
-## Creating your Model
-*Model is the summary of features of the devices that are connected to the DECADA Cloud, including attributes, measure points, services and events of the device.*
+# Set up your Software
+## Setting up the Integrated Development (IDE) Environment
 
-1. Login to DECADA
+**Available Integrated Development Environments (IDEs):**
+1. Mbed Studio *(Recommended)* -  MacOS and Windows
+2. Visual Studio Code - Ubuntu Setup Included Only
 
-2. Go to Model and click on **New Model**
+**Development Machine Pre-requisite(s):**
+1. Git installed
 
-![model](/images/manuca/decada-setup/decada_setup_model_1.png)
+<details>
+  <summary>Mbed Studio Setup</summary>
 
-3. Fill in the fields to create your model
+  1. Create an Mbed Account at <https://os.mbed.com/account/signup/> (This account is required to use Mbed Studio IDE)
+  2. Download Mbed Studio from <https://os.mbed.com/studio/>
+  3. Install Mbed Studio
 
-An example of how you can create your model is shown below:
+</details>
 
-![model](/images/manuca/decada-setup/decada_setup_model_2.png)
+<details>
+  <summary>Visual Studio Code Setup</summary>
 
+  1. Download VS Code for Ubuntu at <https://code.visualstudio.com/download>
+  2. Install VS Code
+  3. Install Python
+    a. In terminal, `sudo apt-get install python2.7`
+  4. Install Pip
+    a. In terminal, sudo apt-get install python-pip 
+  5. Download gcc-arm-embedded-6-2017-q2 Toolchain
+    a. Download 6-2017-q2 from [here](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads), and decompress the folder
+  6. In terminal, `sudo pip install mbed-cli`
+    a. In terminal, `mbed help` to check if mbed-cli is properly installed
+  7. Add gcc-arm tool chain to mbed-cli compiler
+    a. In terminal, `mbed config -G GCC_ARM_PATH <path to GCC_ARM bin\>   # path example: ~/gcc-arm/gcc-arm-none-eabi-6-2017-q2-update/bin/`
+    b. In terminal, `mbed config --list` to show the toolchain attached to mbed-cli compiler
 
+</details>
 
-## Creating your Measure Point(s)
-*Measure Points are entities expected to be received upstream from devices. Examples are `temperature` and `humidity`.*
+## Pulling the MANUCA OS Repository into your IDE
 
-1. Once your model has been created, go to **Edit** on the rightmost column for your model
-2. Go to **Feature Definition** tab (beside Basic Information)
-3. Click on **Add**
-4. Under **Feature Type** drop-down list, select **Measure Points**
+<details>
+  <summary>Mbed Studio Setup</summary>
 
-In this user guide, we will use the identifier **ambient_temp** of data type **double**.
+  1. Create a folder that would be your mbed work space. `cd <workspace_directory>`
+  2. In terminal, `git init` to initialize a git work space
+  3. In terminal, `git clone --recurse-submodules <public_github_url>)`
+  4. In terminal, `git submodule update --init --recursive`
 
-![measurepoints](/images/manuca/decada-setup/decada_setup_measurepoints_1.png)
+</details>
 
-An identifier is:
-- A unique ID given to a measure point
-- At least 4 characters in length with no space.
-- The name of the measure point you send upstream to DECADA
-- Uneditable once you have created the measure point.
+<details>
+  <summary>Visual Studio Code Setup</summary>
 
+  1. Create a folder that would be your mbed work space. `cd <workspace_directory>`
+  2. In terminal, `git init` to initialize a git work space
+  3. In terminal, `git clone --recurse-submodules <public_github_url>)`
+  4. Open VS Code, and install the following packages under Extensions (ctrl + shift + x)
+    a. C/C++ By Microsoft
+    b. Cortex-Debug by marus25
+    c. ESLint by Dirk Baeumer
+    d. Python by Microsoft
 
-## Creating your Service(s)
-*Services are for sending commands downstream to your device.*
+</details>
 
-1. Click on **Add**
+## Input DECADA Credentials into Source Code
 
-2. Under **Feature Type** drop-down list, select **Service**
+Go to mbed_app.json **line 44** to add in your DECADA Credentials as shown below.
 
-Fill in **name** and **identifier** of your service in the fields provided.
-
-Take note that the identifier has to be at least 4 characters in length and **only alphanumeric characters** are allowed.
-
-An example for adding a service is shown below:
-
-![service](/images/manuca/decada-setup/decada_setup_service_1.png)
-
-3. Select **Synchronous**, as we will send an acknowledgement response upon receiving a command from DECADA Cloud.
-
-4. Select **New Parameter** for **Input Parameters**. An input parameter is a specific command you want to send to your device (e.g. change sensor poll rate, wifi credentials)
-
-Fill in the form for the new parameter. 
-
-We will use **string** as our parameter data type in this guide. For string length, set it as 5. *In general, add 2 to your maximum character length as buffer (e.g. max character length for sensor poll rate to be set as 3 characters, so string length is 3+2=5)*
-
-Sending multiple parameters in a single instance downstream is also supported.
-
-![service](/images/manuca/decada-setup/decada_setup_service_2.png)
-
-5. Select **New Parameter** for **Output Parameter**. An output parameter is a specific response you want to receive from your device after your service request (e.g. sensor poll rate updated)
-
-Fill in the form for the new parameter. Set **string** as our parameter data type and the string length as 6.
-
-![service](/images/manuca/decada-setup/decada_setup_service_3.png)
-
-6. Click OK when you are done creating your service(s).
-
-
-
-## Creating your Product
-*Product is the collection of the devices that are connected to the DECADA Cloud.*
-
-1. Go to Device Management > Product
-![product](/images/manuca/decada-setup/decada_setup_product_1.png)
-
-2. Click on New Product
-
-Fill in the **Product Name**. Select **Device** for **Asset Type** and the model you have created previously from the **Model** drop-down box.
-
-Select **Json** for **Data Type** and **enable** the **Certificate-based bi-directional authentication**.
-
-![product](/images/manuca/decada-setup/decada_setup_product_2.png)
-
-3. Once your product is created, click on **View** on the rightmost column for your product.
-
-Activate the **Enable Dynamic Activation** (outlined in red below). This allows devices to register themselves without you manually on-boarding each individual device on DECADA, provided that the devices have the appropriate credentials. (This will be elaborated further in the section **Configuring your Device(s)**)
-
-![product](/images/manuca/decada-setup/decada_setup_product_3.png)
-
-
-## Creating your Application
-*Application gives devices access to DECADA APIs.*
-
-1. Go to **Application Registration** using the left sidebar
-
-![application](/images/manuca/decada-setup/decada_setup_application_1.png)
-
-2. Click on **Register App** (outlined in red below) to create a new application
-
-![application](/images/manuca/decada-setup/decada_setup_application_2.png)
-
-3. Fill in the details to create your application
-
-![application](/images/manuca/decada-setup/decada_setup_application_3.png)
-
-<a id="ApplicationDetails"></a>
-4. Once your application has been created, you will be redirected to App Details, which displays your application name, *application access key* and *secret key*, as shown in the image below. (Some information has been omitted in the image below)
-
-![application](/images/manuca/decada-setup/decada_setup_application_4.png)
-
-
-
-## Configuring your Device(s)
-*Devices are objects that are connected to the DECADA Cloud, defined and managed by the Product and Model they are registered under.*
-
-1. You will need to note down a few credentials needed to configure your device.
-
-  a. Go to **Product** and select your product, you will be able to get your:
-   - Organization Unit ID (hover over your Model Name at the top as shown below)
-   - Product Key
-   - Product Secret
-
-   ![device](/images/manuca/decada-setup/decada_setup_device_1.png)
-
-  b. Go to **Application Registration** and select your Application (see *[Creating your Application step 4](#ApplicationDetails)*), you should be able to get your:
-   - Access Key (under accessKey)
-   - Access Secret (under secretKey)
-
-2. Keep these credentials for a later step --- MANUCA Software Setup: **Input DECADA Credentials into Source Code**.
-
+~~~json
+"decada-ou-id": {
+"help": "Organization Unit ID issued for connecting to DECADAcloud",
+"value": "\"<insert_ou_id>\""
+},
+"decada-access-key": {
+"help": "Access key issued for connecting to DECADAcloud application",
+"value": "\"<insert_decada_access_key>\""
+},
+"decada-access-secret": {
+"help": "Access secret issued for connecting to DECADAcloud application",
+"value": "\"<insert_decada_access_secret>\""
+},
+"decada-product-key": {
+"help": "Product key issued for connecting to DECADAcloud product",
+"value": "\"<insert_product_key>\""
+},
+"decada-product-secret": {
+"help": "Product secret issued for connecting to DECADAcloud product",
+"value": "\"<insert_product_secret>\""
+},
+~~~
