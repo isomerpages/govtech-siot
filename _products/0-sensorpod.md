@@ -7,6 +7,9 @@ collection_name: products
 ---
 
 ## SensorPod
+
+![Customers](/images/products/sensorpod/sensorpod.png)
+
 The SensorPod is GovTech's flagship IoT sensor node, built using the [MANUCA](/tech-stack/manuca/) Tech Stack. It offers secured connectivity to either DECADA Edge or directly to DECADA Cloud.
 
 Core Features:
