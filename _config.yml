@@ -40,3 +40,5 @@ collections:
     output: true
   tech-stack:
     output: true
+  products:
+    output: true

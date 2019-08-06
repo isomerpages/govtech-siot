@@ -5,13 +5,13 @@
 ##################################
 
 - title: Tech Stack
-  url: /tech-stack/riots-dk/
+  url: /tech-stack/manuca/
   sub-links:
-  - title: RIOTS Development Kit
-    url: /tech-stack/riots-dk/
-  - title: Decada Edge
+  - title: MANUCA
+    url: /tech-stack/manuca/
+  - title: DECADA Edge
     url: /tech-stack/decada-edge/
-  - title: Decada Cloud
+  - title: DECADA Cloud
     url: /tech-stack/decada-cloud/
     
 - title: Starter Kit
@@ -35,6 +35,12 @@
     url: /starter-kit/troubleshooting/
   - title: Licensing
     url: /starter-kit/licensing/
+
+- title: Products
+  url: /products/
+  sub-links:
+  - title: SensorPod
+    url: /products/sensorpod/
     
 - title: Contact Us
   url: /contact-us/

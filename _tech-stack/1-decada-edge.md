@@ -1,7 +1,7 @@
 ---
 layout: leftnav-page-content
-title: Decada Edge
+title: DECADA Edge
 permalink: /tech-stack/decada-edge/
-breadcrumb: Decada Edge
+breadcrumb: DECADA Edge
 collection_name: tech-stack
 ---

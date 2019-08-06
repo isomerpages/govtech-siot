@@ -8,13 +8,13 @@
 $primary: #003855;
 $secondary: #1C2331;
 //$secondary: #eb7900;
-$secondary-hover: lighten($secondary, 10%);
+$secondary-hover: lighten($secondary, 70%);
 
-$media-color-one: #49759a;
-$media-color-two: #744d9f;
-$media-color-three: #00838f;
-$media-color-four: #00838f;
-$media-color-five: #00838f;
+$media-color-one: #a5c882;
+$media-color-two: #4e6766;
+$media-color-three: #5ab1bb;
+$media-color-four: #d5c67a;
+$media-color-five: #1C2331;
 
 $gap: 32px !default;
 $desktop: 960px + (2 * $gap) !default;

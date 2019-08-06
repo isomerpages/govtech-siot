@@ -6,7 +6,7 @@ breadcrumb: Set up your Cloud Service
 collection_name: starter-kit
 ---
 
-# Setup your DECADA for RIOTS
+# Setup your DECADA for MANUCA
 ## Creating your Model
 *Model is the summary of features of the devices that are connected to the DECADA Cloud, including attributes, measure points, services and events of the device.*
 
@@ -14,13 +14,13 @@ collection_name: starter-kit
 
 2. Go to Model and click on **New Model**
 
-![model](/images/riots-dk/decada-setup/decada_setup_model_1.png)
+![model](/images/manuca/decada-setup/decada_setup_model_1.png)
 
 3. Fill in the fields to create your model
 
 An example of how you can create your model is shown below:
 
-![model](/images/riots-dk/decada-setup/decada_setup_model_2.png)
+![model](/images/manuca/decada-setup/decada_setup_model_2.png)
 
 
 
@@ -32,20 +32,15 @@ An example of how you can create your model is shown below:
 3. Click on **Add**
 4. Under **Feature Type** drop-down list, select **Measure Points**
 
-For this demo, make sure the identifier is **ambient_temp** and data type is **double**
+In this user guide, we will use the identifier **ambient_temp** of data type **double**.
 
-![measurepoints](/images/riots-dk/decada-setup/decada_setup_measurepoints_1.png)
+![measurepoints](/images/manuca/decada-setup/decada_setup_measurepoints_1.png)
 
 An identifier is:
 - A unique ID given to a measure point
 - At least 4 characters in length with no space.
 - The name of the measure point you send upstream to DECADA
 - Uneditable once you have created the measure point.
-
-If you have used the identifier for another measurepoint, you will see this error message:
-
-![measurepoints](/images/riots-dk/decada-setup/decada_setup_measurepoints_2.png)
-
 
 
 ## Creating your Service(s)
@@ -61,7 +56,7 @@ Take note that the identifier has to be at least 4 characters in length and **on
 
 An example for adding a service is shown below:
 
-![service](/images/riots-dk/decada-setup/decada_setup_service_1.png)
+![service](/images/manuca/decada-setup/decada_setup_service_1.png)
 
 3. Select **Synchronous**, as we will send an acknowledgement response upon receiving a command from DECADA Cloud.
 
@@ -73,13 +68,13 @@ We will use **string** as our parameter data type in this guide. For string leng
 
 Sending multiple parameters in a single instance downstream is also supported.
 
-![service](/images/riots-dk/decada-setup/decada_setup_service_2.png)
+![service](/images/manuca/decada-setup/decada_setup_service_2.png)
 
 5. Select **New Parameter** for **Output Parameter**. An output parameter is a specific response you want to receive from your device after your service request (e.g. sensor poll rate updated)
 
 Fill in the form for the new parameter. Set **string** as our parameter data type and the string length as 6.
 
-![service](/images/riots-dk/decada-setup/decada_setup_service_3.png)
+![service](/images/manuca/decada-setup/decada_setup_service_3.png)
 
 6. Click OK when you are done creating your service(s).
 
@@ -89,7 +84,7 @@ Fill in the form for the new parameter. Set **string** as our parameter data typ
 *Product is the collection of the devices that are connected to the DECADA Cloud.*
 
 1. Go to Device Management > Product
-![product](/images/riots-dk/decada-setup/decada_setup_product_1.png)
+![product](/images/manuca/decada-setup/decada_setup_product_1.png)
 
 2. Click on New Product
 
@@ -97,13 +92,13 @@ Fill in the **Product Name**. Select **Device** for **Asset Type** and the model
 
 Select **Json** for **Data Type** and **enable** the **Certificate-based bi-directional authentication**.
 
-![product](/images/riots-dk/decada-setup/decada_setup_product_2.png)
+![product](/images/manuca/decada-setup/decada_setup_product_2.png)
 
 3. Once your product is created, click on **View** on the rightmost column for your product.
 
 Activate the **Enable Dynamic Activation** (outlined in red below). This allows devices to register themselves without you manually on-boarding each individual device on DECADA, provided that the devices have the appropriate credentials. (This will be elaborated further in the section **Configuring your Device(s)**)
 
-![product](/images/riots-dk/decada-setup/decada_setup_product_3.png)
+![product](/images/manuca/decada-setup/decada_setup_product_3.png)
 
 
 ## Creating your Application
@@ -111,20 +106,20 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
 
 1. Go to **Application Registration** using the left sidebar
 
-![application](/images/riots-dk/decada-setup/decada_setup_application_1.png)
+![application](/images/manuca/decada-setup/decada_setup_application_1.png)
 
 2. Click on **Register App** (outlined in red below) to create a new application
 
-![application](/images/riots-dk/decada-setup/decada_setup_application_2.png)
+![application](/images/manuca/decada-setup/decada_setup_application_2.png)
 
 3. Fill in the details to create your application
 
-![application](/images/riots-dk/decada-setup/decada_setup_application_3.png)
+![application](/images/manuca/decada-setup/decada_setup_application_3.png)
 
 <a id="ApplicationDetails"></a>
 4. Once your application has been created, you will be redirected to App Details, which displays your application name, *application access key* and *secret key*, as shown in the image below. (Some information has been omitted in the image below)
 
-![application](/images/riots-dk/decada-setup/decada_setup_application_4.png)
+![application](/images/manuca/decada-setup/decada_setup_application_4.png)
 
 
 
@@ -138,11 +133,11 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
    - Product Key
    - Product Secret
 
-   ![device](/images/riots-dk/decada-setup/decada_setup_device_1.png)
+   ![device](/images/manuca/decada-setup/decada_setup_device_1.png)
 
   b. Go to **Application Registration** and select your Application (see *[Creating your Application step 4](#ApplicationDetails)*), you should be able to get your:
    - Access Key (under accessKey)
    - Access Secret (under secretKey)
 
-2. Keep these credentials for a later step --- RIOTS Software Setup: **Input DECADA Credentials into Source Code**.
+2. Keep these credentials for a later step --- MANUCA Software Setup: **Input DECADA Credentials into Source Code**.
 
