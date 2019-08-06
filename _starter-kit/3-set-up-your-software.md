@@ -44,7 +44,7 @@ collection_name: starter-kit
 
 </details>
 
-## Pulling the RIOTS Operating System Repository into your IDE
+## Pulling the MANUCA OS Repository into your IDE
 
 <details>
   <summary>Mbed Studio Setup</summary>
