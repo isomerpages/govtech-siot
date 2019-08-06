@@ -19,6 +19,23 @@ $media-color-five: #1C2331;
 $gap: 32px !default;
 $desktop: 960px + (2 * $gap) !default;
 
+// SIOT custom
+#main-content .col {
+  max-width: 100%; // prevent code blocks from stretching out the page
+}
+
+.content img {
+  max-width: 600px;
+}
+
+.content img.small {
+  max-width: 400px;
+}
+
+.content img.large {
+  max-width: 100%;
+}
+
 // Mixins
 
 @mixin touch() {
