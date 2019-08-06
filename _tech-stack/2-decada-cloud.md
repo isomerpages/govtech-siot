@@ -1,7 +1,7 @@
 ---
 layout: leftnav-page-content
-title: Decada Cloud
+title: DECADA Cloud
 permalink: /tech-stack/decada-cloud/
-breadcrumb: Decada Cloud
+breadcrumb: DECADA Cloud
 collection_name: tech-stack
 ---
