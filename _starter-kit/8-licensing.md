@@ -21,9 +21,9 @@ herein.
 Resale of GovTech products with provisions different from the information set forth herein  
 shall void any warranty granted by GovTech for such product.
 
-### RIOTS Board Schematics
+### MANUCA DK Schematics
 <details>
-  <summary> End User License Agreement for RIOTS Board </summary>
+  <summary> End User License Agreement for MANUCA DK </summary>
   
   ~~~
   THIS END USER LICENCE AGREEMENT ("LICENCE") IS A LEGAL AGREEMENT BETWEEN YOU (EITHER A 
@@ -34,9 +34,9 @@ shall void any warranty granted by GovTech for such product.
   THE HARDWARE DEVELOPMENT KIT YOU INDICATE THAT YOU AGREE TO BE BOUND BY ALL OF THE TERMS 
   OF THIS LICENCE. IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENCE, GOVTECH IS UNWILLING 
   TO LICENSE THE HARDWARE DEVELOPMENT KIT TO YOU AND YOU MAY NOT INSTALL, USE OR COPY THE 
-  RIOTS DEVELOPMENT KIT.
+  MANUCA DEVELOPMENT KIT.
 
-  "Hardware Development Kit" means the RIOTS Board schematics ("Schematics"), and GovTech 
+  "Hardware Development Kit" means the MANUCA DK schematics ("Schematics"), and GovTech 
   data accompanying this Licence, and any printed, electronic or online documentation 
   ("Documentation") supplied with it.
 
@@ -111,6 +111,5 @@ shall void any warranty granted by GovTech for such product.
   ~~~
 </details>
 
-### RIOTS Operating System - Source Code
-Unless specifically indicated otherwise in a file, the repository stack-riots-os-example is licensed under the Apache 2.0 license, as can be found in [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
-
+### MANUCA OS - Source Code
+Unless specifically indicated otherwise in a file, the repository manuca-os-example is licensed under the Apache 2.0 license, as can be found in [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
