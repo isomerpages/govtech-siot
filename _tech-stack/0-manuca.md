@@ -8,7 +8,7 @@ collection_name: tech-stack
 
 # Introduction to MANUCA
 
-The eMbedded Advanced Network of Micro(μ) Computing Applications (MANUCA) is a platform designed to integrate multiple sensors and publish their measure points to DECADA Cloud swiftly. It is powered by the [MANUCA Development Kit (MANUCA DK)](#MANUCA-DK) and the [MANUCA Operating System (MANUCA OS)](#MANUCA-OS).  
+The eMbedded Advanced Network of Micro Computing Applications (MANUCA) is a platform designed to integrate multiple sensors and publish their measure points to DECADA Cloud swiftly. The platform currently consists of [MANUCA Development Kit (MANUCA DK)](#MANUCA-DK) and [MANUCA Operating System (MANUCA OS)](#MANUCA-OS).  
 
 As part of the Singapore Government Tech Stack, MANUCA provides a reference design to the hardware and software used in developing sensor nodes that are DECADA-Ready. By extending the sensor library in MANUCA OS, users will be able to integrate their dedicated sensors onto the MANUCA DK, and read out the sensor measure point(s) in real-time on the DECADA Cloud dashboard.  
 
@@ -75,5 +75,7 @@ Additional Details:
 
 <a id="MANUCA-OS"></a>
 ## MANUCA OS
-**MANUCA OS** is a Real-Time OS (RTOS) example customized for the MANUCA DK –  it is based on mbedOS and developed to showcase the ease of developing RTOS applications using the MANUCA DK, that has the capability to publish data to the government cloud. MANUCA OS uses multi-threading to handle Data Ingestion (via Sensor Thread), Process and Analyze (via Behavior Coordinator Thread) and Respond (via Communication Controller Thread and Subscription Manager Thread). MQTT over TLS is the standard communication protocol to interact with DECADA Cloud. Several software modules are included to help kick start your sensor node RTOS development. The public release repository can be found [here](insert_github_url), and would work almost off-the-shelf once the user has configured their personal DECADA credentials into the software. After the binary is compiled, and flashed onto the MANUCA DK, you should observe temperature (using on-board temperature sensor) being updated on your DECADA Cloud measure points.
+**MANUCA OS** is a Real-Time OS (RTOS) example customized for the MANUCA DK –  it is based on mbedOS and developed to showcase the ease of developing RTOS applications using the MANUCA DK, that has the capability to publish data to the government cloud. MANUCA OS uses multi-threading to handle Data Ingestion (via Sensor Thread), Process and Analyze (via Behavior Coordinator Thread) and Respond (via Communication Controller Thread and Subscription Manager Thread). MQTT over TLS is the standard communication protocol to interact with DECADA Cloud. Several software modules are included to help kick start your sensor node RTOS development.  
+
+The public release repository can be found [here](insert_github_url), and would work almost off-the-shelf once the user has configured their personal DECADA credentials into the software. After the binary is compiled, and flashed onto the MANUCA DK, you should observe temperature (using on-board temperature sensor) being updated on your DECADA Cloud measure points.
 
