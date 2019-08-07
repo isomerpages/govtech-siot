@@ -73,7 +73,7 @@ Additional Details:
   </tr>
 </table>
 
-MANUCA DK User Manual can be downloaded [here](/files/MANUCA_User_Manual.pdf)
+MANUCA DK User Manual can be downloaded [here](/files/MANUCA_User_Manual_V1.pdf)
 
 <a id="MANUCA-OS"></a>
 ## MANUCA OS
