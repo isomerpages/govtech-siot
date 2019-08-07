@@ -21,7 +21,7 @@ Core Features:
 
 ### Customers
 
-![Customers](/images/products/sensorpod/customers.png)
+<img class="large" src="/images/products/sensorpod/customers.png" alt="customers">
 
 ### Contact Us
 Christopher Tong  
