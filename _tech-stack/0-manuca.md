@@ -8,7 +8,7 @@ collection_name: tech-stack
 
 # Introduction to MANUCA
 
-The eMbedded Advanced Network of Micro Computing Applications (MANUCA) is a platform designed to integrate multiple sensors and publish their measure points to DECADA Cloud swiftly. The platform currently consists of [MANUCA Development Kit (MANUCA DK)](#MANUCA-DK) and [MANUCA Operating System (MANUCA OS)](#MANUCA-OS).  
+MANUCA, short for eMbedded Advanced Network of Micro Computing Applications, is a platform designed to integrate multiple sensors and publish their measure points to DECADA Cloud swiftly. The platform currently consists of [MANUCA Development Kit (MANUCA DK)](#MANUCA-DK) and [MANUCA Operating System (MANUCA OS)](#MANUCA-OS).  
 
 As part of the Singapore Government Tech Stack, MANUCA provides a reference design to the hardware and software used in developing sensor nodes that are DECADA-Ready. By extending the sensor library in MANUCA OS, users will be able to integrate their dedicated sensors onto the MANUCA DK, and read out the sensor measure point(s) in real-time on the DECADA Cloud dashboard.  
 
