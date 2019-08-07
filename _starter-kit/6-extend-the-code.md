@@ -23,7 +23,7 @@ We will demonstrate this feature of the MANUCA DK by using a CO<sub>2</sub> and 
 
 1. Connect the SCD30 sensor as shown in the diagram above
 
-2. Test the sensor with this image file: [manuca-scd30-i2c-test.bin](/images/manuca/extend-the-code/manuca-scd30-i2c-test.bin)
+2. Test the sensor with this image file: [manuca-scd30-i2c-test.bin](/files/manuca-scd30-i2c-test.bin)
 
     a. If the sensor is active, you should see values of CO<sub>2</sub>, temperature and humidity printed out like this:
     ![Serial Log of SCD30](/images/manuca/extend-the-code/ext_sensor_2_serial_log.png)
