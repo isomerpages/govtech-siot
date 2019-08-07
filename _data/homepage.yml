@@ -19,7 +19,7 @@ hero-banner: /images/banner.jpg
 #hero-banner: /images/hero-banner.png
     
 key-highlights:
-  - title: MANUCA Development Kit
+  - title: MANUCA
     description: Sensor Node
     url: /tech-stack/manuca
   - title: DECADA Edge
