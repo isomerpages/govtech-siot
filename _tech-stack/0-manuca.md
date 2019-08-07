@@ -73,6 +73,8 @@ Additional Details:
   </tr>
 </table>
 
+MANUCA DK User Manual can be downloaded [here](/files/MANUCA_User_Manual.pdf)
+
 <a id="MANUCA-OS"></a>
 ## MANUCA OS
 **MANUCA OS** is a Real-Time OS (RTOS) example customized for the MANUCA DK –  it is based on mbedOS and developed to showcase the ease of developing RTOS applications using the MANUCA DK, that has the capability to publish data to the government cloud. MANUCA OS uses multi-threading to handle Data Ingestion (via Sensor Thread), Process and Analyze (via Behavior Coordinator Thread) and Respond (via Communication Controller Thread and Subscription Manager Thread). MQTT over TLS is the standard communication protocol to interact with DECADA Cloud. Several software modules are included to help kick start your sensor node RTOS development.  
