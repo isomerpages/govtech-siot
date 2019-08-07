@@ -6,4 +6,4 @@ permalink: /media-centre/news/Starter-Kit/
 ---
 
 The IoT Starter,to be unveiled at Stack-X: Experience Reimagined, will allow any sensor node developers to swiftly send data to the government cloud.
-[Pre-order](https://go.gov.sg/iotkit-preorder) now!
+[Pre-order now!](https://go.gov.sg/iotkit-preorder)
