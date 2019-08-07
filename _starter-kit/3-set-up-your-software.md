@@ -51,7 +51,7 @@ collection_name: starter-kit
 
   1. Create a folder that would be your mbed work space. `cd <workspace_directory>`
   2. In terminal, `git init` to initialize a git work space
-  3. In terminal, `git clone --recurse-submodules <public_github_url>)`
+  3. In terminal, `git clone --recurse-submodules https://github.com/GovTechSIOT/stack-manuca-os)`
   4. In terminal, `git submodule update --init --recursive`
 
 </details>
@@ -61,7 +61,7 @@ collection_name: starter-kit
 
   1. Create a folder that would be your mbed work space. `cd <workspace_directory>`
   2. In terminal, `git init` to initialize a git work space
-  3. In terminal, `git clone --recurse-submodules <public_github_url>)`
+  3. In terminal, `git clone --recurse-submodules https://github.com/GovTechSIOT/stack-manuca-os)`
   4. Open VS Code, and install the following packages under Extensions (ctrl + shift + x)
     a. C/C++ By Microsoft
     b. Cortex-Debug by marus25
