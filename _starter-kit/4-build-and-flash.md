@@ -45,14 +45,18 @@ collection_name: starter-kit
 1. Locate the binary file in the BUILD folder e.g. `./BUILD/NUCLEO_F767ZI/ARMC6/manuca-os-example.bin`
 2. Using ST-Link V3 programmer, simply drag-and-drop the binary into the hardware folder (similar to copying a file into a USB stick). 
 
-# Verify flash success
+# Configure WiFi SSID, and verify flash success
 
 1. The ST-Link programmer should flash red and green as the binary is being flashed on the MANUCA DK.
 
-2. Open your serial debug program and press the hardware reset button on your board. Then press space in your serial debug program. You should see the boot manager screen 
+2. Open your serial debug program, for example minicom, and press the hardware reset button on the MANUCA DK. Hit the spacebar while in your serial debug program, and you should see the Boot Manager screen as shown. Note that the BootManager can only be accessed within the first 5 seconds of a hard reset.
 
 ![boot](/images/manuca/flashing-code/flash_success.png)
 
-3. Enter the passphrase `stackx2019` 
+3. Enter the passphrase `stackx2019` to login to the Boot Manager.
 
-4. The program should be able to register with DECADA and send the on-board temperature sensor readings upstream onto your DECADA dashboard
+4. After successfully logging into Boot Manager, select option (1) to change to your dedicated WiFi SSID, and option (2) to change to your dedicated WiFi Password. Select option (-2) to perform a software reset and exit the BootManager. Option (-1) currently empties the WiFi SSID, WiFi Password and SSL Certificates, which are all stored in Persistence Storage, and should be used as a need-to basis.
+
+![wifi](/images/manuca/flashing-code/bootmanager_changewifi.png)
+
+5. The program will automatically register with DECADA Cloud and publish the on-board temperature sensor readings upstream onto your DECADA dashboard.
