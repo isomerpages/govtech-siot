@@ -13,11 +13,11 @@ collection_name: starter-kit
 
   1. Open Mbed Studio and login using your newly created Mbed account
   2. File → Open Workspace → \<workspace_directory>
-  3. On the top left, select `manuca-os-example` as the Active program
+  3. On the top left, select `stack-manuca-os` as the Active program
   4. Ensure Target is set to **NUCLEO-F767ZI (NUCLEO_F767ZI)**
   5. We use C++11 as the standard for software development. Under Build profile, select **Import custom profiles**, select `./tools/profiles/mbedstudio_release.json`
   ![mbed-studio](/images/manuca/flashing-code/mbed_studio_setup_1.png)
-  6. Click on the blue hammer icon on the left to build the source code. The binary image would be located in `./BUILD/NUCLEO_F767ZI/ARMC6/manuca-os-example.bin`
+  6. Click on the blue hammer icon on the left to build the source code. The binary image would be located in `./BUILD/NUCLEO_F767ZI/ARMC6/stack-manuca-os.bin`
   If your build was successful, you should see something similar to the screenshot below:
   ![mbed-studio](/images/manuca/flashing-code/mbed_studio_setup_2.png)
 
@@ -42,7 +42,7 @@ collection_name: starter-kit
 
 # Flash the binary into MANUCA DK
 
-1. Locate the binary file in the BUILD folder e.g. `./BUILD/NUCLEO_F767ZI/ARMC6/manuca-os-example.bin`
+1. Locate the binary file in the BUILD folder e.g. `./BUILD/NUCLEO_F767ZI/ARMC6/stack-manuca-os.bin`
 2. Using ST-Link V3 programmer, simply drag-and-drop the binary into the hardware folder (similar to copying a file into a USB stick). 
 
 # Configure WiFi SSID, and verify flash success

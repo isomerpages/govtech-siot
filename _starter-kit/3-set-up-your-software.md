@@ -70,7 +70,16 @@ collection_name: starter-kit
 
 </details>
 
-## Input DECADA Credentials into Source Code
+## Important Configurations
+
+### Change TLS Configuration
+
+Due to DECADA Cloud migration works, a temporary security workarond is required.  
+
+Disable SSL Verification by changing mbed-os/features/netsocket/TLSSocketWrapper.cpp line 550 to `mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);`
+
+
+### Input DECADA Credentials into Source Code
 
 Go to mbed_app.json **line 44** to add in your DECADA Credentials as shown below.
 
