@@ -6,6 +6,7 @@ breadcrumb: MANUCA
 collection_name: tech-stack
 ---
 
+![MANUCA LOGO](/images/manuca/intro/main_logo_wo_tagline.png)
 # Introduction to MANUCA
 
 MANUCA, short for eMbedded Advanced Network of Micro Computing Applications, is a platform designed to integrate multiple sensors and publish their measure points to DECADA Cloud swiftly. The platform currently consists of [MANUCA Development Kit (MANUCA DK)](#MANUCA-DK) and [MANUCA Operating System (MANUCA OS)](#MANUCA-OS).  
