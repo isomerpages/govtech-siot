@@ -31,16 +31,16 @@ collection_name: starter-kit
   1. Download VS Code for Ubuntu at <https://code.visualstudio.com/download>
   2. Install VS Code
   3. Install Python
-    a. In terminal, `sudo apt-get install python2.7`
+  >* In terminal, `sudo apt-get install python2.7`
   4. Install Pip
-    a. In terminal, sudo apt-get install python-pip 
+  >* In terminal, sudo apt-get install python-pip 
   5. Download gcc-arm-embedded-6-2017-q2 Toolchain
-    a. Download 6-2017-q2 from [here](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads), and decompress the folder
+  >* Download 6-2017-q2 from [here](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads), and decompress the folder
   6. In terminal, `sudo pip install mbed-cli`
-    a. In terminal, `mbed help` to check if mbed-cli is properly installed
+  >* In terminal, `mbed help` to check if mbed-cli is properly installed
   7. Add gcc-arm tool chain to mbed-cli compiler
-    a. In terminal, `mbed config -G GCC_ARM_PATH <path to GCC_ARM bin\>   # path example: ~/gcc-arm/gcc-arm-none-eabi-6-2017-q2-update/bin/`
-    b. In terminal, `mbed config --list` to show the toolchain attached to mbed-cli compiler
+  >* In terminal, `mbed config -G GCC_ARM_PATH <path to GCC_ARM bin\>   # path example: ~/gcc-arm/gcc-arm-none-eabi-6-2017-q2-update/bin/`
+  >* In terminal, `mbed config --list` to show the toolchain attached to mbed-cli compiler
 
 </details>
 
@@ -63,10 +63,10 @@ collection_name: starter-kit
   2. In terminal, `git init` to initialize a git work space
   3. In terminal, `git clone --recurse-submodules https://github.com/GovTechSIOT/stack-manuca-os.git`
   4. Open VS Code, and install the following packages under Extensions (ctrl + shift + x)
-    a. C/C++ By Microsoft
-    b. Cortex-Debug by marus25
-    c. ESLint by Dirk Baeumer
-    d. Python by Microsoft
+  >* C/C++ By Microsoft
+  >* Cortex-Debug by marus25
+  >* ESLint by Dirk Baeumer
+  >* Python by Microsoft
 
 </details>
 
@@ -74,7 +74,7 @@ collection_name: starter-kit
 
 ### Change TLS Configuration
 
-Due to DECADA Cloud migration works, a temporary security workarond is required.  
+> Due to DECADA Cloud migration works, a temporary security workarond is required.  
 
 Disable SSL Verification by changing mbed-os/features/netsocket/TLSSocketWrapper.cpp line 550 to `mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);`
 
@@ -86,22 +86,22 @@ Go to mbed_app.json **line 44** to add in your DECADA Credentials as shown below
 ~~~json
 "decada-ou-id": {
 "help": "Organization Unit ID issued for connecting to DECADAcloud",
-"value": "\"<insert_ou_id>\""
+"value": "\"enter_organization_unit_id_here\""
 },
 "decada-access-key": {
 "help": "Access key issued for connecting to DECADAcloud application",
-"value": "\"<insert_decada_access_key>\""
+"value": "\"enter_access_key_here\""
 },
 "decada-access-secret": {
 "help": "Access secret issued for connecting to DECADAcloud application",
-"value": "\"<insert_decada_access_secret>\""
+"value": "\"enter_access_secret_here\""
 },
 "decada-product-key": {
 "help": "Product key issued for connecting to DECADAcloud product",
-"value": "\"<insert_product_key>\""
+"value": "\"enter_product_key_here\""
 },
 "decada-product-secret": {
 "help": "Product secret issued for connecting to DECADAcloud product",
-"value": "\"<insert_product_secret>\""
+"value": "\"enter_product_secret_here\""
 },
 ~~~
