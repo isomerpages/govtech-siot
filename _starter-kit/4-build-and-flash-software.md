@@ -26,7 +26,7 @@ collection_name: starter-kit
 # Set up Important Configurations
 ## Change TLS Configuration
 
-Due to DECADA Cloud migration works, a temporary security workarond is required.  
+> Due to DECADA Cloud migration works, a temporary security workarond is required.  
 
 Disable SSL Verification by doing the following:
 1. In your IDE, go to mbed-os → features → netsocket → TLSSocketWrapper.cpp
@@ -40,23 +40,23 @@ Disable SSL Verification by doing the following:
 ~~~json
 "decada-ou-id": {
 "help": "Organization Unit ID issued for connecting to DECADAcloud",
-"value": "\"<insert_ou_id>\""
+"value": "\"enter_organization_unit_id_here\""
 },
 "decada-access-key": {
 "help": "Access key issued for connecting to DECADAcloud application",
-"value": "\"<insert_decada_access_key>\""
+"value": "\"enter_access_key_here\""
 },
 "decada-access-secret": {
 "help": "Access secret issued for connecting to DECADAcloud application",
-"value": "\"<insert_decada_access_secret>\""
+"value": "\"enter_access_secret_here\""
 },
 "decada-product-key": {
 "help": "Product key issued for connecting to DECADAcloud product",
-"value": "\"<insert_product_key>\""
+"value": "\"enter_product_key_here\""
 },
 "decada-product-secret": {
 "help": "Product secret issued for connecting to DECADAcloud product",
-"value": "\"<insert_product_secret>\""
+"value": "\"enter_product_secret_here\""
 },
 ~~~
 2. Save your changes.
