@@ -6,31 +6,31 @@ breadcrumb: Set up your Hardware
 collection_name: starter-kit
 ---
 
-# Set up your Hardware
 ## Wiring up the MANUCA DK
 1. Connect the **ESP32 WiFi Module** onto the **WIRELESS MODULE** port on the board
 
-![step 1](/images/manuca/manuca-board-setup/manuca_setup_1_wifi.jpg)
+![step 1](/images/manuca/hardware-setup/manuca_setup_1_wifi.jpg)
 
 2. Connect the **TTL-USB Cable** to the **SERIAL DEBUG** port, with black wire aligned to the GND pin
 
-![step 2](/images/manuca/manuca-board-setup/manuca_setup_2_ttl.jpg)
+![step 2](/images/manuca/hardware-setup/manuca_setup_2_ttl.jpg)
 
 3. Connect the **ST-LINK programmer** cable to the **JTAG** pins, with red wire at the bottom
 
-![step 3](/images/manuca/manuca-board-setup/manuca_setup_3_jtag.jpg)
+![step 3](/images/manuca/hardware-setup/manuca_setup_3_jtag.jpg)
 
 4. Your board set up should look like this:
 
-![step 4](/images/manuca/manuca-board-setup/manuca_setup_4.jpg)
+![step 4](/images/manuca/hardware-setup/manuca_setup_4.jpg)
 
 5. Connect the USB side of the **TTL-USB Cable** and **ST-LINK programmer** to your computer. The board should light up.
 
+<a id="SerialDebug"></a>
 ## Setting up your MANUCA DK Serial Debug Program
 Proceed with the following steps, depending on which OS your computer is running on.
-<details markdown="1">
+<details>
   
-  <summary markdown='span'>Linux</summary>
+  <summary><font size=4>Linux</font size></summary>
   
   1. Find out which serial port your **TTL-USB Cable** is connected to by disconnecting your **TTL-USB Cable**, then entering `dmesg | grep tty` into Terminal.
 
@@ -48,11 +48,11 @@ Proceed with the following steps, depending on which OS your computer is running
   2. Install minicom by entering `sudo apt-get install minicom` into Terminal. This step will install minicom if not installed yet.
 
   3. Configure minicom by entering `sudo minicom -s` into Terminal. You should see this configuration window:
-  ![linux-minicom-setup](/images/manuca/manuca-board-setup/linux_debug_setup_1.jpg)
+  ![linux-minicom-setup](/images/manuca/hardware-setup/linux_debug_setup_1.jpg)
   Use arrow keys/enter to navigate the menu.
 
   4. Go to **Serial port setup**.
-  ![linux-minicom-setup](/images/manuca/manuca-board-setup/linux_debug_setup_2.jpg)
+  ![linux-minicom-setup](/images/manuca/hardware-setup/linux_debug_setup_2.jpg)
   There are three things you need to do:
 
   - Change Serial Device to the name of the port that the TTL-USB Cable is connected to. You can change your Serial Device by entering **A**, then editing the name, and press **enter**.
@@ -66,7 +66,7 @@ Proceed with the following steps, depending on which OS your computer is running
   5. Go to **Save setup as dfl** and **enter**. This will save your configuration as default.
 
   6. Go to **Exit** and **enter**. This will bring you to the minicom application in Terminal.
-  ![linux-minicom-setup](/images/manuca/manuca-board-setup/linux_debug_setup_3.png)
+  ![linux-minicom-setup](/images/manuca/hardware-setup/linux_debug_setup_3.png)
   You should see `Welcome to minicom` and the Port should reflect the name of your TTL-to-USB cable port.
 
   Now your Serial Debugging tool for Linux has been set up successfully.
@@ -76,9 +76,9 @@ Proceed with the following steps, depending on which OS your computer is running
 </details>
 
 <br>
-<details markdown="1">
+<details>
   
-  <summary markdown='span'>MacOS</summary>
+  <summary><font size=4>MacOS</font size></summary>
   
   1. Find out which serial port your **TTL-USB Cable** is connected to by disconnecting your **TTL-USB Cable**, then entering `ls /dev/tty*` into Terminal.
 
@@ -89,11 +89,11 @@ Proceed with the following steps, depending on which OS your computer is running
   - `brew install minicom`
 
   3. Configure minicom by entering `sudo minicom -s` into Terminal. You should see this configuration window:
-  ![macos-minicom-setup](/images/manuca/manuca-board-setup/macos_debug_setup_1.png)
+  ![macos-minicom-setup](/images/manuca/hardware-setup/macos_debug_setup_1.png)
   Use arrow keys/enter to navigate the menu.
 
   4. Go to **Serial port setup**.
-  ![macos-minicom-setup](/images/manuca/manuca-board-setup/macos_debug_setup_2.png)
+  ![macos-minicom-setup](/images/manuca/hardware-setup/macos_debug_setup_2.png)
   There are three things you need to do:
 
   - Change Serial Device to the name of the port that the TTL-USB Cable is connected to. You can change your Serial Device by entering **A**, then editing the name, and press **enter**.
@@ -107,7 +107,7 @@ Proceed with the following steps, depending on which OS your computer is running
   5. Go to **Save setup as dfl** and **enter**. This will save your configuration as default.
 
   6. Go to **Exit** and **enter**. This will bring you to the minicom application in Terminal.
-  ![macos-minicom-setup](/images/manuca/manuca-board-setup/macos_debug_setup_3.png)
+  ![macos-minicom-setup](/images/manuca/hardware-setup/macos_debug_setup_3.png)
   You should see a message similar to the above image and the Port should reflect the name of your TTL-to-USB cable port.
 
   Now your Serial Debugging tool for Linux has been set up successfully.
@@ -117,20 +117,20 @@ Proceed with the following steps, depending on which OS your computer is running
 </details>
 
 <br>
-<details markdown="1">
+<details>
   
-  <summary markdown='span'>Windows</summary>
+  <summary><font size=4>Windows</font size></summary>
   
-  1. Download [Tera Term](https://osdn.net/projects/ttssh2/releases/) for Windows. This tutorial is for Tera Term, though you can use PuTTY as well.
+  1. Download [Tera Term](https://osdn.net/projects/ttssh2/releases/) for Windows.
 
   2. Run the Tera Term `.exe` file and install the software.
 
   3. A "New connection" window will pop up. Select the **Serial** option if available. If not, click cancel.
-  ![windows-teraterm-setup](/images/manuca/manuca-board-setup/windows_debug_setup_1.PNG)
+  ![windows-teraterm-setup](/images/manuca/hardware-setup/windows_debug_setup_1.PNG)
 
   4. Go to **Setup > Serial port...**
   You should see something like this:
-  ![windows-teraterm-setup](/images/manuca/manuca-board-setup/windows_debug_setup_2.PNG)
+  ![windows-teraterm-setup](/images/manuca/hardware-setup/windows_debug_setup_2.PNG)
 
   To find out what port your TTL-USB Cable is connected to:
 

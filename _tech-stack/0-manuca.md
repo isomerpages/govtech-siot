@@ -49,6 +49,10 @@ Additional Details:
     <td>Header for powering the MANUCA DK; Not necessary if TTL Serial is in use</td>
   </tr>
   <tr>
+    <td>Hardware Reset Button</td>
+    <td>Button for manually resetting the system</td>
+  </tr>
+  <tr>
     <td>Programmable LEDs</td>
     <td>Software controlled GPIO LEDs; Programmable by user</td>
   </tr>

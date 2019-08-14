@@ -131,6 +131,7 @@ The following steps are similar to **(2) DECADA setup: Creating your Measure Poi
 
 9. For on-boarding other external sensors, you can add in your driver for the sensor and add the reading of your sensor into sensor thread. If you do not have the driver, you can search for open source drivers on [mbed website](https://os.mbed.com/code/).
 
+<a id="ReferenceExtSensors"></a>
 ### Reference for External Sensor Connectors
 
 The below diagram shows how you can connect your own I<sup>2</sup>C/SPI sensors to the MANUCA DK as external sensors.
