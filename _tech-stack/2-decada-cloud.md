@@ -6,7 +6,7 @@ breadcrumb: DECADA Cloud
 collection_name: tech-stack
 ---
 
-# Introduction to DECADA
+# Introduction to DECADA Cloud
 
 **DECADA** (Device Management, Control and Data Acquisition Systems) is a multi-tenant cloud platform by GovTech that provides support for device management, data acquisition and data analytics of IoT devices.
 
@@ -67,7 +67,7 @@ We offer 3 different ways of connecting to the cloud:
 
 ## Direct Connection
 
-A direct connection between a sensor device and the DECADA cloud can be established with or without the use of GovTech’s SDKs (Software Development Kits).
+A direct connection between a sensor device and the DECADA cloud can be established with or without the use of DECADA’s SDKs (Software Development Kits).
 
 ### DECADA's SDKs
 
