@@ -132,13 +132,10 @@ You will need to note down a few credentials needed to configure your device.
 
 The following steps will elaborate on how to find these credentials:
 
-1. You can get your OUID by hovering your cursor over your Organization Name at the top, as seen in the screenshot below.  
-<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_1.png" alt="ouid">
-
-Otherwise, you can find your OUID by going to the left navigation panel > **IAM** > **Organization Profile** and look for **Organization ID**.
-
+1. You can find your OUID by going to the left navigation panel > **IAM** > **Organization Profile**.  
 <img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_2.png" alt="ouid">  
-<br><br>
+
+Your OUID is the id under **Organization ID** (see the screenshot below for reference).
 <img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_3.png" alt="ouid">
 
 
@@ -151,8 +148,8 @@ Otherwise, you can find your OUID by going to the left navigation panel > **IAM*
 <img class="large" src="/images/manuca/decada-setup/decada_setup_productkey.png" alt="productkey">
 
 4. Go to **Application Registration** and select your application (see [Creating your Application](#DecadaApplication)), you should be able to get your:
-- Access Key (named accessKey)
-- Access Secret (named secretKey)
+- Access Key (named `accessKey`)
+- Access Secret (named `secretKey`)
 
 <img class="large" src="/images/manuca/decada-setup/decada_setup_applicationkey.png" alt="applicationkey">
 
