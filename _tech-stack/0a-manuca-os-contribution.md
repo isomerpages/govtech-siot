@@ -1,7 +1,7 @@
 ---
 title: Contributing
 permalink: /tech-stack/manuca/manuca-os-contribution/
-third_nav_title: "MANUCA OS Contribution"
+third_nav_title: "MANUCA"
 ---
 # Contributing to MANUCA OS
 MANUCA OS is an open-sourced RTOS that is designed to work with the MANUCA DK. Contributions are an important part of the MANUCA ecosystem, and the wider Singapore Government Tech Stack. Our goal is to make it as simple as possible to become a contributor.
