@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Contributing
 permalink: /tech-stack/manuca/manuca-os-contribution/
 third_nav_title: "MANUCA OS Contribution"
 ---
