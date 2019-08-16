@@ -1,7 +1,10 @@
 ---
+layout: leftnav-page-content
 title: Overview
 permalink: /tech-stack/manuca/overview/
-third_nav_title: "MANUCA"
+breadcrumb: MANUCA - Overview
+second_nav_title: "MANUCA"
+collection_name: tech-stack
 ---
 
 ![MANUCA LOGO](/images/manuca/intro/main_logo_wo_tagline.png)
