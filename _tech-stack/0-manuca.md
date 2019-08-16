@@ -1,9 +1,7 @@
 ---
-layout: leftnav-page-content
-title: MANUCA
-permalink: /tech-stack/manuca/
-breadcrumb: MANUCA
-collection_name: tech-stack
+title: Overview
+permalink: /tech-stack/manuca/overview/
+third_nav_title: "MANUCA"
 ---
 
 ![MANUCA LOGO](/images/manuca/intro/main_logo_wo_tagline.png)
