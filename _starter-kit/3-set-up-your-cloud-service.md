@@ -20,20 +20,20 @@ collection_name: starter-kit
 
 An example of how you can create your model is shown below:
 
-<img class="large" src="/images/manuca/decada-setup/decada_setup_model_2.png" alt="model">
+<img src="/images/manuca/decada-setup/decada_setup_model_2.png" alt="model">
 
 
-## Creating your Measure Point(s)
+## Creating your Measurement Point(s)
 *Measure Points are entities expected to be received upstream from devices. Examples are `temperature` and `humidity`.*
 
 1. Once your model has been created, go to **Edit** on the rightmost column for your model
 2. Go to **Feature Definition** tab (beside Basic Information)
 3. Click on **Add**
-4. Under **Feature Type** drop-down list, select **Measure Points**
+4. Under **Feature Type** drop-down list, select **Measurement Points**
 
 > In this user guide, we will use the identifier **ambient_temp** of data type **double**.
 
-<img class="large" src="/images/manuca/decada-setup/decada_setup_measurepoints_1.png" alt="measurepoints">
+<img src="/images/manuca/decada-setup/decada_setup_measurepoints_1.png" alt="measurepoints">
 
 An identifier is:
 - A unique ID given to a measure point
@@ -53,7 +53,7 @@ An identifier is:
 
 Take note that the identifier has to be at least 4 characters in length and **only alphanumeric characters** are allowed.
 
-<img class="large" src="/images/manuca/decada-setup/decada_setup_service_1.png" alt="service">
+<img src="/images/manuca/decada-setup/decada_setup_service_1.png" alt="service">
 
 3. Select **Synchronous**, as we will send an acknowledgement response upon receiving a command from DECADA Cloud.
 
@@ -65,13 +65,13 @@ Take note that the identifier has to be at least 4 characters in length and **on
 
 Sending multiple parameters in a single instance downstream is also supported.
 
-<img class="large" src="/images/manuca/decada-setup/decada_setup_service_2.png" alt="service">
+<img src="/images/manuca/decada-setup/decada_setup_service_2.png" alt="service">
 
 5. Select **New Parameter** for **Output Parameter**. An output parameter is a specific response you want to receive from your device after your service request (e.g. sensor poll rate updated)
 
 > In this user guide, we will use the identifier **success** for the output parameter, **string** as the data type and string length of **6** bytes. 
 
-<img class="large" src="/images/manuca/decada-setup/decada_setup_service_3.png" alt="service">
+<img src="/images/manuca/decada-setup/decada_setup_service_3.png" alt="service">
 
 6. Click OK when you are done creating your service(s).
 
@@ -89,7 +89,7 @@ Fill in the **Product Name**. Select **Device** for **Asset Type** and the model
 
 Select **Json** for **Data Type** and **enable** the **Certificate-based bi-directional authentication**.
 
-<img class="large" src="/images/manuca/decada-setup/decada_setup_product_2.png" alt="product">
+<img src="/images/manuca/decada-setup/decada_setup_product_2.png" alt="product">
 
 3. Once your product is created, click on **View** on the rightmost column for your product.
 
@@ -106,7 +106,7 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
 
 <img class="large" src="/images/manuca/decada-setup/decada_setup_application_1.png" alt="app">
 
-2. Click on **Register App** (outlined in red below) to create a new application
+2. Click on **Create App** (outlined in red below) to create a new application
 
 <img class="large" src="/images/manuca/decada-setup/decada_setup_application_2.png" alt="app">
 
@@ -114,7 +114,7 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
 
 <img class="large" src="/images/manuca/decada-setup/decada_setup_application_3.png" alt="app">
 
-4. Once your application has been created, you will be redirected to App Details, which displays your application name, *application access key* and *secret key*, as shown in the image below. (Some information has been omitted in the image below)
+4. Once your application has been created, you will see the `Success: App created` message and your application will be displayed as shown below.
 
 <img class="large" src="/images/manuca/decada-setup/decada_setup_application_4.png" alt="app">
 
@@ -133,10 +133,10 @@ You will need to note down a few credentials needed to configure your device.
 The following steps will elaborate on how to find these credentials:
 
 1. You can find your OUID by going to the left navigation panel > **IAM** > **Organization Profile**.  
-<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_2.png" alt="ouid">  
+<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_1.png" alt="ouid">  
 
 Your OUID is the id under **Organization ID** (see the screenshot below for reference).
-<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_3.png" alt="ouid">
+<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_2.png" alt="ouid">
 
 
 2. Next, go to left navigation panel > **Device Management** > **Product**
