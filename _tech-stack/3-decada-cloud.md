@@ -47,15 +47,15 @@ The main tools provided are:
 * Data Explorer
 * Metadata Explorer
 
-![DECADA Data Analytics IDE](/images/decada/features/data_ide.png)
+<img class="large" src="/images/decada/features/data_ide.png" alt="DECADA Data Analytics IDE">
 
 ## Application Framework
 
-DECADA empowers developers with the ability to create, manage and acquire resources of the organisation that they manage. The platform also provides identity management features to handle the authentication and authorisation of Application Programming Interface(API) calls made to it.
+DECADA empowers developers with the ability to easily deploy and manage web applications through the Application Framework. The Framework includes a web portal for end users to log in and access applications that they are authorized for.
 
-![DECADA Data Analytics IDE](/images/decada/features/app_framework.png)
+<img class="large" src="/images/decada/features/app_framework.png" alt="DECADA Application Framework screenshot">
 
-Internally, containers are containerised and isolated in production.
+Internally, applications are containerised and isolated in production.
 
 <a id="DECADA-Connecting-To-DECADA-Cloud"></a>
 # Connecting to DECADA Cloud
