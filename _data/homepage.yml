@@ -11,17 +11,14 @@ favicon: /images/siot.ico
 agency-logo: /images/logo.png
 
 # Hero Banner
-hero-title: <font size=45>Sensors and Internet-of-Things</font>
-# hero-title: <font size=10>Sensors and IoT</font>
+hero-title: Sensors and Internet of Things
 hero-subtitle: Capability Centre | GovTech
-# hero-banner: /images/banner2.png
 hero-banner: /images/banner.jpg
-#hero-banner: /images/hero-banner.png
     
 key-highlights:
   - title: MANUCA
     description: Sensor Node
-    url: /tech-stack/manuca
+    url: /tech-stack/manuca/overview
   - title: DECADA Edge
     description: Gateway
     url: /tech-stack/decada-edge

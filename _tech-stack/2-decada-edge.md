@@ -19,20 +19,20 @@ DECADA Edge Gateway software can be deployed on a variety of hardware, ranging f
 
 The DECADA Edge Gateway supports the following features:
 
-1. Secured connection to DECADA Cloud
-2. Firmware Over-The-Air (FOTA) update capability
-3. Transformation between communication protocols
-4. Web User Interface configuration
-5. Data Resiliency
-6. Data Aggregation
-7. Data Analytics
+* Secured connection to DECADA Cloud
+* Firmware Over-The-Air (FOTA) update capability
+* Transformation between communication protocols
+* Web User Interface configuration
+* Data Resiliency
+* Data Aggregation
+* Data Analytics
 
 <a id="DECADA-EDGE-Design-Overview"></a>
 ### Design Overview
 
 **DECADA Edge Gateway** software is written on top of open source QT C++ framework. There are two main parts in the software - **Core** modules and **Plugins**. Core modules compromises of managers that provides services for plugins to function.
 
-![DECADA EDGE Design Overview](/images/decada-edge/design/decada-edge-design-overview.png)
+<img class="large" src="/images/decada-edge/design/decada-edge-design-overview.png" alt="DECADA Edge Design Overview">
 
 <a id="DECADA-EDGE-Plugins"></a>
 ### Plugins
@@ -43,7 +43,7 @@ Plugins enable adaptive and fast deployment, reducing the need to redevelop exis
 
 An example of the combination of plugins to achieve data acquisition from various sensor nodes, with data processing and sending to DECADA via a single MQTT channel is shown below.
 
-![DECADA EDGE Plugin Example](/images/decada-edge/plugins/decada-edge-example.png)
+<img class="large" src="/images/decada-edge/plugins/decada-edge-example.png" alt="DECADA Edge Plugin Example">
 
 Plugins can be classified into the following categories:
 
