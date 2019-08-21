@@ -7,15 +7,15 @@ collection_name: starter-kit
 ---
 
 ## Wiring up the MANUCA DK
-1. Connect the **ESP32 WiFi Module** onto the **WIRELESS MODULE** port on the board
+1. Connect the **ESP32 WiFi Module** onto the **WIRELESS MODULE** port on the board as shown below:
 
 ![step 1](/images/manuca/hardware-setup/manuca_setup_1_wifi.jpg)
 
-2. Connect the **TTL-USB Cable** to the **SERIAL DEBUG** port, with black wire aligned to the GND pin
+2. Connect the **TTL-USB Cable** to the **SERIAL DEBUG** port, with black wire aligned to the GND pin as shown below:
 
 ![step 2](/images/manuca/hardware-setup/manuca_setup_2_ttl.jpg)
 
-3. Connect the **ST-LINK programmer** cable to the **JTAG** pins, with red wire at the bottom
+3. Connect the **ST-LINK programmer** cable to the **JTAG** pins, with red wire at the top and the cable connected towards the left side of the board as shown below:
 
 ![step 3](/images/manuca/hardware-setup/manuca_setup_3_jtag.jpg)
 

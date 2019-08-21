@@ -8,7 +8,7 @@ collection_name: tech-stack
 
 # Singapore Government Tech Stack: Sensors and IOT Stack
 
-![MANUCA DECADA COMPARISON](/images/manuca/intro/main_logo_wo_tagline.png)
+![MANUCA DECADA COMPARISON](/images/techstack_system.png)
 
 To enable government agencies to build services quickly and effectively, GovTech is developing the [**Singapore Government Tech Stack**](https://www.tech.gov.sg/products-and-services/singapore-government-tech-stack/) (SGTS). Traditionally most agencies develop their own services and infrastructure to meet the needs of the specific citizen or business group they serve, and may not be the fastest or most efficient way. With SGTS, agencies would be able to tap on a suite of tools and services hosted on a common infrastructure to ensure consistency, security and high quality of their applications.
 

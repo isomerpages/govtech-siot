@@ -22,14 +22,14 @@ All functions and methods must include a corresponding doxygen-styled API docume
 
 ## Types of contributions
 1. **Bugfix**
-*  A bug fix is a change that fixes a specific defect in the codebase with backward compatibility. These are the highest priority because of the positive effect the change will have on users developing against the same code. A bug fix should be limited to restoring the documented or proven otherwise, originally intended behavior. Every bug fix should contain a test to verify results before and after the pull request. Bug fixes are candidates for patch releases.
-* Create branch with the prefix `bugfix/`. For example bugfix/foo-bar 
+    *  A bug fix is a change that fixes a specific defect in the codebase with backward compatibility. These are the highest priority because of the positive effect the change will have on users developing against the same code. A bug fix should be limited to restoring the documented or proven otherwise, originally intended behavior. Every bug fix should contain a test to verify results before and after the pull request. Bug fixes are candidates for patch releases.
+    * Create branch with the prefix `bugfix/`. For example bugfix/foo-bar 
 2. **Feature**
-* A feature can be any change in the functionality, including adding a new feature, a new method or a function. A feature contribution contains a new API, capability or behavior. It does not break backward compatibility with existing APIs, capabilities or behaviors. New features should also come with documentation and comprehensive test coverage. Feature PRs are treated cautiously, and new features require a new minor version for the codebase. Features are candidates for feature releases.
-* Create branch with the prefix `feature/`. For example feature/foo-bar
+    * A feature can be any change in the functionality, including adding a new feature, a new method or a function. A feature contribution contains a new API, capability or behavior. It does not break backward compatibility with existing APIs, capabilities or behaviors. New features should also come with documentation and comprehensive test coverage. Feature PRs are treated cautiously, and new features require a new minor version for the codebase. Features are candidates for feature releases.
+    * Create branch with the prefix `feature/`. For example feature/foo-bar
 3. **Others**
-* All other types of pull request not convered above will fall into this category. This includes pull requests for docmentations, code refactoring and updating of unit tests. Depending on the impact of the change, this branch may be queued to a lower priority.
-* Create branch with the prefix `others/`. For example others/foo-bar
+    * All other types of pull request not convered above will fall into this category. This includes pull requests for docmentations, code refactoring and updating of unit tests. Depending on the impact of the change, this branch may be queued to a lower priority.
+    * Create branch with the prefix `others/`. For example others/foo-bar
 
 ## GitHub Pull Request Workflow
 ![PR Flowchart](/images/manuca/intro/manuca_os_github_pr_sm.png)
