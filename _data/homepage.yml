@@ -5,31 +5,29 @@
 ##################################
 
 # Favicon
-favicon: /images/favicon-isomer.ico
+favicon: /images/siot.ico
 
 # Agency logo
-agency-logo: /images/isomer-logo.svg
+agency-logo: /images/logo.png
 
 # Hero Banner
-hero-title: Sensors and IOT Starter Kit
-hero-subtitle: Subtitle Here
-hero-banner: /images/hero-banner.png
-
-#Call to Action Button
-button:
-  - text: Learn More
-    url: /who-we-are/
+hero-title: Sensors and Internet of Things
+hero-subtitle: Capability Centre | GovTech
+hero-banner: /images/banner.jpg
     
 key-highlights:
-  - title: Highlight A
-    description: Important highlight A is important
-    url: https://google.com
-    external: true
-  - title: Highlight B
-    description: Important highlight B is equally important
-    url: https://yahoo.com
-    external: true
-  - title: Page A
-    description: Page A is important too
-    url: /page-A/
-
+  - title: MANUCA
+    description: Sensor Node
+    url: /tech-stack/manuca/overview
+  - title: DECADA Edge
+    description: Gateway
+    url: /tech-stack/decada-edge
+  - title: DECADA Cloud
+    description: Cloud
+    url: /tech-stack/decada-edge
+    
+# Resources Section
+resources-title: 
+resources-subtitle: Latest News
+resources-more-button: More Media
+resources-more-button-url: media-centre/

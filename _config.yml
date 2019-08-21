@@ -1,11 +1,11 @@
-title: Sensors and IOT Starter Kit
+title: Sensors and IoT Capability Centre
 title-abbreviated: SIOT
 description: >- # this means to ignore newlines until "baseurl:"
   Description
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-markdown: kramdown
+markdown: CommonMarkGhPages
 remote_theme: isomerpages/isomerpages-template
 safe: false
 
@@ -21,18 +21,13 @@ breadcrumbs:
     image: false # Show image or title text
 
 # Resource Room and Pagination
+resources_name: "media-centre"
 paginate: 12
+paginate_path: "/media-centre/page:num"
 
 # Homepage sections
 homepage_hero_i_want_to: false
-homepage_resources: false
-
-# Feedback Form URL
-feedback_form_url: "https://form.sg/#!/forms/govtech/5a9ce876b3a3b6006e6b8335"
-
-# FAQ URL
-faq_url: "/faq/"
-faq_url_external: false
+homepage_resources: true
 
 # Custom CSS file path
 custom_css_path: "/misc/custom.css"
@@ -44,4 +39,6 @@ collections:
   starter-kit:
     output: true
   tech-stack:
+    output: true
+  products:
     output: true
