@@ -11,7 +11,7 @@ favicon: /images/siot.ico
 agency-logo: /images/logo.png
 
 # Hero Banner
-hero-title: Sensors and Internet of Things
+hero-title: Sensors and<br>Internet of Things
 hero-subtitle: Capability Centre | GovTech
 hero-banner: /images/banner.jpg
     
