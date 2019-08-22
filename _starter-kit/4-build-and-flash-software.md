@@ -29,13 +29,47 @@ collection_name: starter-kit
 > Due to DECADA Cloud migration works, a temporary security workarond is required.  
 
 Disable SSL Verification by doing the following:
-1. In your IDE, go to mbed-os → features → netsocket → TLSSocketWrapper.cpp
-2. Change line 550 to `mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);`  
+1. In your IDE, go to **mbed-os** → **features** → **netsocket** → **TLSSocketWrapper.cpp**
+2. Change line 550 to 
+
+~~~cpp
+mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
+~~~  
 
 <a id="InputCredentials"></a>
 ## Input DECADA Credentials into Source Code
 
-1. Go to mbed_app.json **line 44** (as seen below) to add in your DECADA Credentials (which is obtained from [Set up your Cloud Service: Configuring your Device(s)](/starter-kit/set-up-your-cloud-service/#DecadaCredentials)).
+In order to configure your device to be automatically registered to DECADA, you will need the following credentials:  
+- Organization Unit ID (OUID)
+- Product Key
+- Product Secret
+- Access Key
+- Access Secret
+
+The following steps will elaborate on how to find these credentials on your [DECADA](portal.decada.gov.sg) dashboard:
+
+1. You can find your OUID by going to the left navigation panel > **IAM** > **Organization Profile**.  
+<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_1.png" alt="ouid">  
+
+Your OUID is the id under **Organization ID** (see the screenshot below for reference).
+<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_2.png" alt="ouid">
+
+2. Next, go to left navigation panel > **Device Management** > **Product**
+
+3. Select **View** under the **Operations** column for your product (see [Creating your Product](#DecadaProduct)), you will be able to get your:
+- Product Key
+- Product Secret
+
+<img class="large" src="/images/manuca/decada-setup/decada_setup_productkey.png" alt="productkey">
+
+4. Go to **Application Registration** and select your application (see [Creating your Application](#DecadaApplication)), you should be able to get your:
+- Access Key (named `accessKey`)
+- Access Secret (named `secretKey`)
+
+<img class="large" src="/images/manuca/decada-setup/decada_setup_applicationkey.png" alt="applicationkey">
+
+
+5. On your IDE (mbed studio/vs code), open the mbed_app.json file and go to **line 44** (as seen below) to add in your DECADA Credentials.
 
 ~~~json
 "decada-ou-id": {
@@ -59,7 +93,7 @@ Disable SSL Verification by doing the following:
 "value": "\"enter_product_secret_here\""
 },
 ~~~
-2. Save your changes.
+6. Save your changes.
 
 # Build the binary
 
@@ -75,7 +109,11 @@ Disable SSL Verification by doing the following:
   The binary image will be located in `./BUILD/NUCLEO_F767ZI/ARMC6/stack-manuca-os.bin`
 
   **Running Unit Tests (Optional)**  
-  In terminal (at the root of the repository), enter `mbed test -t GCC_ARM -m NUCLEO_F767ZI --profile ./tools/profiles/tiny_debug.json -n src-*,threads-*`
+  In terminal (at the root of the repository), enter 
+  
+  ~~~bash
+  mbed test -t GCC_ARM -m NUCLEO_F767ZI --profile ./tools/profiles/tiny_debug.json -n src-*,threads-*
+  ~~~
 
 </details>
 
@@ -83,13 +121,23 @@ Disable SSL Verification by doing the following:
 <details>
   <summary><font size=4>Visual Studio Code</font size></summary>
 
-  2. In VS Code's terminal (or your regular terminal) enter `mbed compile --target NUCLEO_F767ZI --toolchain GCC_ARM --profile ./tools/profiles/tiny_debug.json` to compile
+  2. In VS Code's terminal (or your regular terminal) enter the following line to compile:
+  
+  ~~~bash
+  mbed compile --target NUCLEO_F767ZI --toolchain GCC_ARM --profile ./tools/profiles/tiny_debug.json
+  ~~~
+  
   ![vscode](/images/manuca/build-and-flash/vscode_setup_1.png)
+
   If your build was successful, you should see something similar to the screenshot below:
   ![vscode](/images/manuca/build-and-flash/vscode_setup_2.png)
   The binary image will be located in `./BUILD/NUCLEO_F767ZI/GCC_ARM-TINY_DEBUG/stack-manuca-os.bin`
   **Running Unit Tests (Optional)**  
-  In terminal (at the root of the repository), enter `mbed test -t GCC_ARM -m NUCLEO_F767ZI --profile ./tools/profiles/tiny_debug.json -n src-*,threads-*`
+  In terminal (at the root of the repository), enter 
+
+  ~~~bash
+  mbed test -t GCC_ARM -m NUCLEO_F767ZI --profile ./tools/profiles/tiny_debug.json -n src-*,threads-*
+  ~~~
 
 </details>
 
@@ -114,7 +162,11 @@ Hit the spacebar while in your serial debug program, and you should see the Boot
 
 3. Enter the passphrase `stackx2019` to login to the Boot Manager.
 
-4. After successfully logging into Boot Manager, select option (1) to change to your dedicated WiFi SSID, and option (2) to change to your dedicated WiFi Password. Select option (-2) to perform a software reset and exit the BootManager. Option (-1) currently empties the WiFi SSID, WiFi Password and SSL Certificates, which are all stored in Persistence Storage, and should be used as a need-to basis.
+4. After successfully logging into Boot Manager:
+ - Select option (1) to change to your dedicated WiFi SSID
+ - Select option (2) to change to your dedicated WiFi Password
+ - Select option (-2) to perform a software reset and exit the BootManager. 
+ - Select option (-1) if you wish to clear the WiFi SSID, WiFi Password and SSL Certificates, which are all stored in Persistence Storage.
 
 ![wifi](/images/manuca/build-and-flash/bootmanager_changewifi.png)
 
