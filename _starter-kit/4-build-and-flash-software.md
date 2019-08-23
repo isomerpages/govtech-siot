@@ -39,37 +39,7 @@ mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
 <a id="InputCredentials"></a>
 ## Input DECADA Credentials into Source Code
 
-In order to configure your device to be automatically registered to DECADA, you will need the following credentials:  
-- Organization Unit ID (OUID)
-- Product Key
-- Product Secret
-- Access Key
-- Access Secret
-
-The following steps will elaborate on how to find these credentials on your [DECADA](portal.decada.gov.sg) dashboard:
-
-1. You can find your OUID by going to the left navigation panel > **IAM** > **Organization Profile**.  
-<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_1.png" alt="ouid">  
-
-Your OUID is the id under **Organization ID** (see the screenshot below for reference).
-<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_2.png" alt="ouid">
-
-2. Next, go to left navigation panel > **Device Management** > **Product**
-
-3. Select **View** under the **Operations** column for your product (see [Creating your Product](#DecadaProduct)), you will be able to get your:
-- Product Key
-- Product Secret
-
-<img class="large" src="/images/manuca/decada-setup/decada_setup_productkey.png" alt="productkey">
-
-4. Go to **Application Registration** and select your application (see [Creating your Application](#DecadaApplication)), you should be able to get your:
-- Access Key (named `accessKey`)
-- Access Secret (named `secretKey`)
-
-<img class="large" src="/images/manuca/decada-setup/decada_setup_applicationkey.png" alt="applicationkey">
-
-
-5. On your IDE (mbed studio/vs code), open the mbed_app.json file and go to **line 44** (as seen below) to add in your DECADA Credentials.
+1. On your IDE (mbed studio/vs code), open the mbed_app.json file and go to **line 44** (as seen below) to add in your DECADA Credentials (which is obtained from [Set up your Cloud Service: Configuring your Device(s)](/starter-kit/set-up-your-cloud-service/#DecadaCredentials)).
 
 ~~~json
 "decada-ou-id": {
@@ -93,7 +63,7 @@ Your OUID is the id under **Organization ID** (see the screenshot below for refe
 "value": "\"enter_product_secret_here\""
 },
 ~~~
-6. Save your changes.
+2. Save your changes.
 
 # Build the binary
 
