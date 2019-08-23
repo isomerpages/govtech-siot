@@ -6,6 +6,7 @@ breadcrumb: DECADA Cloud
 collection_name: tech-stack
 ---
 
+![DECADA](/images/decada/intro/decada_cloud_logo.png)
 # Introduction to DECADA Cloud
 
 **DECADA** (Device Management, Control and Data Acquisition Systems) is a multi-tenant cloud platform by GovTech that provides support for device management, data acquisition and data analytics of IoT devices.
