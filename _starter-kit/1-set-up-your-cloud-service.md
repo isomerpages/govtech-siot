@@ -117,3 +117,40 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
 4. Once your application has been created, you will see the `Success: App created` message and your application will be displayed as shown below.
 
 <img class="large" src="/images/manuca/decada-setup/decada_setup_application_4.png" alt="app">
+
+<a id="DecadaCredentials"></a>
+
+## Configuring your Device(s)
+*Devices are objects that are connected to the DECADA Cloud, defined and managed by the Product and Model they are registered under.*
+
+You will need to note down a few credentials needed to configure your device.  
+- Organization Unit ID (OUID)
+- Product Key
+- Product Secret
+- Access Key
+- Access Secret
+
+The following steps will elaborate on how to find these credentials:
+
+1. You can find your OUID by going to the left navigation panel > **IAM** > **Organization Profile**.  
+<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_1.png" alt="ouid">  
+
+Your OUID is the id under **Organization ID** (see the screenshot below for reference).
+<img class="large" src="/images/manuca/decada-setup/decada_setup_ouid_2.png" alt="ouid">
+
+
+2. Next, go to left navigation panel > **Device Management** > **Product**
+
+3. Select **View** under the **Operations** column for your product (see [Creating your Product](#DecadaProduct)), you will be able to get your:
+- Product Key
+- Product Secret
+
+<img class="large" src="/images/manuca/decada-setup/decada_setup_productkey.png" alt="productkey">
+
+4. Go to **Application Registration** and select your application (see [Creating your Application](#DecadaApplication)), you should be able to get your:
+- Access Key (named `accessKey`)
+- Access Secret (named `secretKey`)
+
+<img class="large" src="/images/manuca/decada-setup/decada_setup_applicationkey.png" alt="applicationkey">
+
+5. Keep these credentials for a later step – [Build and Flash Software: Input DECADA Credentials into Source Code](/starter-kit/build-and-flash-sw/#InputCredentials).
