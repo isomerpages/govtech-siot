@@ -118,8 +118,8 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
 
 <img class="large" src="/images/manuca/decada-setup/decada_setup_application_4.png" alt="app">
 
-
 <a id="DecadaCredentials"></a>
+
 ## Configuring your Device(s)
 *Devices are objects that are connected to the DECADA Cloud, defined and managed by the Product and Model they are registered under.*
 
@@ -154,4 +154,3 @@ Your OUID is the id under **Organization ID** (see the screenshot below for refe
 <img class="large" src="/images/manuca/decada-setup/decada_setup_applicationkey.png" alt="applicationkey">
 
 5. Keep these credentials for a later step – [Build and Flash Software: Input DECADA Credentials into Source Code](/starter-kit/build-and-flash-sw/#InputCredentials).
-

@@ -5,12 +5,12 @@
 ##################################
 
 - title: Tech Stack
-  url: /tech-stack/overview
+  url: /tech-stack/overview/
   sub-links:
   - title: Overview
-    url: /tech-stack/overview
+    url: /tech-stack/overview/
   - title: MANUCA
-    url: /tech-stack/manuca/overview
+    url: /tech-stack/manuca/overview/
   - title: DECADA Edge
     url: /tech-stack/decada-edge/
   - title: DECADA Cloud

@@ -29,13 +29,17 @@ collection_name: starter-kit
 > Due to DECADA Cloud migration works, a temporary security workarond is required.  
 
 Disable SSL Verification by doing the following:
-1. In your IDE, go to mbed-os → features → netsocket → TLSSocketWrapper.cpp
-2. Change line 550 to `mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);`  
+1. In your IDE, go to **mbed-os** → **features** → **netsocket** → **TLSSocketWrapper.cpp**
+2. Change line 550 to 
+
+~~~cpp
+mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
+~~~  
 
 <a id="InputCredentials"></a>
 ## Input DECADA Credentials into Source Code
 
-1. Go to mbed_app.json **line 44** (as seen below) to add in your DECADA Credentials (which is obtained from [Set up your Cloud Service: Configuring your Device(s)](/starter-kit/set-up-your-cloud-service/#DecadaCredentials)).
+1. On your IDE (mbed studio/vs code), open the mbed_app.json file and go to **line 44** (as seen below) to add in your DECADA Credentials (which is obtained from [Set up your Cloud Service: Configuring your Device(s)](/starter-kit/set-up-your-cloud-service/#DecadaCredentials)).
 
 ~~~json
 "decada-ou-id": {
@@ -74,22 +78,23 @@ Disable SSL Verification by doing the following:
   ![mbed-studio](/images/manuca/build-and-flash/mbed_studio_setup_2.png)
   The binary image will be located in `./BUILD/NUCLEO_F767ZI/ARMC6/stack-manuca-os.bin`
 
-  **Running Unit Tests (Optional)**  
-  In terminal (at the root of the repository), enter `mbed test -t GCC_ARM -m NUCLEO_F767ZI --profile ./tools/profiles/tiny_debug.json -n src-*,threads-*`
-
 </details>
 
 <br>
 <details>
   <summary><font size=4>Visual Studio Code</font size></summary>
 
-  2. In VS Code's terminal (or your regular terminal) enter `mbed compile --target NUCLEO_F767ZI --toolchain GCC_ARM --profile ./tools/profiles/tiny_debug.json` to compile
+  2. In VS Code's terminal (or your regular terminal) enter the following line to compile:
+  
+  ~~~bash
+  mbed compile --target NUCLEO_F767ZI --toolchain GCC_ARM --profile ./tools/profiles/tiny_debug.json
+  ~~~
+  
   ![vscode](/images/manuca/build-and-flash/vscode_setup_1.png)
+
   If your build was successful, you should see something similar to the screenshot below:
   ![vscode](/images/manuca/build-and-flash/vscode_setup_2.png)
   The binary image will be located in `./BUILD/NUCLEO_F767ZI/GCC_ARM-TINY_DEBUG/stack-manuca-os.bin`
-  **Running Unit Tests (Optional)**  
-  In terminal (at the root of the repository), enter `mbed test -t GCC_ARM -m NUCLEO_F767ZI --profile ./tools/profiles/tiny_debug.json -n src-*,threads-*`
 
 </details>
 
@@ -114,7 +119,11 @@ Hit the spacebar while in your serial debug program, and you should see the Boot
 
 3. Enter the passphrase `stackx2019` to login to the Boot Manager.
 
-4. After successfully logging into Boot Manager, select option (1) to change to your dedicated WiFi SSID, and option (2) to change to your dedicated WiFi Password. Select option (-2) to perform a software reset and exit the BootManager. Option (-1) currently empties the WiFi SSID, WiFi Password and SSL Certificates, which are all stored in Persistence Storage, and should be used as a need-to basis.
+4. After successfully logging into Boot Manager:
+ - Select option (1) to change to your dedicated WiFi SSID
+ - Select option (2) to change to your dedicated WiFi Password
+ - Select option (-2) to perform a software reset and exit the BootManager. 
+ - Select option (-1) if you wish to clear the WiFi SSID, WiFi Password and SSL Certificates, which are all stored in Persistence Storage.
 
 ![wifi](/images/manuca/build-and-flash/bootmanager_changewifi.png)
 
