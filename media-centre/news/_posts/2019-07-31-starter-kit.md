@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Starter Kit Expression of Interest
+title:  IoT Starter Kit to be unveiled on 12 September 2019
 date:   2019-07-31
 permalink: /media-centre/news/Starter-Kit/
 ---
