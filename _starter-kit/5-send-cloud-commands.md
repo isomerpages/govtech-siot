@@ -23,12 +23,12 @@ collection_name: starter-kit
 
 5. Make sure your device is connected to DECADA (you will see Device is online like shown below) 
 
-<img class="large" src="/images/manuca/cloud-commands/service_request_2.png" alt="service-request">
+<img src="/images/manuca/cloud-commands/service_request_2.png" alt="service-request">
 
 6. Under Debugging, select the service (with the prefix S: like shown below) and change the value on the right (replace the "2 bytes length"). Click Run.
 
-<img class="large" src="/images/manuca/cloud-commands/service_request_3.png" alt="service-request">
+<img src="/images/manuca/cloud-commands/service_request_3.png" alt="service-request">
 
 When the response from the device is received, you should see this success message.
 
-<img class="large" src="/images/manuca/cloud-commands/service_request_4.png" alt="service-request">
+<img src="/images/manuca/cloud-commands/service_request_4.png" alt="service-request">

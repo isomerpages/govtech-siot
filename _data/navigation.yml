@@ -5,12 +5,12 @@
 ##################################
 
 - title: Tech Stack
-  url: /tech-stack/overview
+  url: /tech-stack/overview/
   sub-links:
   - title: Overview
-    url: /tech-stack/overview
+    url: /tech-stack/overview/
   - title: MANUCA
-    url: /tech-stack/manuca/overview
+    url: /tech-stack/manuca/overview/
   - title: DECADA Edge
     url: /tech-stack/decada-edge/
   - title: DECADA Cloud
@@ -21,12 +21,12 @@
   sub-links:
   - title: Introduction
     url: /starter-kit/introduction/
+  - title: Set up your Cloud Service
+    url: /starter-kit/set-up-your-cloud-service/
   - title: Set up your Software Environment
     url: /starter-kit/set-up-your-software-env/
   - title: Set up your Hardware
     url: /starter-kit/set-up-your-hardware/
-  - title: Set up your Cloud Service
-    url: /starter-kit/set-up-your-cloud-service/
   - title: Build and Flash Software
     url: /starter-kit/build-and-flash-sw/
   - title: Send Cloud Commands

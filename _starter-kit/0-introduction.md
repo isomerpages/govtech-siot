@@ -7,7 +7,7 @@ collection_name: starter-kit
 ---
 
 ## Sypnosis
-The starter kit uses both [MANUCA](/tech-stack/manuca) and [DECADA Cloud](/tech-stack/decada-cloud/) Tech Stack. It is designed to help you get started with sending data from a sensor node, MANUCA, to the government cloud, DECADA Cloud.
+The starter kit uses both [MANUCA](/tech-stack/manuca/overview) and [DECADA Cloud](/tech-stack/decada-cloud/) Tech Stack. It is designed to help you get started with sending data from a sensor node, MANUCA, to the government cloud, DECADA Cloud.
 
 ![System](/images/manuca/intro/starter_kit_system.png)
 
