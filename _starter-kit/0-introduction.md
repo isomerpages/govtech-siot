@@ -13,7 +13,7 @@ The starter kit uses both [MANUCA](/tech-stack/manuca/overview) and [DECADA Clou
 
 At the end of this getting started guide, you would be pumping ambient temperature data using the on-board temperature sensor to your DECADA Cloud account, and be able to see it on your DECADA dashboard.
 
-[Pre-order is available now.](https://go.gov.sg/iotkit-preorder)
+[Express your interest now.](https://go.gov.sg/iotkit-eoi)
 
 ## Contents of Starter Kit
 
