@@ -78,13 +78,6 @@ mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
   ![mbed-studio](/images/manuca/build-and-flash/mbed_studio_setup_2.png)
   The binary image will be located in `./BUILD/NUCLEO_F767ZI/ARMC6/stack-manuca-os.bin`
 
-  **Running Unit Tests (Optional)**  
-  In terminal (at the root of the repository), enter 
-  
-  ~~~bash
-  mbed test -t GCC_ARM -m NUCLEO_F767ZI --profile ./tools/profiles/tiny_debug.json -n src-*,threads-*
-  ~~~
-
 </details>
 
 <br>
@@ -102,12 +95,6 @@ mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
   If your build was successful, you should see something similar to the screenshot below:
   ![vscode](/images/manuca/build-and-flash/vscode_setup_2.png)
   The binary image will be located in `./BUILD/NUCLEO_F767ZI/GCC_ARM-TINY_DEBUG/stack-manuca-os.bin`
-  **Running Unit Tests (Optional)**  
-  In terminal (at the root of the repository), enter 
-
-  ~~~bash
-  mbed test -t GCC_ARM -m NUCLEO_F767ZI --profile ./tools/profiles/tiny_debug.json -n src-*,threads-*
-  ~~~
 
 </details>
 
