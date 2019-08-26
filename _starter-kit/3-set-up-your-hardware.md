@@ -6,7 +6,7 @@ breadcrumb: Set up your Hardware
 collection_name: starter-kit
 ---
 
-## Wiring up the MANUCA DK
+## 1. Wiring up the MANUCA DK
 1. Connect the **ESP32 WiFi Module** onto the **WIRELESS MODULE** port on the board as shown below:
 
 ![step 1](/images/manuca/hardware-setup/manuca_setup_1_wifi.jpg)
@@ -26,7 +26,8 @@ collection_name: starter-kit
 5. Connect the USB side of the **TTL-USB Cable** and **ST-LINK programmer** to your computer. The board should light up.
 
 <a id="SerialDebug"></a>
-## Setting up your MANUCA DK Serial Debug Program
+
+## 2. Setting up your MANUCA DK Serial Debug Program
 Proceed with the following steps, depending on which OS your computer is running on.
 <details>
   

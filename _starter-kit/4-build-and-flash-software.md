@@ -6,7 +6,7 @@ breadcrumb: Build and Flash Software
 collection_name: starter-kit
 ---
 
-# Open the Source Code
+# 1. Open the Source Code
 
 <details>
   <summary><font size=4>Mbed Studio</font size></summary>
@@ -23,7 +23,7 @@ collection_name: starter-kit
   1. In VS Code, go to File → Open Workspace... → \<workspace_directory> (the workspace you have created in [Set up your Software Environment: Pulling the MANUCA OS into your IDE](/starter-kit/set-up-your-software-env/#Workspace))  
 </details>
 
-# Set up Important Configurations
+# 2. Set up Important Configurations
 ## Change TLS Configuration
 
 > Due to DECADA Cloud migration works, a temporary security workarond is required.  
@@ -65,7 +65,7 @@ mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
 ~~~
 2. Save your changes.
 
-# Build the binary
+# 3. Build the binary
 
 <details>
   <summary><font size=4>Mbed Studio</font size></summary>
@@ -100,12 +100,12 @@ mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
 
 
 
-# Flash the binary into MANUCA DK
+# 4. Flash the binary into MANUCA DK
 
 1. Locate the binary file in the BUILD folder e.g. `./BUILD/NUCLEO_F767ZI/ARMC6/stack-manuca-os.bin`
 2. Using ST-Link V3 programmer, simply drag-and-drop the binary into the hardware folder (similar to copying a file into a USB stick). 
 
-# Configure WiFi SSID, and verify flash success
+# 5. Configure WiFi SSID, and verify flash success
 
 1. The ST-Link programmer should flash red and green as the binary is being flashed on the MANUCA DK.
 

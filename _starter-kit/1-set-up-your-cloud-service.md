@@ -7,7 +7,7 @@ collection_name: starter-kit
 ---
 
 # Setup your DECADA for MANUCA
-## Creating your Model
+## 1. Creating your Model
 *Model is the summary of features of the devices that are connected to the DECADA Cloud, including attributes, measure points, services and events of the device.*
 
 1. Go to [DECADA](https://portal.decada.gov.sg) and login with your user credentials.
@@ -23,7 +23,7 @@ An example of how you can create your model is shown below:
 <img src="/images/manuca/decada-setup/decada_setup_model_2.png" alt="model">
 
 
-## Creating your Measurement Point(s)
+## 2. Creating your Measurement Point(s)
 *Measure Points are entities expected to be received upstream from devices. Examples are `temperature` and `humidity`.*
 
 1. Once your model has been created, go to **Edit** on the rightmost column for your model
@@ -42,7 +42,7 @@ An identifier is:
 - Uneditable once you have created the measure point.
 
 
-## Creating your Service(s)
+## 3. Creating your Service(s)
 *Services are for sending commands downstream to your device.*
 
 1. Click on **Add**
@@ -77,7 +77,8 @@ Sending multiple parameters in a single instance downstream is also supported.
 
 
 <a id="DecadaProduct"></a>
-## Creating your Product
+
+## 4. Creating your Product
 *Product is the collection of the devices that are connected to the DECADA Cloud.*
 
 1. On the left navigation panel, go to **Device Management** > **Product**
@@ -99,7 +100,8 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
 
 
 <a id="DecadaApplication"></a>
-## Creating your Application
+
+## 5. Creating your Application
 *Application gives devices access to DECADA APIs.*
 
 1. On the left navigation panel, go to **Application Registration**.  
@@ -120,7 +122,7 @@ Activate the **Enable Dynamic Activation** (outlined in red below). This allows 
 
 <a id="DecadaCredentials"></a>
 
-## Configuring your Device(s)
+## 6. Configuring your Device(s)
 *Devices are objects that are connected to the DECADA Cloud, defined and managed by the Product and Model they are registered under.*
 
 You will need to note down a few credentials needed to configure your device.  
