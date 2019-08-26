@@ -6,7 +6,7 @@ breadcrumb: Set up your Software Envinronment
 collection_name: starter-kit  
 ---
 
-## Setting up the Integrated Development (IDE) Environment
+## 1. Setting up the Integrated Development Environment (IDE)
 
 Proceed with the following steps, depending on which Operating System your development machine is running on.
 
@@ -14,9 +14,6 @@ Proceed with the following steps, depending on which Operating System your devel
 1. Mbed Studio *(Recommended)* -  MacOS and Windows
 2. Visual Studio Code (VS Code) - Ubuntu Setup Included Only
 
-**Development Machine Pre-requisite(s):**
-1. [Git](https://git-scm.com/downloads) installed
-___
 <br>
 
 <details>
@@ -68,9 +65,14 @@ ___
 
 </details>
 
+___
 <a id="Workspace"></a>
 
-## Pulling the MANUCA OS Repository into your IDE
+## 2. Pulling the MANUCA OS Repository into your IDE
+
+**Development Machine Pre-requisite(s):**  
+  \> [Git](https://git-scm.com/downloads) installed
+
 1. Create a folder that would be your mbed work space by entering the following line in terminal. *Replace `<workspace_directory>` with your desired workspace name.*
     ~~~bash
     mkdir <workspace_directory>
@@ -88,9 +90,10 @@ ___
     git clone --recurse-submodules https://github.com/GovTechSIOT/stack-manuca-os.git
     ~~~  
 
+___
 <a id="SerialDebug"></a>
 
-## Installing your Serial Debug Program
+## 3. Installing your Serial Debug Program
 This program will allow you to read the serial debug output from the MANUCA DK. Proceed with the following steps to install your serial debug program, depending on which OS your computer is running on.
 <details>
   
