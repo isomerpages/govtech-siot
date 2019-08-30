@@ -72,12 +72,19 @@ mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
   <summary><font size=4>Mbed Studio</font size></summary>
 
   1. In Mbed Studio, ensure target is set to **NUCLEO-F767ZI (NUCLEO_F767ZI)**
-  2. We use C++11 as the standard for software development. Under Build profile, select **Import custom profiles**, then select **./tools/profiles/mbedstudio_release.json**
+  2. We use C++11 as the standard for software development. Under Build profile, select **Import custom profiles**.  
+  Go to stack-manuca-os > tools > profile then select **mbedstudio_debug.json**.  
+  The screenshot below shows how it looks like on Windows OS.
   ![mbed-studio](/images/manuca/build-and-flash/mbed_studio_setup_1.png)
-  3. Click on the blue hammer icon on the left to build the source code.   
-  If your build is successful, you should see something similar to the screenshot below:
+  
+  On mbed studio, select the **mbedstudio_debug.json** build profile. There will be a tick beside the selected profile.
   ![mbed-studio](/images/manuca/build-and-flash/mbed_studio_setup_2.png)
-  The binary image will be located in `./BUILD/NUCLEO_F767ZI/ARMC6/stack-manuca-os.bin`
+
+  3. Click on the blue hammer icon on the left to build the source code.   
+  ![mbed-studio](/images/manuca/build-and-flash/mbed_studio_setup_3.png)
+
+  If your build is successful, you should see the line `Image: BUILD/NUCLEO_F767ZI/ARMC6/stack-manuca-os.bin`, where the binary image is located.
+  ![mbed-studio](/images/manuca/build-and-flash/mbed_studio_setup_4.png)
 
 </details>
 

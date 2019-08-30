@@ -89,6 +89,11 @@ ___
     ~~~bash
     git clone --recurse-submodules https://github.com/GovTechSIOT/stack-manuca-os.git
     ~~~  
+4. For **non-Mbed Studio users**, install the required python modules by running the following code lines in Terminal:
+    ~~~bash
+    cd stack-manuca-os/mbed-os/
+    sudo pip install -r requirements.txt
+    ~~~
 
 ___
 <a id="SerialDebug"></a>
