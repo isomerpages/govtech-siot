@@ -1,8 +1,8 @@
 ---
 layout: leftnav-page-content
-title: Licensing
-permalink: /starter-kit/licensing/
-breadcrumb: Licensing
+title: Terms and Conditions
+permalink: /starter-kit/terms-and-conditions/
+breadcrumb: Terms and Conditions
 collection_name: starter-kit
 ---
 
@@ -44,7 +44,7 @@ Terms and Conditions of Use
   
 2.	**Usage Terms**
 
-    2.1	You agree to comply with any and all the guidelines, notices, operating rules and policies and instructions pertaining to the access to and/or use of the MANUCA Development Kit (or any part thereof), and all printed, electronic or online documentation ("Documentation") supplied with it, any amendments to the aforementioned issued by us from time to time, as well as any applicable laws and regulations. We reserve the right to revise these guidelines, notices, operating rules and policies and instructions at any time and you are deemed to be aware of and bound by any changes to the foregoing upon their publication on our website at https://siot.gov.sg/starter-kit/licensing/ (the “Website”). 
+    2.1	You agree to comply with any and all the guidelines, notices, operating rules and policies and instructions pertaining to the access to and/or use of the MANUCA Development Kit (or any part thereof), and all printed, electronic or online documentation ("Documentation") supplied with it, any amendments to the aforementioned issued by us from time to time, as well as any applicable laws and regulations. We reserve the right to revise these guidelines, notices, operating rules and policies and instructions at any time and you are deemed to be aware of and bound by any changes to the foregoing upon their publication on our website at https://siot.gov.sg/starter-kit/terms-and-conditions/ (the “Website”). 
 
     2.2	You agree to use all equipment in a reasonable manner consistent with the purpose for which the product was designed, in accordance with any manufacturer’s directions, and to practice reasonable care and maintenance in the use of all equipment. You shall be responsible for providing your own connectivity for the MANUCA Development Kit. 
 
