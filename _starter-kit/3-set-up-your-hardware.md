@@ -31,7 +31,7 @@ collection_name: starter-kit
 Proceed with the following steps, depending on which OS your computer is running on.
 <details>
   
-  <summary><font size=4>Linux</font size></summary>
+  <summary>Linux</summary>
   
   1. Find out which serial port your **TTL-USB Cable** is connected to by disconnecting your **TTL-USB Cable**, then entering in Terminal:
       ~~~bash
@@ -85,7 +85,7 @@ Proceed with the following steps, depending on which OS your computer is running
 <br>
 <details>
   
-  <summary><font size=4>MacOS</font size></summary>
+  <summary>MacOS</summary>
   
   1. Find out which serial port your **TTL-USB Cable** is connected to by disconnecting your **TTL-USB Cable**, then entering in Terminal:
       ~~~bash
@@ -131,7 +131,7 @@ Proceed with the following steps, depending on which OS your computer is running
 <br>
 <details>
   
-  <summary><font size=4>Windows</font size></summary>
+  <summary>Windows</summary>
   
   1. Download [Tera Term](https://osdn.net/projects/ttssh2/releases/) for Windows.
 
