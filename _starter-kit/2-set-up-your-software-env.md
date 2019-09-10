@@ -17,7 +17,7 @@ Proceed with the following steps, depending on which Operating System your devel
 <br>
 
 <details>
-  <summary><font size=4>Mbed Studio Setup</font size></summary>
+  <summary>Mbed Studio Setup</summary>
 
   1. Create an Mbed Account at <https://os.mbed.com/account/signup/> (This account is required to use Mbed Studio IDE)
   2. Download Mbed Studio from <https://os.mbed.com/studio/>
@@ -27,7 +27,7 @@ Proceed with the following steps, depending on which Operating System your devel
 
 <br>
 <details>
-  <summary><font size=4>Visual Studio Code Setup</font size></summary>
+  <summary>Visual Studio Code Setup</summary>
 
   1. Download VS Code for Ubuntu at <https://code.visualstudio.com/download>
   2. Install VS Code
@@ -102,7 +102,7 @@ ___
 This program will allow you to read the serial debug output from the MANUCA DK. Proceed with the following steps to install your serial debug program, depending on which OS your computer is running on.
 <details>
   
-  <summary><font size=4>Linux</font size></summary>
+  <summary>Linux</summary>
 
   1. Install minicom by entering the following line into Terminal. This step will install minicom if not installed yet.
   ~~~bash
@@ -115,7 +115,7 @@ This program will allow you to read the serial debug output from the MANUCA DK. 
 <br>
 <details>
   
-  <summary><font size=4>MacOS</font size></summary>
+  <summary>MacOS</summary>
 
   1. Install minicom using the following commands in Terminal:  
   ~~~bash
@@ -129,7 +129,7 @@ This program will allow you to read the serial debug output from the MANUCA DK. 
 <br>
 <details>
   
-  <summary><font size=4>Windows</font size></summary>
+  <summary>Windows</summary>
   
   1. Download [Tera Term](https://osdn.net/projects/ttssh2/releases/) for Windows.
 

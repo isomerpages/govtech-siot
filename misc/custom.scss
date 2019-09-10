@@ -36,6 +36,12 @@ $desktop: 960px + (2 * $gap) !default;
   max-width: 100%;
 }
 
+details summary {
+  font-size: 1.2em;
+  cursor: pointer;
+  color: $primary;
+}
+
 // Mixins
 
 @mixin touch() {

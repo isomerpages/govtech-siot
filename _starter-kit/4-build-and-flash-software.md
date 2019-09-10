@@ -9,7 +9,7 @@ collection_name: starter-kit
 # 1. Open the Source Code
 
 <details>
-  <summary><font size=4>Mbed Studio</font size></summary>
+  <summary>Mbed Studio</summary>
 
   1. Open Mbed Studio and login using your Mbed account
   2. Go to File → Open Workspace → \<workspace_directory> (the workspace you have created in [Set up your Software Environment: Pulling the MANUCA OS into your IDE](/starter-kit/set-up-your-software-env/#Workspace))  
@@ -18,7 +18,7 @@ collection_name: starter-kit
 
 <br>
 <details>
-  <summary><font size=4>Visual Studio Code</font size></summary>
+  <summary>Visual Studio Code</summary>
 
   1. In VS Code, go to File → Open Workspace... → \<workspace_directory> (the workspace you have created in [Set up your Software Environment: Pulling the MANUCA OS into your IDE](/starter-kit/set-up-your-software-env/#Workspace))  
 </details>
@@ -69,7 +69,7 @@ mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
 # 3. Build the binary
 
 <details>
-  <summary><font size=4>Mbed Studio</font size></summary>
+  <summary>Mbed Studio</summary>
 
   1. In Mbed Studio, ensure target is set to **NUCLEO-F767ZI (NUCLEO_F767ZI)**
   2. We use C++11 as the standard for software development. Under Build profile, select **Import custom profiles**.  
@@ -90,7 +90,7 @@ mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
 
 <br>
 <details>
-  <summary><font size=4>Visual Studio Code</font size></summary>
+  <summary>Visual Studio Code</summary>
 
   2. In VS Code's terminal (or your regular terminal) enter the following line to compile:
   
