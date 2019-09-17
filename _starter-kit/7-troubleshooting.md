@@ -14,6 +14,14 @@ collection_name: starter-kit
     <th>Answer</th>
   </tr>
   <tr>
+    <td>I cannot find any files under mbed-os in my MANUCA OS</td>
+    <td>Retry pulling the remote repository with <code>git clone --recurse-submodules https://github.com/GovTechSIOT/stack-manuca-os.git</code> <br> Take note that <code>--recurse-submodules</code> should be included when pulling the remote repository, if not your submodules will not be downloaded, resulting empty submodules folders.</td>
+  </tr>
+  <tr>
+    <td>My MANUCA OS is unable to compile</td>
+    <td><details> <summary> Error: No module named fuzzywuzzy </summary> Check your mbed-os version by entering in the Terminal window in your repository folder: <br> <code>cd mbed-os/</code><br> <code>git branch</code> <br> It should show <code>* (HEAD detached at 1bf6b20df9)</code> <br> If it does not, enter <code>git checkout 1bf6b20df9 </code> </details></td>
+  </tr>
+  <tr>
     <td>My MANUCA DK is unable to connect to the internet</td>
     <td>Ensure credentials are entered correctly in Boot Manager. If "NetworkInterface successfully configured" is printed out in serial debug, it means MANUCA OS has successfully connected to the internet.</td>
   </tr>
