@@ -30,7 +30,7 @@ collection_name: starter-kit
 
 Disable SSL Verification by doing the following:
 1. In your IDE, go to **mbed-os** → **features** → **netsocket** → **TLSSocketWrapper.cpp**
-2. Change line 550 to 
+2. Change line 569 to 
 
 ~~~cpp
 mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
