@@ -83,7 +83,7 @@ In the event that the solutions provided by GovTech cannot meet the unique requi
 
 ## DECADA Edge
 
-GovTech provide a software solution that is x86/ARM architecture compatible. The solution can be deployed either on-premise, or as a virtual instance on the cloud. Please see [DECADA Edge](/tech-stack/decada-edge/) for more information.
+GovTech provides a software solution that is x86/ARM architecture compatible. The solution can be deployed either on-premise, or as a virtual instance on the cloud. Please see [DECADA Edge](/tech-stack/decada-edge/) for more information.
 
 ## Cloud-to-Cloud
 
@@ -94,3 +94,118 @@ Examples of cloud-to-cloud connections include:
 * Pulling - Retrieving data from an agency’s cloud system
 
 In the above examples, the described data might be raw, filtered or even aggregated from the sensors.
+
+<a id="DECADA-Device Lifecycle Management"></a>
+# Device Lifecycle Management
+
+<img class="large" src="/images/decada/lifecycle/device_lifecycle_management.png" alt="DECADA Application Framework screenshot">
+
+## Plan & Design Phase
+
+DECADA requires users to plan and design how they will manage their devices. DECADA allows users to model their devices based on attributes and measure points. The connection scheme of the devices can be based upon hardware designs, deployment methods or security requirements. The hierarchy of the devices can be indicated too.
+
+### Model Planning
+
+The model is a template that describes the device. This template will contain attributes and measure points. A user is able to associate many devices to the same model.
+
+### Hierarchy Planning
+
+Asset trees can be arranged in a hierarchical form to better manage assets. Users can organize the assets according to:
+
+* Geographical location: country, state, city, district, etc.
+* Industry domain: wind power, photovoltaic, energy storage, etc.
+* Device type: fan, inverter, combiner box, etc.
+
+### Connection Scheme
+
+The connection scheme is selected based on hardware capabilities of the devices and the security requirements of their connections.
+
+## Provisioning Phase
+
+Each device must be uniquely identified by its product key, device key and device secret (device triple).
+
+If certificate authentication is required, a client can request for a certificate to be generated from the DECADA API.
+
+In a device-end development scenario, users can utilise the SDK provided by GovTech to perform authentication with DECADA. DECADA will then validate the device triple. Upon verification, devices will be able to send data to DECADA.
+
+Methods to provision devices are as follows:
+
+* Provisioning individual devices
+  1. A user will create the *Model*, *Product* and *Device* in DECADA to obtain the device triple to be burned onto the device
+  2. Devices with GovTech's SDK will use the device triple to connect to DECADA cloud. Data can be transferred between devices and DECADA
+
+* Provisioning Edge for multiple devices provisioning
+  1. A user will create the *Edge Model*, *Product* and *Device* in DECADA to obtain its device triple
+  2. A user will also create the *Model*, *Product* and *Device* of the sub-devices. The sub-devices are placed under the *Edge*.
+  3. Once the sub-devices are placed under the *Edge*, the user will use the *Edge* device triple to connect to DECADA cloud. Data can be transferred to cloud via Edge
+
+* Provisioning application to enable multiple devices registration
+  1. A user can register an application that used to provision devices onto DECADA. Upon registration, the user will be provided with the application's access key and secret key
+  2. The application will call the API to register and provision the new device and obtain the device triple
+  3. The application will then use the device triple to connect to DECADA. Data can be transferred between devices and cloud
+
+* Provisioning 3rd-party cloud
+  1. The 3rd-party cloud will need to have an application to forward the device data to DECADA. The application will be registered to DECADA to obtain the access key and secret key
+  2. The device connected to the 3rd-party cloud will be detected by the application. It will call the API to register and obtain the device triple for the new device
+  3. The application will then use the device triple to connect to DECADA. Data can be transferred between devices and cloud
+
+## Service Phase
+
+Once the devices are provisioned, DECADA will be able to receive and monitor data transmitted. Other functionalities provided include:
+
+* Monitoring of data from devices to cloud - The monitoring can be done through DECADA or external applications
+* Enabling and disabling remotely - Services defined by the devices' models can be triggered
+* Monitoring alerts sent via email or SMS. Alert triggering rules can be set up to react to real-time measure point telemetry
+* Managing, consuming and storing data according to business needs
+
+## Maintenance Phase
+
+The firmware of devices can be updated over-the-air by DECADA.
+
+Certificates will be renewed upon expiry for devices that require certificate authentication. This is to ensure that connectivity can be maintained.
+
+## Decommissioning Phase
+
+When devices are scheduled to be decommissioned, users can use the DECADA to:
+
+* Disable and delete devices
+* Revoke certificates of devices that were issued
+* Archive data
+
+<a id="DECADA-Service-Level-Agreement"></a>
+# Service Level Agreement
+
+## Infrastructure and Service Guarantee
+
+### Cloud services
+
+When two or more role instances are deployed in different fault and upgrade domains, at least one role instance will have Role Instance Connectivity of at least 99.95%.
+
+### Virtual Machines
+
+* For any single instance Virtual Machine using premium storage for all disks, the Virtual Machine Connectivity is at least 99.9%.
+* For all Virtual Machines that have two or more instances deployed in the same Availability Set, the Virtual Machine Connectivity to at least one instance is at least 99.95% of the time.
+
+### DNS
+
+Valid DNS requests will receive a response from at least one Azure DNS name server all the time.
+
+### SQL Database
+
+Connectivity between DECADA MySQL Server and Internet gateway will be available at least 99.99% of the time.
+
+### Loan Balancer
+
+A load balanced endpoint using Azure Standard Load Balancer(serving two or more healthy Virtual Machine instances) will be available 99.99% of the time.
+
+### Backup
+
+Backup and restore functionality will be available at least 99.9% of the time.
+
+### DDoS Protection
+
+DDoS Protection Service will be available at least 99.99% of the time.
+
+### Multi-Factor Authentication
+
+Multi-Factor Authentication services will be available at least 99.9% of the time.
