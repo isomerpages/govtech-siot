@@ -98,11 +98,11 @@ In the above examples, the described data might be raw, filtered or even aggrega
 <a id="DECADA-Device Lifecycle Management"></a>
 # Device Lifecycle Management
 
-<img class="large" src="/images/decada/lifecycle/device_lifecycle_management.png" alt="DECADA Application Framework screenshot">
+<img class="large" src="/images/decada/lifecycle/device_lifecycle_management.png" alt="Device Lifecycle Management Screenshot">
 
 ## Plan & Design Phase
 
-DECADA requires users to plan and design how they will manage their devices. DECADA allows users to model their devices based on attributes and measure points. The connection scheme of the devices can be based upon hardware designs, deployment methods or security requirements. The hierarchy of the devices can be indicated too.
+DECADA requires users to plan and design how they will manage their devices. Devices are modelled based on their attributes and measure points. The connection scheme of the devices can be based upon hardware designs, deployment methods or security requirements. The hierarchy of the devices can be indicated too.
 
 ### Model Planning
 
@@ -132,11 +132,11 @@ Methods to provision devices are as follows:
 
 * Provisioning individual devices
   1. A user will create the *Model*, *Product* and *Device* in DECADA to obtain the device triple to be burned onto the device
-  2. Devices with GovTech's SDK will use the device triple to connect to DECADA cloud. Data can be transferred between devices and DECADA
+  2. Devices will use the device triple to connect to DECADA cloud using the GovTech's SDK. Data can be transferred between devices and DECADA
 
 * Provisioning Edge for multiple devices provisioning
   1. A user will create the *Edge Model*, *Product* and *Device* in DECADA to obtain its device triple
-  2. A user will also create the *Model*, *Product* and *Device* of the sub-devices. The sub-devices are placed under the *Edge*.
+  2. A user will also create the *Model*, *Product* and *Device* of the sub-devices. The sub-devices are placed under the *Edge*
   3. Once the sub-devices are placed under the *Edge*, the user will use the *Edge* device triple to connect to DECADA cloud. Data can be transferred to cloud via Edge
 
 * Provisioning application to enable multiple devices registration
