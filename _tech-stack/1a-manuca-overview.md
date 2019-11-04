@@ -16,7 +16,7 @@ As part of the Singapore Government Tech Stack, MANUCA provides a reference desi
 
 <a id="MANUCA-DK"></a>
 ## MANUCA DK
-The **MANUCA DK** is the physical hardware –  it is powered by an ARM Cortex-M7 MCU with 2MB of flash memory, and supports both WiFi and Ethernet as its network communication interfaces. It supports up to 6 external sensors (3 for I2C interface, 3 for SPI) and has one on-board temperature sensor that can be used for monitoring the health of the MANUCA DK. The on-board temperature sensor is used in MANUCA OS as an example measure point. An ESP32 is used as the WiFi module.
+The **MANUCA DK** is the physical hardware –  it is powered by an ARM Cortex-M7 MCU with 2MB of flash memory, and supports both WiFi and Ethernet as its network communication interfaces. It supports up to 6 hardware connectors (3 for I2C interface, 3 for SPI) which can be connected to more than a hundred sensors. An on-board temperature sensor is also included for monitoring the health of the MANUCA DK. The on-board temperature sensor is used in MANUCA OS as an example measure point. An ESP32 is used as the WiFi module.
 
 Additional Details:
 
