@@ -24,21 +24,7 @@ collection_name: starter-kit
 </details>
 
 # 2. Set up Important Configurations
-### 2.1 Change TLS Configuration
-
-> Due to DECADA Cloud migration works, a temporary security workarond is required.  
-
-Disable SSL Verification by doing the following:
-1. In your IDE, go to **mbed-os** → **features** → **netsocket** → **TLSSocketWrapper.cpp**
-2. Change line 569 to 
-
-~~~cpp
-mbedtls_ssl_conf_authmode(get_ssl_config(), MBEDTLS_SSL_VERIFY_NONE);
-~~~  
-
-<a id="InputCredentials"></a>
-
-### 2.2 Input DECADA Credentials into Source Code
+### 2.1 Input DECADA Credentials into Source Code
 
 1. On your IDE (mbed studio/vs code), open the mbed_app.json file and go to **line 44** (as seen below) to add in your DECADA Credentials (which is obtained from [Set up your Cloud Service: Configuring your Device(s)](/starter-kit/set-up-your-cloud-service/#DecadaCredentials)).
 
