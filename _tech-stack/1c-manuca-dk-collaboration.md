@@ -8,7 +8,7 @@ collection_name: tech-stack
 ---
 
 # MANUCA Development Kit Collaborations
-
+---
 We welcome industry partners to `manuca-ready` their commercial development boards.
 In order to do so, you should :
 1. Have a hardware that is capable of directly connecting to a cloud service. You may use the Hardware Requirements listed below as a guideline (but not limited to).
@@ -57,7 +57,7 @@ During this process, you may require consultation and/or assistance from us. For
   
 #
 # Software Requirements (SDK Example)
-
+---
 ## Security
 - Use of common TLS libraries (eg. mbedtls)
 - Connection to DECADA via TLS 1.2
