@@ -37,7 +37,7 @@ During this process, you may require consultation and/or assistance from us. For
 - Temperature Sensor 
 
 ## Connectivity Radio 
-### (either PCB-mounted or via Zigbee Socket as an external accessory)
+Either PCB-mounted or via Zigbee Socket as an external accessory:
 - WiFi Module (eg. ESP32) and/or
 - Cellular Module (eg. Quectel BG96)
 
