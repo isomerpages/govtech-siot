@@ -8,7 +8,7 @@ collection_name: tech-stack
 ---
 
 # MANUCA Development Kit Collaborations
----
+
 We welcome industry partners to `manuca-ready` their commercial development boards.
 In order to do so, you should :
 1. Have a hardware that is capable of directly connecting to a cloud service. You may use the Hardware Requirements listed below as a guideline (but not limited to).
@@ -57,7 +57,7 @@ During this process, you may require consultation and/or assistance from us. For
   
 #
 # Software Requirements (SDK Example)
----
+
 ## Security
 - Use of common TLS libraries (eg. mbedtls)
 - Connection to DECADA via TLS 1.2
@@ -67,14 +67,14 @@ During this process, you may require consultation and/or assistance from us. For
 
 ## General Steps for Provisioning with DECADA
 1. Update your RTC with NTP time. NTP time is one of the parameter used to validate the RESTful call.
-2. Register with DECADA via a HTTPS Request to attain a device-secret. (example: https://github.com/GovTechSIOT/stack-manuca-os/blob/master/src/DecadaManager/decada_manager.cpp#L124)
+2. Register with DECADA via a HTTPS Request to attain a device-secret. [See example](https://github.com/GovTechSIOT/stack-manuca-os/blob/master/src/DecadaManager/decada_manager.cpp#L124).
 3. You will receive a HTTP Response with your device-secret. Store it in a variable, as it will be used by the MQTT client on the device during initialization.
-4. On the device or secure element, generate a private-public key pair. (example: https://github.com/GovTechSIOT/stack-manuca-os/blob/master/src/CryptoEngine/crypto_engine.cpp#L119)
-5. Create a Certificate Signing Request (CSR) using your public key. (example: https://github.com/GovTechSIOT/stack-manuca-os/blob/master/src/CryptoEngine/crypto_engine.cpp#L54)
+4. On the device or secure element, generate a private-public key pair. [See example](https://github.com/GovTechSIOT/stack-manuca-os/blob/master/src/CryptoEngine/crypto_engine.cpp#L119).
+5. Create a Certificate Signing Request (CSR) using your public key. [See example](https://github.com/GovTechSIOT/stack-manuca-os/blob/master/src/CryptoEngine/crypto_engine.cpp#L54).
 6. Send the CSR to DECADA via a HTTPS Request
 7. You will receive a HTTP Response with your client certificate. Store this certificate in PEM format, in flash memory.
 8. Using a TLSSocket (or equivalent), connect to DECADA over TLS with 
-i. `ca-certificate` (found at https://github.com/GovTechSIOT/stack-manuca-os/blob/master/src/DecadaManager/decada_manager.cpp#L23) 
-ii. `device private-key`, created in step 4
-iii. `client-certificate`, attained in step 7
-9. Connect to the DECADA’s MQTT Broker, by generating a sha-256 signature using the device-secret attained in step 3. (example at https://github.com/GovTechSIOT/stack-manuca-os/blob/master/src/CommunicationFrontEnd/MQTT/communications_mqtt.cpp#L111)
+(i) `ca-certificate`, [found here](https://github.com/GovTechSIOT/stack-manuca-os/blob/master/src/DecadaManager/decada_manager.cpp#L23)
+(ii) `device private-key`, created in step 4
+(iii) `client-certificate`, attained in step 7
+9. Connect to the DECADA’s MQTT Broker, by generating a sha-256 signature using the device-secret attained in step 3. [See example](https://github.com/GovTechSIOT/stack-manuca-os/blob/master/src/CommunicationFrontEnd/MQTT/communications_mqtt.cpp#L111).
