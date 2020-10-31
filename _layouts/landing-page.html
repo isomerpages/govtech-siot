@@ -6,11 +6,27 @@ layout: default
   html {
     font-family: Lato, sans-serif;
   }
+  @media screen and (min-width: 1279px) {
+    html.has-navbar-fixed-top-widescreen {
+      padding-top: 28px !important;
+    }
+  }
+  .navbar {
+    display: none;
+  }
+  .bp-masthead {
+    overflow: hidden;
+  }
   .bp-hero {
     background: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80")
       no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
+    height: 700px;
+    min-height: calc(100vh - 28px);
+  }
+  .bp-hero-body .row {
+    height: unset;
   }
   .container {
     background-color: #ffe03d;
@@ -34,6 +50,12 @@ layout: default
     <div class="bp-container margin--top--lg margin--bottom--lg">
       <div class="row is-vcentered is-centered ma">
         <div class="col has-text-white has-text-centered">
+          <!-- logo -->
+          <img
+            src="{{ site.baseurl }}/images/logo_w_gt.png"
+            style="width: 200px; background: white; padding: 5px"
+          />
+          <p class="margin--bottom--lg">Sensors & IoT, GovTech</p>
           <h1 class="display padding--bottom--lg margin--none">
             <b>Sensing Singapore,<br />Connecting Citizens</b>
           </h1>
