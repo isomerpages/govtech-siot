@@ -4,45 +4,23 @@
 #                                #
 ##################################
 
-- title: Tech Stack
-  url: /tech-stack/overview/
+- title: Core Products
+  url: /core-products/
   sub-links:
-  - title: Overview
-    url: /tech-stack/overview/
-  - title: MANUCA
-    url: /tech-stack/manuca/overview/
-  - title: DECADA Edge
-    url: /tech-stack/decada-edge/
-  - title: DECADA Cloud
-    url: /tech-stack/decada-cloud/
-    
-- title: Starter Kit
-  url: /starter-kit/introduction/
-  sub-links:
-  - title: Introduction
-    url: /starter-kit/introduction/
-  - title: Set up your Cloud Service
-    url: /starter-kit/set-up-your-cloud-service/
-  - title: Set up your Software Environment
-    url: /starter-kit/set-up-your-software-env/
-  - title: Set up your Hardware
-    url: /starter-kit/set-up-your-hardware/
-  - title: Build and Flash Software
-    url: /starter-kit/build-and-flash-sw/
-  - title: Send Cloud Commands
-    url: /starter-kit/send-cloud-commands/
-  - title: Extend the Code
-    url: /starter-kit/extend-the-code/
-  - title: Troubleshooting
-    url: /starter-kit/troubleshooting/
-  - title: Terms and Conditions
-    url: /starter-kit/terms-and-conditions/
+    - title: Overview
+      url: /core-products/
+    - title: MANUCA
+      url: /core-products/manuca/
+    - title: DECADA Edge
+      url: /core-products/decada-edge/
+    - title: DECADA Cloud
+      url: /core-products/decada-cloud/
+    - title: Starter Kit
+      url: /starter-kit/
 
-- title: Products
-  url: /products/sensorpod/
-  sub-links:
-  - title: SensorPod
-    url: /products/sensorpod/
-    
 - title: Contact Us
   url: /contact-us/
+
+- title: Blog
+  url: https://medium.com/siot
+  external: true
