@@ -1,9 +1,9 @@
 ---
 layout: leftnav-page-content
 title: Overview
-permalink: /tech-stack/overview/
+permalink: /core-products/
 breadcrumb: Tech Stack Overview
-collection_name: tech-stack
+collection_name: core-products
 ---
 
 # Singapore Government Tech Stack - Sensors and IoT
@@ -14,9 +14,8 @@ To enable government agencies to build services quickly and effectively, GovTech
 
 Agencies can focus on designing solutions that best meet the needs of those they serve, without worrying about the underlying infrastructure. Citizens can expect a more secure, seamless, consistent and connected user experience across the spectrum of government digital services.
 
-The Sensors and IoT stack consists of 3 core components: 
+The Sensors and IoT stack consists of 3 core components:
 
-- [**MANUCA**](/tech-stack/manuca/overview/): a family of low power data acquisition products designed to integrate multiple low-bandwidth sensors and publish their measure points to DECADA Cloud swiftly.
-- [**DECADA Edge Gateway**](/tech-stack/decada-edge/): a product and software solution to onboard new and existing sensor nodes to DECADA securely with ease. It is both a Gateway to DECADA and an Edge to process and aggregate sensor nodes data to reduce data traffic to DECADA. 
-- [**DECADA**](/tech-stack/decada-cloud/): a multi-tenant cloud platform that provides support for device management, data acquisition and data analytics of IoT devices.
-
+- [**MANUCA**](/core-products/manuca/): a family of low power data acquisition products designed to integrate multiple low-bandwidth sensors and publish their measure points to DECADA Cloud swiftly.
+- [**DECADA Edge Gateway**](/core-products/decada-edge/): a product and software solution to onboard new and existing sensor nodes to DECADA securely with ease. It is both a Gateway to DECADA and an Edge to process and aggregate sensor nodes data to reduce data traffic to DECADA.
+- [**DECADA Cloud**](/core-products/decada-cloud/): a multi-tenant cloud platform that provides support for device management, data acquisition and data analytics of IoT devices.

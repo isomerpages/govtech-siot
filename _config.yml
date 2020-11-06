@@ -17,7 +17,7 @@ plugins:
 # Breadcrumbs
 breadcrumbs:
   root:
-    hide: false  # show breadcrumbs on root/home page
+    hide: false # show breadcrumbs on root/home page
     image: false # Show image or title text
 
 # Resource Room and Pagination
@@ -33,12 +33,22 @@ homepage_resources: true
 custom_css_path: "/misc/custom.css"
 custom_print_css_path: "/assets/css/print.css"
 
-exclude: [travis-script.js, .travis.yml, README.md, package.json, package-lock.json, node_modules, vendor/bundle/, vendor/cache/, vendor/gems/, vendor/ruby/, Gemfile, Gemfile.lock]
+exclude:
+  [
+    travis-script.js,
+    .travis.yml,
+    README.md,
+    package.json,
+    package-lock.json,
+    node_modules,
+    vendor/bundle/,
+    vendor/cache/,
+    vendor/gems/,
+    vendor/ruby/,
+    Gemfile,
+    Gemfile.lock,
+  ]
 
 collections:
-  starter-kit:
-    output: true
-  tech-stack:
-    output: true
-  products:
+  core-products:
     output: true
