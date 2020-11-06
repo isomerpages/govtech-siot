@@ -1,6 +1,6 @@
 ---
 layout: landing-page
-title: Sensors & IoT Capability Centre
+title: Sensors & IoT, GovTech Singapore
 permalink: /
 ---
 
