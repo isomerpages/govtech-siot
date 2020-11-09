@@ -11,22 +11,22 @@
 <circle r="9" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 62 665)" fill="white" stroke="white" stroke-width="12"/>
 <rect width="186.62" height="12" rx="6" transform="matrix(0.707107 0.707107 0.707107 -0.707107 -70 359.485)" fill="white"/>
 <rect width="203" height="12" rx="6" transform="matrix(4.37114e-08 1 1 -4.37114e-08 56 477)" fill="white"/>
-<circle cx="1333" cy="638" r="14" transform="rotate(-180 1333 638)" fill="white" stroke="white" stroke-width="2"/>
-<rect x="1411.42" y="446.313" width="110.457" height="16" rx="8" transform="rotate(135 1411.42 446.313)" fill="white"/>
-<rect x="1400.11" y="381.419" width="110.457" height="16" rx="8" transform="rotate(-135 1400.11 381.419)" fill="white"/>
-<path d="M1333 506C1337.42 506 1341 509.581 1341 514L1341 645C1341 649.418 1337.42 653 1333 653C1328.58 653 1325 649.418 1325 645L1325 514C1325 509.581 1328.58 506 1333 506Z" fill="white"/>
-<rect x="1340.99" y="175" width="136" height="16" rx="8" transform="rotate(90 1340.99 175)" fill="white"/>
-<rect x="1409" y="363" width="90" height="16" rx="8" transform="rotate(90 1409 363)" fill="white"/>
-<circle cx="1377" cy="638" r="14" transform="rotate(-180 1377 638)" fill="white" stroke="white" stroke-width="2"/>
-<rect x="1455.42" y="457.313" width="110.457" height="16" rx="8" transform="rotate(135 1455.42 457.313)" fill="white"/>
-<rect x="1444.1" y="373.419" width="110.457" height="16" rx="8" transform="rotate(-135 1444.1 373.419)" fill="white"/>
-<rect x="1385" y="518" width="135" height="16" rx="8" transform="rotate(90 1385 518)" fill="white"/>
-<rect x="1385" y="175" width="128" height="16" rx="8" transform="rotate(90 1385 175)" fill="white"/>
-<circle cx="1422" cy="638" r="14" transform="rotate(-180 1422 638)" fill="white" stroke="white" stroke-width="2"/>
-<rect x="1500.42" y="464.314" width="110.457" height="16" rx="8" transform="rotate(135 1500.42 464.314)" fill="white"/>
-<rect x="1489.1" y="364.419" width="110.457" height="16" rx="8" transform="rotate(-135 1489.1 364.419)" fill="white"/>
-<rect x="1430" y="524" width="129" height="16" rx="8" transform="rotate(90 1430 524)" fill="white"/>
-<rect x="1430" y="175" width="119" height="16" rx="8" transform="rotate(90 1430 175)" fill="white"/>
-<rect x="1288" y="8" width="173" height="173" rx="8" stroke="white" stroke-width="16"/>
-<rect x="1334" y="53" width="83" height="83" rx="8" stroke="white" stroke-width="16"/>
+<circle cx="1321" cy="655" r="9" transform="rotate(-180 1321 655)" fill="white" stroke="white" stroke-width="12"/>
+<rect x="1399.59" y="458.485" width="110.457" height="12" rx="6" transform="rotate(135 1399.59 458.485)" fill="white"/>
+<rect x="1391.11" y="387.59" width="110.457" height="12" rx="6" transform="rotate(-135 1391.11 387.59)" fill="white"/>
+<path d="M1321 523C1324.31 523 1327 525.686 1327 529L1327 664C1327 667.314 1324.31 670 1321 670V670C1317.69 670 1315 667.314 1315 664L1315 529C1315 525.686 1317.69 523 1321 523V523Z" fill="white"/>
+<rect x="1327" y="179" width="136" height="12" rx="6" transform="rotate(90 1327 179)" fill="white"/>
+<rect x="1398" y="374" width="90" height="12" rx="6" transform="rotate(90 1398 374)" fill="white"/>
+<circle cx="1369" cy="655" r="9" transform="rotate(-180 1369 655)" fill="white" stroke="white" stroke-width="12"/>
+<rect x="1447.59" y="461.485" width="110.457" height="12" rx="6" transform="rotate(135 1447.59 461.485)" fill="white"/>
+<rect x="1435.1" y="379.419" width="110.457" height="12" rx="6" transform="rotate(-135 1435.1 379.419)" fill="white"/>
+<rect x="1375" y="526" width="132" height="12" rx="6" transform="rotate(90 1375 526)" fill="white"/>
+<rect x="1371" y="179" width="128" height="12" rx="6" transform="rotate(90 1371 179)" fill="white"/>
+<circle cx="1414" cy="655" r="9" transform="rotate(-180 1414 655)" fill="white" stroke="white" stroke-width="12"/>
+<rect x="1492.59" y="465.485" width="110.457" height="12" rx="6" transform="rotate(135 1492.59 465.485)" fill="white"/>
+<rect x="1479.1" y="371.419" width="110.457" height="12" rx="6" transform="rotate(-135 1479.1 371.419)" fill="white"/>
+<rect x="1420" y="530" width="123" height="12" rx="6" transform="rotate(90 1420 530)" fill="white"/>
+<rect x="1414" y="179" width="119" height="12" rx="6" transform="rotate(90 1414 179)" fill="white"/>
+<rect x="1276" y="6" width="177" height="177" rx="10" stroke="white" stroke-width="12"/>
+<rect x="1321" y="51" width="87" height="87" rx="10" stroke="white" stroke-width="12"/>
 </svg>
