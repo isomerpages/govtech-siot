@@ -46,23 +46,6 @@ layout: default
   .no-after::after {
     display: none !important;
   }
-  .tag {
-    display: inline-block;
-    font-size: 0.75rem;
-    padding: 4px 8px;
-    margin-bottom: 8px;
-    border-radius: 4px;
-    color: #FFFFFF;
-    border: 1.5px solid #FFFFFF;
-  }
-  .relative {
-    position: relative;
-  }
-  .divider-image {
-    position: absolute;
-    top: 0px;
-    opacity: .3;
-  }
   .philosophy-image {
     height: 200px;
     padding: 0 2rem 2rem 2rem !important;
@@ -70,60 +53,6 @@ layout: default
   .contact-image {
     height: 200px;
     padding-left: 8rem !important;
-  }
-  .product-image {
-    border-radius: 32px;
-    background-position: center;
-    background-size: cover;
-    height: 20rem;
-  }
-  .custom-shape-divider-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-  }
-  .custom-shape-divider-top-opp {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-  }
-  .custom-shape-divider-top-opp svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 100px;
-  }
-  .custom-shape-divider-top svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 100px;
-      transform: rotateY(180deg);
-  }
-  .custom-shape-divider-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-  .custom-shape-divider-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 70px;
-    transform: rotateY(180deg);
-  }
-  .custom-shape-divider-shape-fill {
-    fill: #FFFFFF;
   }
 </style>
 
@@ -201,12 +130,12 @@ layout: default
 
 <!-- Section 3 (Projects) -->
 <section class="bp-section padding--left--none padding--right--none relative" style="background-color: #007c89;">
-  <div class="custom-shape-divider-top">
+  <div class="shape-divider-top-right">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="custom-shape-divider-shape-fill"></path>
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#FFFFFF"></path>
     </svg>
   </div>
-  <img class="divider-image" src="{{site.baseurl}}/images/circuit-board/circuit_board_4.svg" width="100%" height="auto">
+  <img class="divider-circuit-board" src="{{site.baseurl}}/images/circuit-board/circuit_board_4.svg" width="100%" height="auto">
   <div class="bp-container padding--bottom--xl">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white">WHAT WE DO</p>
@@ -221,9 +150,9 @@ layout: default
         class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
       >
         <h4 class="padding--bottom has-text-white"><b>TraceTogether Token</b></h4>
-        <div class="tag">SG United</div>
-        <div class="tag">Bluetooth</div>
-        <div class="tag">Low-power</div>
+        <div class="product-tag">SG United</div>
+        <div class="product-tag">Bluetooth</div>
+        <div class="product-tag">Low-power</div>
         <p class="has-text-white">A bluetooth token that aids contact tracing efforts for COVID-19.</p>
         <a
           href="https://www.tracetogether.gov.sg/common/token/"
@@ -241,23 +170,14 @@ layout: default
         class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
       >
         <h4 class="padding--bottom has-text-white"><b>Smart Gardens</b></h4>
-        <div class="tag">Smart Lamppost</div>
-        <div class="tag">Smart Cities</div>
-        <div class="tag">Mesh</div>
-        <div class="tag">Sensors</div>
+        <div class="product-tag">Smart Lamppost</div>
+        <div class="product-tag">Smart Cities</div>
+        <div class="product-tag">Mesh</div>
+        <div class="product-tag">Sensors</div>
         <p class="has-text-white">
           An integrated system of lamppost, sensors, and robots in the heart of
           Singapore.
         </p>
-        <!-- <a
-          href="{{ site.baseurl }}/#smartgardens"
-          class="padding--top--lg padding--bottom is-block no-after"
-          target="_blank"
-        >
-          <div class="bp-button is-outlined is-uppercase search-button">
-            Visit Website
-          </div>
-        </a> -->
       </div>
       <div
         class="col is-half margin--left--lg margin--right--lg product-image"
@@ -273,23 +193,14 @@ layout: default
         class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
       >
         <h4 class="padding--bottom has-text-white"><b>Electricity Meters</b></h4>
-        <div class="tag">Smart Cities</div>
-        <div class="tag">Wireless</div>
-        <div class="tag">IoT</div>
-        <div class="tag">Environment</div>
+        <div class="product-tag">Smart Cities</div>
+        <div class="product-tag">Wireless</div>
+        <div class="product-tag">IoT</div>
+        <div class="product-tag">Environment</div>
         <p class="has-text-white">
           A network of smart meters that manages our country's energy
           consumption.
         </p>
-        <!-- <a
-          href="{{ site.baseurl }}/#electricitymeters"
-          class="padding--top--lg padding--bottom is-block no-after"
-          target="_blank"
-        >
-          <div class="bp-button is-outlined is-uppercase search-button">
-            Visit Website
-          </div>
-        </a> -->
       </div>
     </div>
     <div class="row product-row padding--top--lg padding--bottom--lg">
@@ -297,10 +208,10 @@ layout: default
         class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
       >
         <h4 class="padding--bottom has-text-white"><b>eCanvas</b></h4>
-        <div class="tag">AI</div>
-        <div class="tag">Mechatronics</div>
-        <div class="tag">Mechanical</div>
-        <div class="tag">Social Good</div>
+        <div class="product-tag">AI</div>
+        <div class="product-tag">Mechatronics</div>
+        <div class="product-tag">Mechanical</div>
+        <div class="product-tag">Social Good</div>
         <p class="has-text-white">
           A robotics structure with a voice-command interface that allows persons with disabilities to pursue their artistic endeavors independently.
         </p>
@@ -328,23 +239,14 @@ layout: default
         class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
       >
         <h4 class="padding--bottom has-text-white"><b>Smart Gym</b></h4>
-        <div class="tag">Sensors</div>
-        <div class="tag">Cloud</div>
-        <div class="tag">UI</div>
-        <div class="tag">Full Stack</div>
-        <div class="tag">Health & Wellness</div>
+        <div class="product-tag">Sensors</div>
+        <div class="product-tag">Cloud</div>
+        <div class="product-tag">UI</div>
+        <div class="product-tag">Full Stack</div>
+        <div class="product-tag">Health & Wellness</div>
         <p class="has-text-white">
           A network of sensor-integrated gym equipment at community gyms, uplifting the wellness of Singaporeans.
         </p>
-        <!-- <a
-          href="{{ site.baseurl }}/#smartgym"
-          class="padding--top--lg padding--bottom is-block no-after"
-          target="_blank"
-        >
-          <div class="bp-button is-outlined is-uppercase search-button">
-            Visit Website
-          </div>
-        </a> -->
       </div>
     </div>
     <div class="row product-row padding--top--lg padding--bottom--lg">
@@ -354,9 +256,9 @@ layout: default
         <h4 class="padding--bottom has-text-white">
           <b>GALE (GovTech Assisted Living Ecosystem)</b>
         </h4>
-        <div class="tag">Wireless</div>
-        <div class="tag">Cloud</div>
-        <div class="tag">Embedded</div>
+        <div class="product-tag">Wireless</div>
+        <div class="product-tag">Cloud</div>
+        <div class="product-tag">Embedded</div>
         <p class="has-text-white">
           An ecosystem built to support the assisted living infrastructure in
           Singapore.
@@ -377,9 +279,9 @@ layout: default
       ></div>
     </div>
   </div>
-  <div class="custom-shape-divider-bottom">
+  <div class="shape-divider-bottom-right">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="custom-shape-divider-shape-fill"></path>
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#FFFFFF"></path>
     </svg>
   </div>
 </section>
@@ -428,19 +330,19 @@ layout: default
 
 <!-- Section 5 (Contact Us) -->
 <section class="bp-section padding--left--none padding--right--none relative" style="background-color: #56638a;">
-  <div class="custom-shape-divider-top-opp">
+  <div class="shape-divider-top-left">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="custom-shape-divider-shape-fill"></path>
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#FFFFFF"></path>
     </svg>
   </div>
-  <img class="divider-image" src="{{site.baseurl}}/images/circuit-board/circuit_board_4.svg" width="100%" height="auto">
+  <img class="divider-circuit-board" src="{{site.baseurl}}/images/circuit-board/circuit_board_4.svg" width="100%" height="auto">
   <div class="bp-container padding--bottom--xl">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white">CHAT WITH US</p>
       <h1 class="margin--bottom--lg has-text-white"><b>Contact Us</b></h1>
     </div>
     <div class="row is-centered padding--top--lg padding--bottom--lg">
-      <img class="contact-image" src="images/contact_career.svg" alt=""/>
+      <img class="contact-image padding--top--lg" src="images/contact_career.svg" alt=""/>
       <div class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl">
         <h4 class="padding--bottom has-text-white"><b>Career</b></h4>
         <p class="has-text-white">
@@ -458,7 +360,7 @@ layout: default
       </div>
     </div>
     <div class="row is-centered padding--top--lg padding--bottom--lg">
-      <img class="contact-image" src="images/contact_contact_us.svg" alt=""/>
+      <img class="contact-image padding--top--lg" src="images/contact_contact_us.svg" alt=""/>
       <div class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl">
         <h4 class="padding--bottom has-text-white"><b>Contact Us</b></h4>
         <p class="has-text-white">

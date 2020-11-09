@@ -3,7 +3,7 @@
 
 @charset "utf-8";
 
-// HLB brand colors
+// Brand colors
 $primary: #007c89;
 $secondary: #56638a;
 $secondary-hover: lighten($secondary, 20%);
@@ -12,13 +12,14 @@ $media-color-one: #a5c882;
 $media-color-two: #4e6766;
 $media-color-three: #5ab1bb;
 $media-color-four: #d5c67a;
-$media-color-five: $secondary;
+$media-color-five: #1c2331;
 
+// Default values
 $gap: 32px !default;
 $tablet: 769px !default;
 $desktop: 960px + (2 * $gap) !default;
 
-// SIOT custom
+// SIOT custom styling
 #main-content .col {
   max-width: 100%; // prevent code blocks from stretching out the page
 }
@@ -41,8 +42,116 @@ details summary {
   color: $primary;
 }
 
-// Mixins
+.relative {
+  position: relative;
+}
 
+.divider-circuit-board {
+  position: absolute;
+  top: 0px;
+  opacity: 0.3;
+}
+
+// .shape-divider {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   overflow: hidden;
+//   line-height: 0;
+//   svg {
+//     position: relative;
+//     display: block;
+//     width: calc(100% + 1.3px);
+//     height: 100px;
+//   }
+// }
+
+// .flip-horizontal {
+//   transform: rotateY(180deg);
+// }
+
+// .flip-vertical {
+//   transform: rotate(180deg);
+// }
+
+// .shape-divider-top-right {
+//   @extend .shape-divider-top-left;
+//   svg {
+//     transform: rotateY(180deg);
+//   }
+// }
+
+// .shape-divider-bottom-right {
+//   @extend .shape-divider-top-left;
+//   transform: rotate(180deg);
+//   svg {
+//     transform: rotateY(180deg);
+//   }
+// }
+
+.shape-divider-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.shape-divider-top-left svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.shape-divider-top-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.shape-divider-top-right svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+  transform: rotateY(180deg);
+}
+
+.shape-divider-bottom-right {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.shape-divider-bottom-right svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+  transform: rotateY(180deg);
+}
+
+.product-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+}
+
+// Mixins
 @mixin touch() {
   @media screen and (max-width: $desktop - 1px) {
     @content;
@@ -216,11 +325,13 @@ details summary {
 }
 
 // Text color
-.has-text-primary {
-  color: $primary !important;
-}
-.has-text-secondary {
-  color: $secondary !important;
+.has-text {
+  &-primary {
+    color: $primary !important;
+  }
+  &-secondary {
+    color: $secondary !important;
+  }
 }
 
 // Menu/Left-nav
@@ -237,7 +348,6 @@ details summary {
 }
 
 // Button
-
 .bp-button.is-text span {
   &:hover,
   &:focus {
@@ -379,7 +489,6 @@ details summary {
 }
 
 // Media category buttons - not used now but will be used in the future
-
 .media-category-button {
   text-decoration: none !important;
   color: #323232;
@@ -443,7 +552,7 @@ details summary {
   }
 }
 
-// Product Section
+// Product section
 .product-row {
   display: flex;
   flex-direction: row;
@@ -451,9 +560,11 @@ details summary {
 
 .product-image {
   overflow: hidden;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 32px;
+  height: 20rem;
 }
 
 @include mobile {
