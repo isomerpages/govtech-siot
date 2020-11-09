@@ -11,8 +11,20 @@ layout: default
       padding-top: 28px !important;
     }
   }
+  #navbar {
+    position: fixed;
+    top: 0;
+  }
   .navbar {
-    display: none;
+    visibility: hidden;
+    position: fixed;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 0.2s ease-in;
+  }
+  #navbar.show .navbar {
+    visibility: visible;
+    opacity: 100%;
   }
   .bp-masthead {
     overflow: hidden;
@@ -119,7 +131,7 @@ layout: default
 </section>
 
 <!-- Section 2 (Philosophy) -->
-<section class="bp-section">
+<section class="bp-section" id="philosophy">
   <div class="bp-container padding--bottom--lg">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--bottom eyebrow is-uppercase">About Us</p>
@@ -396,3 +408,12 @@ layout: default
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+  window.onscroll = function () {
+    const html = document.getElementsByTagName("html")[0];
+    if (html.scrollTop > 200)
+      document.getElementById("navbar").classList.add("show");
+    else document.getElementById("navbar").classList.remove("show");
+  };
+</script>
