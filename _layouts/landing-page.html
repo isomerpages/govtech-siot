@@ -52,16 +52,16 @@ layout: default
     padding: 4px 8px;
     margin-bottom: 8px;
     border-radius: 4px;
-    border: 1.5px solid #66B0B8;
+    color: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
   }
   .relative {
     position: relative;
   }
-  .divider {
+  .divider-image {
     position: absolute;
     top: 0px;
-    z-index: -1;
-    opacity: .3;
+    /* opacity: .3; */
   }
   .philosophy-image {
     height: 200px;
@@ -72,6 +72,43 @@ layout: default
     background-position: center;
     background-size: cover;
     height: 20rem;
+  }
+  .custom-shape-divider-top-1604918486 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .custom-shape-divider-top-1604918486 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 100px;
+      transform: rotateY(180deg);
+  }
+  .custom-shape-divider-top-1604918486 .shape-fill {
+      fill: #FFFFFF;
+  }
+  .custom-shape-divider-bottom-1604921343 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  .custom-shape-divider-bottom-1604921343 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+    transform: rotateY(180deg);
+  }
+  .custom-shape-divider-bottom-1604921343 .shape-fill {
+    fill: #FFFFFF;
   }
 </style>
 
@@ -107,7 +144,7 @@ layout: default
   <div class="bp-container padding--bottom--lg">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--bottom eyebrow is-uppercase">About Us</p>
-      <h1 class="margin--bottom--lg has-text-secondary"><b>Our Vision</b></h1>
+      <h1 class="margin--bottom--lg has-text-primary"><b>Our Vision</b></h1>
     </div>
 
     <div class="row">
@@ -148,179 +185,189 @@ layout: default
 </section>
 
 <!-- Section 3 (Projects) -->
-<section class="relative">
-  <img class="divider" src="{{site.baseurl}}/images/circuit-board/circuit-board-3.svg" width="100%" height="auto">
-  <div class="bp-section">
-    <div class="bp-container padding--bottom--lg">
+<section class="bp-section padding--left--none padding--right--none relative" style="background-color: #007c89;">
+  <div class="custom-shape-divider-top-1604918486">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>
+  </div>
+  <img class="divider-image" src="{{site.baseurl}}/images/circuit-board/circuit-board-4.svg" width="100%" height="auto">
+  <div class="bp-container product-container">
+    <div class="row">
       <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
-        <p class="margin--bottom eyebrow is-uppercase">WHAT WE DO</p>
-        <h1 class="margin--bottom--lg has-text-secondary"><b>Our Projects</b></h1>
-      </div>
-      <div class="row product-row padding--top--xl padding--bottom--xl">
-        <div
-          class="col is-half margin--left--lg margin--right--lg product-image"
-          style="background-image: url('{{site.baseurl}}/images/project_tt_token.jpg')"
-        ></div>
-        <div
-          class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
-        >
-          <h4 class="padding--bottom"><b>TraceTogether Token</b></h4>
-          <div class="tag">SG United</div>
-          <div class="tag">Bluetooth</div>
-          <div class="tag">Low-power</div>
-          <p>A bluetooth token that aids contact tracing efforts for COVID-19.</p>
-          <a
-            href="https://www.tracetogether.gov.sg/common/token/"
-            class="padding--top--lg padding--bottom is-block no-after"
-            target="_blank"
-          >
-            <div class="bp-button is-outlined is-uppercase search-button">
-              Visit Website
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row product-row padding--top--xl padding--bottom--xl">
-        <div
-          class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
-        >
-          <h4 class="padding--bottom"><b>Smart Gardens</b></h4>
-          <div class="tag">Smart Lamppost</div>
-          <div class="tag">Smart Cities</div>
-          <div class="tag">Mesh</div>
-          <div class="tag">Sensors</div>
-          <p>
-            An integrated system of lamppost, sensors, and robots in the heart of
-            Singapore.
-          </p>
-          <!-- <a
-            href="{{ site.baseurl }}/#smartgardens"
-            class="padding--top--lg padding--bottom is-block no-after"
-            target="_blank"
-          >
-            <div class="bp-button is-outlined is-uppercase search-button">
-              Visit Website
-            </div>
-          </a> -->
-        </div>
-        <div
-          class="col is-half margin--left--lg margin--right--lg product-image"
-          style="background-image: url('{{site.baseurl}}/images/project_gardens.png')"
-        ></div>
-      </div>
-      <div class="row product-row padding--top--xl padding--bottom--xl">
-        <div
-          class="col is-half margin--left--lg margin--right--lg product-image"
-          style="background-image: url('{{site.baseurl}}/images/project_tt_token.jpg')"
-        ></div>
-        <div
-          class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
-        >
-          <h4 class="padding--bottom"><b>Electricity Meters</b></h4>
-          <div class="tag">Smart Cities</div>
-          <div class="tag">Wireless</div>
-          <div class="tag">IoT</div>
-          <div class="tag">Environment</div>
-          <p>
-            A network of smart meters that manages our country's energy
-            consumption.
-          </p>
-          <!-- <a
-            href="{{ site.baseurl }}/#electricitymeters"
-            class="padding--top--lg padding--bottom is-block no-after"
-            target="_blank"
-          >
-            <div class="bp-button is-outlined is-uppercase search-button">
-              Visit Website
-            </div>
-          </a> -->
-        </div>
-      </div>
-      <div class="row product-row padding--top--xl padding--bottom--xl">
-        <div
-          class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
-        >
-          <h4 class="padding--bottom"><b>eCanvas</b></h4>
-          <div class="tag">AI</div>
-          <div class="tag">Mechatronics</div>
-          <div class="tag">Mechanical</div>
-          <div class="tag">Social Good</div>
-          <p>
-            A robotics structure with a voice-command interface that allows persons with disabilities to pursue their artistic endeavors independently.
-          </p>
-          <a
-            href="https://www.youtube.com/watch?v=tTio3SsVMvc"
-            class="padding--top--lg padding--bottom is-block no-after"
-            target="_blank"
-          >
-            <div class="bp-button is-outlined is-uppercase search-button">
-              Watch Video
-            </div>
-          </a>
-        </div>
-        <div
-          class="col is-half margin--left--lg margin--right--lg product-image"
-          style="background-image: url('{{site.baseurl}}/images/project_ecanvas.png')"
-        ></div>
-      </div>
-      <div class="row product-row padding--top--xl padding--bottom--xl">
-        <div
-          class="col is-half margin--left--lg margin--right--lg product-image"
-          style="background-image: url('{{site.baseurl}}/images/project_smartgym.jpg')"
-        ></div>
-        <div
-          class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
-        >
-          <h4 class="padding--bottom"><b>Smart Gym</b></h4>
-          <div class="tag">Sensors</div>
-          <div class="tag">Cloud</div>
-          <div class="tag">UI</div>
-          <div class="tag">Full Stack</div>
-          <div class="tag">Health & Wellness</div>
-          <p>
-            A network of sensor-integrated gym equipment at community gyms, uplifting the wellness of Singaporeans.
-          </p>
-          <!-- <a
-            href="{{ site.baseurl }}/#smartgym"
-            class="padding--top--lg padding--bottom is-block no-after"
-            target="_blank"
-          >
-            <div class="bp-button is-outlined is-uppercase search-button">
-              Visit Website
-            </div>
-          </a> -->
-        </div>
-      </div>
-      <div class="row product-row padding--top--xl padding--bottom--xl">
-        <div
-          class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
-        >
-          <h4 class="padding--bottom">
-            <b>GALE (GovTech Assisted Living Ecosystem)</b>
-          </h4>
-          <div class="tag">Wireless</div>
-          <div class="tag">Cloud</div>
-          <div class="tag">Embedded</div>
-          <p>
-            An ecosystem built to support the assisted living infrastructure in
-            Singapore.
-          </p>
-          <a
-            href="https://www.8world.com/news/singapore/article/govtech-pab-1009726"
-            class="padding--top--lg padding--bottom is-block no-after"
-            target="_blank"
-          >
-            <div class="bp-button is-outlined is-uppercase search-button">
-              Read More (in Chinese)
-            </div>
-          </a>
-        </div>
-        <div
-          class="col is-half margin--left--lg margin--right--lg product-image"
-          style="background-image: url('{{site.baseurl}}/images/project_gale.png')"
-        ></div>
+        <p class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white">WHAT WE DO</p>
+        <h1 class="margin--bottom--lg has-text-white"><b>Our Projects</b></h1>
       </div>
     </div>
+    <div class="row product-row padding--top--xl padding--bottom--xl">
+      <div
+        class="col is-half margin--left--lg margin--right--lg product-image"
+        style="background-image: url('{{site.baseurl}}/images/project_tt_token.jpg')"
+      ></div>
+      <div
+        class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
+      >
+        <h4 class="padding--bottom has-text-white"><b>TraceTogether Token</b></h4>
+        <div class="tag">SG United</div>
+        <div class="tag">Bluetooth</div>
+        <div class="tag">Low-power</div>
+        <p class="has-text-white">A bluetooth token that aids contact tracing efforts for COVID-19.</p>
+        <a
+          href="https://www.tracetogether.gov.sg/common/token/"
+          class="padding--top--lg padding--bottom is-block no-after"
+          target="_blank"
+        >
+          <div class="bp-button is-outlined is-uppercase search-button">
+            Visit Website
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row product-row padding--top--xl padding--bottom--xl">
+      <div
+        class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
+      >
+        <h4 class="padding--bottom has-text-white"><b>Smart Gardens</b></h4>
+        <div class="tag">Smart Lamppost</div>
+        <div class="tag">Smart Cities</div>
+        <div class="tag">Mesh</div>
+        <div class="tag">Sensors</div>
+        <p class="has-text-white">
+          An integrated system of lamppost, sensors, and robots in the heart of
+          Singapore.
+        </p>
+        <!-- <a
+          href="{{ site.baseurl }}/#smartgardens"
+          class="padding--top--lg padding--bottom is-block no-after"
+          target="_blank"
+        >
+          <div class="bp-button is-outlined is-uppercase search-button">
+            Visit Website
+          </div>
+        </a> -->
+      </div>
+      <div
+        class="col is-half margin--left--lg margin--right--lg product-image"
+        style="background-image: url('{{site.baseurl}}/images/project_gardens.png')"
+      ></div>
+    </div>
+    <div class="row product-row padding--top--xl padding--bottom--xl">
+      <div
+        class="col is-half margin--left--lg margin--right--lg product-image"
+        style="background-image: url('{{site.baseurl}}/images/project_tt_token.jpg')"
+      ></div>
+      <div
+        class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
+      >
+        <h4 class="padding--bottom has-text-white"><b>Electricity Meters</b></h4>
+        <div class="tag">Smart Cities</div>
+        <div class="tag">Wireless</div>
+        <div class="tag">IoT</div>
+        <div class="tag">Environment</div>
+        <p class="has-text-white">
+          A network of smart meters that manages our country's energy
+          consumption.
+        </p>
+        <!-- <a
+          href="{{ site.baseurl }}/#electricitymeters"
+          class="padding--top--lg padding--bottom is-block no-after"
+          target="_blank"
+        >
+          <div class="bp-button is-outlined is-uppercase search-button">
+            Visit Website
+          </div>
+        </a> -->
+      </div>
+    </div>
+    <div class="row product-row padding--top--xl padding--bottom--xl">
+      <div
+        class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
+      >
+        <h4 class="padding--bottom has-text-white"><b>eCanvas</b></h4>
+        <div class="tag">AI</div>
+        <div class="tag">Mechatronics</div>
+        <div class="tag">Mechanical</div>
+        <div class="tag">Social Good</div>
+        <p class="has-text-white">
+          A robotics structure with a voice-command interface that allows persons with disabilities to pursue their artistic endeavors independently.
+        </p>
+        <a
+          href="https://www.youtube.com/watch?v=tTio3SsVMvc"
+          class="padding--top--lg padding--bottom is-block no-after"
+          target="_blank"
+        >
+          <div class="bp-button is-outlined is-uppercase search-button">
+            Watch Video
+          </div>
+        </a>
+      </div>
+      <div
+        class="col is-half margin--left--lg margin--right--lg product-image"
+        style="background-image: url('{{site.baseurl}}/images/project_ecanvas.png')"
+      ></div>
+    </div>
+    <div class="row product-row padding--top--xl padding--bottom--xl">
+      <div
+        class="col is-half margin--left--lg margin--right--lg product-image"
+        style="background-image: url('{{site.baseurl}}/images/project_smartgym.jpg')"
+      ></div>
+      <div
+        class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
+      >
+        <h4 class="padding--bottom has-text-white"><b>Smart Gym</b></h4>
+        <div class="tag">Sensors</div>
+        <div class="tag">Cloud</div>
+        <div class="tag">UI</div>
+        <div class="tag">Full Stack</div>
+        <div class="tag">Health & Wellness</div>
+        <p class="has-text-white">
+          A network of sensor-integrated gym equipment at community gyms, uplifting the wellness of Singaporeans.
+        </p>
+        <!-- <a
+          href="{{ site.baseurl }}/#smartgym"
+          class="padding--top--lg padding--bottom is-block no-after"
+          target="_blank"
+        >
+          <div class="bp-button is-outlined is-uppercase search-button">
+            Visit Website
+          </div>
+        </a> -->
+      </div>
+    </div>
+    <div class="row product-row padding--top--xl padding--bottom--xl">
+      <div
+        class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
+      >
+        <h4 class="padding--bottom has-text-white">
+          <b>GALE (GovTech Assisted Living Ecosystem)</b>
+        </h4>
+        <div class="tag">Wireless</div>
+        <div class="tag">Cloud</div>
+        <div class="tag">Embedded</div>
+        <p class="has-text-white">
+          An ecosystem built to support the assisted living infrastructure in
+          Singapore.
+        </p>
+        <a
+          href="https://www.8world.com/news/singapore/article/govtech-pab-1009726"
+          class="padding--top--lg padding--bottom is-block no-after"
+          target="_blank"
+        >
+          <div class="bp-button is-outlined is-uppercase search-button">
+            Read More (in Chinese)
+          </div>
+        </a>
+      </div>
+      <div
+        class="col is-half margin--left--lg margin--right--lg product-image"
+        style="background-image: url('{{site.baseurl}}/images/project_gale.png')"
+      ></div>
+    </div>
+  </div>
+  <div class="custom-shape-divider-bottom-1604921343">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>
   </div>
 </section>
 
@@ -329,11 +376,11 @@ layout: default
   <div class="bp-container padding--bottom--lg">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--bottom eyebrow is-uppercase">READ MORE ABOUT US</p>
-      <h1 class="margin--bottom--lg has-text-secondary"><b>Our Blog</b></h1>
+      <h1 class="margin--bottom--lg has-text-primary"><b>Our Blog</b></h1>
     </div>
   </div>
-  <div class="row margin--top padding--bottom">
-    <div class="col is-one-third">
+  <div class="row padding--left--xl padding--right--xl">
+    <div class="col is-one-third padding">
         <h4 class="padding--top--lg has-text-secondary"><b>
           A Day in the Life of a SIOT Software Developer</b></h4>
         <p class="padding--top--sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis fugiat modi dolor illum temporibus libero, corporis ullam totam quaerat aperiam et enim recusandae velit quas nulla soluta accusantium. Iusto, commodi.</p>
@@ -344,7 +391,7 @@ layout: default
             </div>
         </a>
     </div>
-    <div class="col is-one-third">
+    <div class="col is-one-third padding">
         <h4 class="padding--top--lg has-text-secondary"><b>My Experience building the TraceTogether Token</b></h4>
         <p class="padding--top--sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis fugiat modi dolor illum temporibus libero, corporis ullam totam quaerat aperiam et enim recusandae velit quas nulla soluta accusantium. Iusto, commodi.</p>
         <a href="{{site.baseurl}}/careers/software-engineer/" class="bp-sec-button margin--top padding--bottom">
@@ -354,7 +401,7 @@ layout: default
             </div>
         </a>
     </div>
-    <div class="col is-one-third">
+    <div class="col is-one-third padding">
         <h4 class="padding--top--lg has-text-secondary"><b>Developing Singpore's capability in Sensors & IoTs</b></h5>
         <p class="padding--top--sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis fugiat modi dolor illum temporibus libero, corporis ullam totam quaerat aperiam et enim recusandae velit quas nulla soluta accusantium. Iusto, commodi.</p>
         <a href="{{site.baseurl}}/careers/product-designer/" class="bp-sec-button margin--top padding--bottom">
@@ -371,7 +418,7 @@ layout: default
   <div class="bp-container padding--bottom--lg">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--bottom eyebrow is-uppercase">CHAT WITH US</p>
-      <h1 class="margin--bottom--lg has-text-secondary"><b>Contact Us</b></h1>
+      <h1 class="margin--bottom--lg has-text-primary"><b>Contact Us</b></h1>
     </div>
   </div>
 </section>

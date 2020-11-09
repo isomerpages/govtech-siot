@@ -4,9 +4,8 @@
 @charset "utf-8";
 
 // HLB brand colors
-$primary: #003855;
+$primary: #007c89;
 $secondary: #56638a;
-//$secondary: #eb7900;
 $secondary-hover: lighten($secondary, 70%);
 
 $media-color-one: #a5c882;
@@ -16,6 +15,7 @@ $media-color-four: #d5c67a;
 $media-color-five: $secondary;
 
 $gap: 32px !default;
+$tablet: 769px !default;
 $desktop: 960px + (2 * $gap) !default;
 
 // SIOT custom
@@ -45,6 +45,12 @@ details summary {
 
 @mixin touch() {
   @media screen and (max-width: $desktop - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media screen and (max-width: $tablet - 1px) {
     @content;
   }
 }
@@ -434,5 +440,49 @@ details summary {
   width: 50%;
   @include touch() {
     width: 100%;
+  }
+}
+
+// Product Section
+.product-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-image {
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-container {
+  padding-bottom: 8rem;
+}
+
+@include mobile {
+  .product-row {
+    padding: 2rem 0 1rem !important;
+  }
+
+  .product-row:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .product-row:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .product-row:last-child {
+    padding-bottom: 0 !important;
+  }
+
+  .product-image {
+    height: 50vw;
+    flex-basis: auto;
+  }
+
+  .product-container {
+    padding-bottom: 2rem;
   }
 }
