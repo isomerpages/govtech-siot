@@ -67,6 +67,10 @@ layout: default
     height: 200px;
     padding: 0 2rem 2rem 2rem !important;
   }
+  .contact-image {
+    height: 200px;
+    padding-left: 8rem !important;
+  }
   .product-image {
     border-radius: 32px;
     background-position: center;
@@ -81,15 +85,26 @@ layout: default
     overflow: hidden;
     line-height: 0;
   }
+  .custom-shape-divider-top-opp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .custom-shape-divider-top-opp svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 100px;
+  }
   .custom-shape-divider-top svg {
       position: relative;
       display: block;
       width: calc(100% + 1.3px);
       height: 100px;
       transform: rotateY(180deg);
-  }
-  .custom-shape-divider-top .shape-fill {
-      fill: #FFFFFF;
   }
   .custom-shape-divider-bottom {
     position: absolute;
@@ -107,7 +122,7 @@ layout: default
     height: 70px;
     transform: rotateY(180deg);
   }
-  .custom-shape-divider-bottom .shape-fill {
+  .custom-shape-divider-shape-fill {
     fill: #FFFFFF;
   }
 </style>
@@ -141,7 +156,7 @@ layout: default
 
 <!-- Section 2 (Philosophy) -->
 <section class="bp-section" id="philosophy">
-  <div class="bp-container padding--bottom--lg">
+  <div class="bp-container padding--bottom--xl">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--bottom eyebrow is-uppercase">About Us</p>
       <h1 class="margin--bottom--lg has-text-primary"><b>Our Vision</b></h1>
@@ -188,16 +203,14 @@ layout: default
 <section class="bp-section padding--left--none padding--right--none relative" style="background-color: #007c89;">
   <div class="custom-shape-divider-top">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="custom-shape-divider-shape-fill"></path>
     </svg>
   </div>
-  <img class="divider-image" src="{{site.baseurl}}/images/circuit-board/circuit-board-4.svg" width="100%" height="auto">
-  <div class="bp-container product-container">
-    <div class="row">
-      <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
-        <p class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white">WHAT WE DO</p>
-        <h1 class="margin--bottom--lg has-text-white"><b>Our Projects</b></h1>
-      </div>
+  <img class="divider-image" src="{{site.baseurl}}/images/circuit-board/circuit_board_4.svg" width="100%" height="auto">
+  <div class="bp-container padding--bottom--xl">
+    <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
+      <p class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white">WHAT WE DO</p>
+      <h1 class="margin--bottom--lg has-text-white"><b>Our Projects</b></h1>
     </div>
     <div class="row product-row padding--top--lg padding--bottom--lg">
       <div
@@ -366,14 +379,14 @@ layout: default
   </div>
   <div class="custom-shape-divider-bottom">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="custom-shape-divider-shape-fill"></path>
     </svg>
   </div>
 </section>
 
 <!-- Section 4 (Blog) -->
 <section class="bp-section">
-  <div class="bp-container padding--bottom--lg">
+  <div class="bp-container padding--bottom--xl">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--bottom eyebrow is-uppercase">READ MORE ABOUT US</p>
       <h1 class="margin--bottom--lg has-text-primary"><b>Our Blog</b></h1>
@@ -415,15 +428,52 @@ layout: default
 
 <!-- Section 5 (Contact Us) -->
 <section class="bp-section padding--left--none padding--right--none relative" style="background-color: #56638a;">
-  <div class="custom-shape-divider-top">
+  <div class="custom-shape-divider-top-opp">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="custom-shape-divider-shape-fill"></path>
     </svg>
   </div>
-  <div class="bp-container padding--bottom--lg">
+  <img class="divider-image" src="{{site.baseurl}}/images/circuit-board/circuit_board_4.svg" width="100%" height="auto">
+  <div class="bp-container padding--bottom--xl">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
-      <p class="margin--bottom eyebrow is-uppercase has-text-white">CHAT WITH US</p>
+      <p class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white">CHAT WITH US</p>
       <h1 class="margin--bottom--lg has-text-white"><b>Contact Us</b></h1>
+    </div>
+    <div class="row is-centered padding--top--lg padding--bottom--lg">
+      <img class="contact-image" src="images/contact_career.svg" alt=""/>
+      <div class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl">
+        <h4 class="padding--bottom has-text-white"><b>Career</b></h4>
+        <p class="has-text-white">
+          We are constantly looking for skilled and passionate individuals to join us. We have various positions available, including both full and part time positions. 
+        </p>
+        <a
+          href="{{ site.baseurl }}/#career"
+          class="padding--top--lg padding--bottom is-block no-after"
+          target="_blank"
+        >
+          <div class="bp-button is-outlined is-uppercase search-button">
+            Join Us
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row is-centered padding--top--lg padding--bottom--lg">
+      <img class="contact-image" src="images/contact_contact_us.svg" alt=""/>
+      <div class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl">
+        <h4 class="padding--bottom has-text-white"><b>Contact Us</b></h4>
+        <p class="has-text-white">
+          Have any questions or feedback? Get details on our location and email.
+        </p>
+        <a
+          href="{{ site.baseurl }}/contact-us"
+          class="padding--top--lg padding--bottom is-block no-after"
+          target="_blank"
+        >
+          <div class="bp-button is-outlined is-uppercase search-button">
+            Contact Us
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>

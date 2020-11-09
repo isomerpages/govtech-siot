@@ -456,10 +456,6 @@ details summary {
   background-position: center;
 }
 
-.product-container {
-  padding-bottom: 8rem;
-}
-
 @include mobile {
   .product-row {
     padding: 2rem 0 1rem !important;
@@ -480,9 +476,5 @@ details summary {
   .product-image {
     height: 50vw;
     flex-basis: auto;
-  }
-
-  .product-container {
-    padding-bottom: 2rem;
   }
 }
