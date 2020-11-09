@@ -6,9 +6,13 @@ layout: default
   html {
     font-family: Lato, sans-serif;
   }
-  @media screen and (min-width: 1279px) {
-    html.has-navbar-fixed-top-widescreen {
-      padding-top: 28px !important;
+  html.has-navbar-fixed-top-widescreen {
+    padding-top: 28px !important;
+  }
+  @media screen and (max-width: 560px) {
+    .display {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
     }
   }
   #navbar {
@@ -102,7 +106,7 @@ layout: default
 
 <!-- Section 1 (Intro) -->
 <section class="bp-hero bg-hero">
-  <div class="bp-hero-body">
+  <div class="bp-hero-body" style="height: 100%;">
     <div class="bp-container margin--top--lg margin--bottom--lg">
       <div class="row is-vcentered is-centered ma">
         <div class="col has-text-white has-text-centered">
