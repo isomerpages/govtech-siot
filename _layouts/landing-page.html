@@ -9,7 +9,7 @@ layout: default
   html.has-navbar-fixed-top-widescreen {
     padding-top: 28px !important;
   }
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 570px) {
     .display {
       font-size: 2.5rem;
       line-height: 3.5rem;
@@ -38,11 +38,10 @@ layout: default
       no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 700px;
-    min-height: calc(100vh - 28px);
   }
   .bp-hero-body .row {
-    height: unset;
+    height: 700px;
+    min-height: calc(100vh - 28px);
   }
   .no-after::after {
     display: none !important;
@@ -111,29 +110,27 @@ layout: default
 
 <!-- Section 1 (Intro) -->
 <section class="bp-hero bg-hero">
-  <div class="bp-hero-body" style="height: 100%;">
-    <div class="bp-container margin--top--lg margin--bottom--lg">
-      <div class="row is-vcentered is-centered ma">
-        <div class="col has-text-white has-text-centered">
-          <!-- logo -->
-          <img
-            src="{{ site.baseurl }}/images/logo_w_gt.png"
-            style="width: 200px; background: white; padding: 5px"
-          />
-          <p class="margin--bottom--lg">Sensors & IoT, GovTech</p>
-          <h1 class="display padding--bottom--lg margin--none">
-            <b>Sensing Singapore,<br />Connecting Citizens</b>
-          </h1>
-          <p class="margin--bottom--xl">
-            We are developers, engineers, creatives who work in cross functional
-            teams to deliver products.
-          </p>
-          <a
-            href="{{ site.baseurl }}/#careers"
-            class="bp-button is-white is-outlined is-uppercase search-button"
-            >Join Us</a
-          >
-        </div>
+  <div class="bp-hero-body padding--none">
+    <div class="row is-vcentered is-centered ma" style="margin: 0 auto; display: flex; height: 100%;">
+      <div class="col has-text-white has-text-centered" style="margin-top: -100px;">
+        <!-- logo -->
+        <!-- <img
+          src="{{ site.baseurl }}/images/logo_w_gt.png"
+          style="width: 200px; background: white; padding: 5px"
+        /> -->
+        <!-- <p class="margin--bottom--lg">Sensors & IoT, GovTech</p> -->
+        <h1 class="display padding--bottom--lg margin--none">
+          <b>Sensing Singapore,<br />Connecting Citizens</b>
+        </h1>
+        <p class="margin--bottom--xl">
+          We are developers, engineers, creatives who work in cross functional
+          teams to deliver products.
+        </p>
+        <button
+          id="read-more"
+          class="bp-button is-white is-outlined is-uppercase search-button"
+          >Read More
+        </button>
       </div>
     </div>
   </div>
@@ -419,6 +416,11 @@ layout: default
 </section>
 
 <script type="text/javascript">
+  document.getElementById("read-more").onclick = function() {
+    const firstSection = document.getElementById("philosophy");
+    firstSection.scrollIntoView({behavior: "smooth"});
+  }
+  
   window.onscroll = function () {
     const html = document.getElementsByTagName("html")[0];
     if (html.scrollTop > 200)
