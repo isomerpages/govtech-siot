@@ -44,6 +44,9 @@ layout: default
   .bp-hero-body .row {
     height: unset;
   }
+  .no-after::after {
+    display: none !important;
+  }
   .tag-teal {
     background-color: #66B0B8;
     display: inline-block;
@@ -96,11 +99,13 @@ layout: default
     opacity: .3;
   }
   .philosophy-image {
-    height: 400px;
+    height: 200px;
     padding: 0 2rem 2rem 2rem !important;
   }
   .product-image {
     border-radius: 32px;
+    background-position: center;
+    background-size: cover;
   }
 </style>
 
@@ -203,8 +208,8 @@ layout: default
           <div class="tag-yellow">Low-power</div>
           <p>A bluetooth token that aids contact tracing efforts for COVID-19.</p>
           <a
-            href="{{ site.baseurl }}/#tracetogether"
-            class="padding--top--lg padding--bottom is-block"
+            href="https://www.tracetogether.gov.sg/common/token/"
+            class="padding--top--lg padding--bottom is-block no-after"
             target="_blank"
           >
             <div class="bp-button is-outlined is-uppercase search-button">
@@ -226,19 +231,19 @@ layout: default
             An integrated system of lamppost, sensors, and robots in the heart of
             Singapore.
           </p>
-          <a
+          <!-- <a
             href="{{ site.baseurl }}/#smartgardens"
-            class="padding--top--lg padding--bottom is-block"
+            class="padding--top--lg padding--bottom is-block no-after"
             target="_blank"
           >
             <div class="bp-button is-outlined is-uppercase search-button">
               Visit Website
             </div>
-          </a>
+          </a> -->
         </div>
         <div
           class="col is-half padding--top--xl padding--bottom--xl product-image"
-          style="background-image: url('{{site.baseurl}}/images/project_tt_token.jpg')"
+          style="background-image: url('{{site.baseurl}}/images/project_gardens.png')"
         ></div>
       </div>
       <div class="row product-row padding--top--xl padding--bottom--xl">
@@ -258,15 +263,15 @@ layout: default
             A network of smart meters that manages our country's energy
             consumption.
           </p>
-          <a
+          <!-- <a
             href="{{ site.baseurl }}/#electricitymeters"
-            class="padding--top--lg padding--bottom is-block"
+            class="padding--top--lg padding--bottom is-block no-after"
             target="_blank"
           >
             <div class="bp-button is-outlined is-uppercase search-button">
               Visit Website
             </div>
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="row product-row padding--top--xl padding--bottom--xl">
@@ -284,24 +289,24 @@ layout: default
             endeavours.
           </p>
           <a
-            href="{{ site.baseurl }}/#ecanvas"
-            class="padding--top--lg padding--bottom is-block"
+            href="https://www.youtube.com/watch?v=tTio3SsVMvc"
+            class="padding--top--lg padding--bottom is-block no-after"
             target="_blank"
           >
             <div class="bp-button is-outlined is-uppercase search-button">
-              Visit Website
+              Watch Video
             </div>
           </a>
         </div>
         <div
           class="col is-half padding--top--xl padding--bottom--xl product-image"
-          style="background-image: url('{{site.baseurl}}/images/project_tt_token.jpg')"
+          style="background-image: url('{{site.baseurl}}/images/project_ecanvas.png')"
         ></div>
       </div>
       <div class="row product-row padding--top--xl padding--bottom--xl">
         <div
           class="col is-half padding--top--xl padding--bottom--xl product-image"
-          style="background-image: url('{{site.baseurl}}/images/project_tt_token.jpg')"
+          style="background-image: url('{{site.baseurl}}/images/project_smartgym.jpg')"
         ></div>
         <div
           class="col is-half padding--top--lg padding--bottom--lg padding--left--xl padding--right--xl"
@@ -317,15 +322,15 @@ layout: default
             at community gyms and paves the way for uplifting the population
             wellness.
           </p>
-          <a
+          <!-- <a
             href="{{ site.baseurl }}/#smartgym"
-            class="padding--top--lg padding--bottom is-block"
+            class="padding--top--lg padding--bottom is-block no-after"
             target="_blank"
           >
             <div class="bp-button is-outlined is-uppercase search-button">
               Visit Website
             </div>
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="row product-row padding--top--xl padding--bottom--xl">
@@ -343,18 +348,18 @@ layout: default
             Singapore.
           </p>
           <a
-            href="{{ site.baseurl }}/#gale"
-            class="padding--top--lg padding--bottom is-block"
+            href="https://www.8world.com/news/singapore/article/govtech-pab-1009726"
+            class="padding--top--lg padding--bottom is-block no-after"
             target="_blank"
           >
             <div class="bp-button is-outlined is-uppercase search-button">
-              Visit Website
+              Read More (in Chinese)
             </div>
           </a>
         </div>
         <div
           class="col is-half padding--top--xl padding--bottom--xl product-image"
-          style="background-image: url('{{site.baseurl}}/images/project_tt_token.jpg')"
+          style="background-image: url('{{site.baseurl}}/images/project_gale.png')"
         ></div>
       </div>
     </div>
