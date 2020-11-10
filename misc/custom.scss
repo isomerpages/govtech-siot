@@ -143,12 +143,23 @@ details summary {
 
 .product-tag {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   padding: 4px 8px;
-  margin-bottom: 8px;
+  margin: 0 2px 8px 0;
   border-radius: 4px;
   color: #ffffff;
   border: 1.5px solid #ffffff;
+}
+
+.floating-image {
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 20rem;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
 }
 
 // Mixins
@@ -563,13 +574,16 @@ details summary {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 32px;
-  height: 20rem;
+  height: 16rem;
+  margin: auto;
+  border-radius: 80px;
 }
 
 @include mobile {
-  .product-row {
-    padding: 2rem 0 1rem !important;
+  .product-row,
+  .contact-row {
+    padding: 1rem 0 1rem !important;
+    text-align: center;
   }
 
   .product-row:nth-child(even) {
