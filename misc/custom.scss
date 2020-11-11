@@ -514,13 +514,6 @@ details summary {
 .product-row {
   display: flex;
   flex-direction: row;
-
-  .col {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-  }
 }
 
 .product-image {
@@ -535,6 +528,13 @@ details summary {
 }
 
 @media screen and (min-width: 768px) {
+  .product-row .col {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
   .product-row:nth-child(odd) {
     .col {
       text-align: right;
