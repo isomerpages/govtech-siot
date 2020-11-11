@@ -26,7 +26,7 @@
 <circle cx="1321" cy="641" r="9" transform="rotate(-180 1321 641)" fill="white" stroke="white" stroke-width="12"/>
 <rect x="1399.59" y="444.485" width="110.457" height="12" rx="6" transform="rotate(135 1399.59 444.485)" fill="white"/>
 <rect x="1391.11" y="373.59" width="110.457" height="12" rx="6" transform="rotate(-135 1391.11 373.59)" fill="white"/>
-<path d="M1321 509C1324.31 509 1327 511.686 1327 515L1327 650C1327 653.314 1324.31 656 1321 656V656C1317.69 656 1315 653.314 1315 650L1315 515C1315 511.686 1317.69 509 1321 509V509Z" fill="white"/>
+<path d="M1321 509C1324.31 509 1327 511.686 1327 515L1327 650C1327 653.314 1324.31 656 1321 656C1317.69 656 1315 653.314 1315 650L1315 515C1315 511.686 1317.69 509 1321 509Z" fill="white"/>
 <rect x="1327" y="165" width="136" height="12" rx="6" transform="rotate(90 1327 165)" fill="white"/>
 <rect x="1398" y="360" width="90" height="12" rx="6" transform="rotate(90 1398 360)" fill="white"/>
 <circle cx="1369" cy="641" r="9" transform="rotate(-180 1369 641)" fill="white" stroke="white" stroke-width="12"/>
@@ -82,10 +82,10 @@
 <circle r="9" transform="matrix(-1 0 0 1 1360 1244)" fill="white" stroke="white" stroke-width="12"/>
 <rect width="186.62" height="12" rx="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1492 1639.51)" fill="white"/>
 <rect width="293" height="12" rx="6.00001" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 1366 1522)" fill="white"/>
-<circle r="9" transform="matrix(-1 0 0 1 1367 1086)" fill="white" stroke="white" stroke-width="12"/>
+<circle r="9" transform="matrix(-1 0 0 1 1367 954)" fill="white" stroke="white" stroke-width="12"/>
 <rect width="186.62" height="12" rx="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1533 1618.51)" fill="white"/>
-<rect width="387" height="12" rx="6.00001" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 1407 1501)" fill="white"/>
-<rect width="67.6707" height="12" rx="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1409.34 1118.85)" fill="white"/>
+<rect width="520" height="12" rx="6.00001" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 1407 1501)" fill="white"/>
+<rect width="67.6707" height="12" rx="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1409.34 986.85)" fill="white"/>
 <circle cx="1398" cy="2313" r="9" transform="rotate(180 1398 2313)" fill="white" stroke="white" stroke-width="12"/>
 <circle cx="1341" cy="2153" r="9" transform="rotate(180 1341 2153)" fill="white" stroke="white" stroke-width="12"/>
 <rect x="1530" y="1686.49" width="186.62" height="12" rx="6" transform="rotate(135 1530 1686.49)" fill="white"/>
