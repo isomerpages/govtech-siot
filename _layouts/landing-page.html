@@ -34,7 +34,10 @@ layout: default
     overflow: hidden;
   }
   .bp-hero {
-    background: url("{{site.baseurl}}/images/hero-earth.webp")
+    /* tried downloading the img file locally, but safari doesn't support webp and the workaround
+       is annoying. let's just leave it as the unsplash url for now, which automatically serves the
+       appropriate img format based on browser */
+    background: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80")
       no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
@@ -136,7 +139,7 @@ layout: default
     </svg>
   </div>
   <img class="circuit-board-divider" src="{{site.baseurl}}/images/circuit-board/circuit_board_big.svg" width="100%" height="auto">
-  <div class="bp-container padding--bottom--xl">
+  <div class="bp-container padding--bottom--xl padding--left--lg padding--right--lg">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white">WHAT WE DO</p>
       <h1 class="margin--bottom--lg has-text-white"><b>Our Projects</b></h1>
@@ -147,9 +150,11 @@ layout: default
       </div>
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white"><b>TraceTogether Token</b></h4>
-        <div class="product-tag">SG United</div>
-        <div class="product-tag">Bluetooth</div>
-        <div class="product-tag">Low-power</div>
+        <div>
+          <div class="product-tag">SG United</div>
+          <div class="product-tag">Bluetooth</div>
+          <div class="product-tag">Low-power</div>
+        </div>
         <p class="has-text-white">A bluetooth token that aids contact tracing efforts for COVID-19.</p>
         <a
           href="https://www.tracetogether.gov.sg/common/token/"
@@ -165,10 +170,12 @@ layout: default
     <div class="row product-row padding--top--lg padding--bottom--lg">
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white"><b>Smart Gardens</b></h4>
-        <div class="product-tag">Smart Lamppost</div>
-        <div class="product-tag">Smart Cities</div>
-        <div class="product-tag">Mesh</div>
-        <div class="product-tag">Sensors</div>
+        <div>
+          <div class="product-tag">Smart Lamppost</div>
+          <div class="product-tag">Smart Cities</div>
+          <div class="product-tag">Mesh</div>
+          <div class="product-tag">Sensors</div>
+        </div>
         <p class="has-text-white">
           An integrated system of lamppost, sensors, and robots in the heart of
           Singapore.
@@ -184,10 +191,12 @@ layout: default
       </div>
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white"><b>Electricity Meters</b></h4>
-        <div class="product-tag">Smart Cities</div>
-        <div class="product-tag">Wireless</div>
-        <div class="product-tag">IoT</div>
-        <div class="product-tag">Environment</div>
+        <div>
+          <div class="product-tag">Smart Cities</div>
+          <div class="product-tag">Wireless</div>
+          <div class="product-tag">IoT</div>
+          <div class="product-tag">Environment</div>
+        </div>
         <p class="has-text-white">
           A network of smart meters that manages our country's energy
           consumption.
@@ -197,10 +206,12 @@ layout: default
     <div class="row product-row padding--top--lg padding--bottom--lg">
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white"><b>eCanvas</b></h4>
-        <div class="product-tag">AI</div>
-        <div class="product-tag">Mechatronics</div>
-        <div class="product-tag">Mechanical</div>
-        <div class="product-tag">Social Good</div>
+        <div>
+          <div class="product-tag">AI</div>
+          <div class="product-tag">Mechatronics</div>
+          <div class="product-tag">Mechanical</div>
+          <div class="product-tag">Social Good</div>
+        </div>
         <p class="has-text-white">
           A robotics structure with a voice-command interface that allows persons with disabilities to pursue their artistic endeavors independently.
         </p>
@@ -224,11 +235,13 @@ layout: default
       </div>
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white"><b>Smart Gym</b></h4>
-        <div class="product-tag">Sensors</div>
-        <div class="product-tag">Cloud</div>
-        <div class="product-tag">UI</div>
-        <div class="product-tag">Full Stack</div>
-        <div class="product-tag">Health & Wellness</div>
+        <div>
+          <div class="product-tag">Sensors</div>
+          <div class="product-tag">Cloud</div>
+          <div class="product-tag">UI</div>
+          <div class="product-tag">Full Stack</div>
+          <div class="product-tag">Health & Wellness</div>
+        </div>
         <p class="has-text-white">
           A network of sensor-integrated gym equipment at community gyms, uplifting the wellness of Singaporeans.
         </p>
@@ -239,9 +252,11 @@ layout: default
         <h4 class="padding--bottom has-text-white">
           <b>GALE (GovTech Assisted Living Ecosystem)</b>
         </h4>
-        <div class="product-tag">Wireless</div>
-        <div class="product-tag">Cloud</div>
-        <div class="product-tag">Embedded</div>
+        <div>
+          <div class="product-tag">Wireless</div>
+          <div class="product-tag">Cloud</div>
+          <div class="product-tag">Embedded</div>
+        </div>
         <p class="has-text-white">
           An ecosystem built to support the assisted living infrastructure in
           Singapore.
@@ -318,14 +333,14 @@ layout: default
     </svg>
   </div>
   <img class="circuit-board-divider" src="{{site.baseurl}}/images/circuit-board/circuit_board_small.svg" width="100%" height="auto">
-  <div class="bp-container padding--bottom--xl">
+  <div class="bp-container padding--bottom--xl padding--left--lg padding--right--lg">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white">CHAT WITH US</p>
       <h1 class="margin--bottom--lg has-text-white"><b>Contact Us</b></h1>
     </div>
     <div class="row contact-row is-centered padding--top--lg padding--bottom--lg">
       <img class="contact-image padding--top--lg" src="images/contact_career.svg" alt=""/>
-      <div class="col is-half padding--lg">
+      <div class="col is-half">
         <h4 class="padding--bottom has-text-white"><b>Career</b></h4>
         <p class="has-text-white">
           We are constantly looking for skilled and passionate individuals to join us. We have various positions available, including both full and part time positions. 
@@ -343,7 +358,7 @@ layout: default
     </div>
     <div class="row contact-row is-centered padding--top--lg padding--bottom--lg">
       <img class="contact-image padding--top--lg" src="images/contact_contact_us.svg" alt=""/>
-      <div class="col is-half padding--lg">
+      <div class="col is-half">
         <h4 class="padding--bottom has-text-white"><b>Contact Us</b></h4>
         <p class="has-text-white">
           Have any questions or feedback? Get details on our location and email.

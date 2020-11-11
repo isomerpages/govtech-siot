@@ -514,6 +514,13 @@ details summary {
 .product-row {
   display: flex;
   flex-direction: row;
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
 }
 
 .product-image {
@@ -521,16 +528,40 @@ details summary {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 16rem;
   margin: auto;
-  border-radius: 80px;
+  border-radius: 40px;
+  width: 100%;
+  padding-bottom: 75%;
+}
+
+@media screen and (min-width: 768px) {
+  .product-row:nth-child(odd) {
+    .col {
+      text-align: right;
+    }
+    .product-image {
+      margin-left: 0;
+    }
+  }
+
+  .product-row:nth-child(even) {
+    .product-image {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .product-image {
+    width: 80%;
+    padding-bottom: 60%;
+  }
 }
 
 @include mobile {
   .product-row,
   .contact-row {
-    padding: 1rem 0 1rem !important;
-    text-align: center;
+    padding: 1rem 0 !important;
   }
 
   .product-row:nth-child(even) {
@@ -539,14 +570,5 @@ details summary {
 
   .product-row:nth-child(odd) {
     flex-direction: column-reverse;
-  }
-
-  .product-row:last-child {
-    padding-bottom: 0 !important;
-  }
-
-  .product-image {
-    height: 50vw;
-    flex-basis: auto;
   }
 }
