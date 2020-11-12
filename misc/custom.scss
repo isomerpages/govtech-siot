@@ -594,19 +594,32 @@ details summary {
 }
 
 #headline1 {
+  -webkit-animation: animated-text1 1.5s steps(30, end) 1 normal both;
   animation: animated-text1 1.5s steps(30, end) 1 normal both;
 }
 
 #headline2 {
+  -webkit-animation: animated-text2 1.5s steps(30, end) 1.5s 1 normal both;
   animation: animated-text2 1.5s steps(30, end) 1.5s 1 normal both;
 }
 
 #cursor1 {
+  -webkit-animation: animated-cursor 500ms steps(30, end) 3 forwards;
   animation: animated-cursor 500ms steps(30, end) 3 forwards;
 }
 
 #cursor2 {
+  -webkit-animation: animated-cursor 500ms steps(30, end) 1.5s infinite;
   animation: animated-cursor 500ms steps(30, end) 1.5s infinite;
+}
+
+@-webkit-keyframes animated-cursor {
+  from {
+    border-bottom-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-bottom-color: transparent;
+  }
 }
 
 @keyframes animated-cursor {
@@ -627,12 +640,30 @@ details summary {
     height: 4rem;
   }
 
+  @-webkit-keyframes animated-text1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 350px;
+    }
+  }
+
   @keyframes animated-text1 {
     from {
       width: 0;
     }
     to {
       width: 350px;
+    }
+  }
+
+  @-webkit-keyframes animated-text2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 370px;
     }
   }
 
@@ -655,12 +686,30 @@ details summary {
     height: 5.5rem;
   }
 
+  @-webkit-keyframes animated-text1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 430px;
+    }
+  }
+
   @keyframes animated-text1 {
     from {
       width: 0;
     }
     to {
       width: 430px;
+    }
+  }
+
+  @-webkit-keyframes animated-text2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 490px;
     }
   }
 
@@ -679,12 +728,30 @@ details summary {
     width: 40px;
   }
 
+  @-webkit-keyframes animated-text1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 520px;
+    }
+  }
+
   @keyframes animated-text1 {
     from {
       width: 0;
     }
     to {
       width: 520px;
+    }
+  }
+
+  @-webkit-keyframes animated-text2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 590px;
     }
   }
 
@@ -699,12 +766,29 @@ details summary {
 }
 
 @media screen and (min-width: 1023px) {
+  @-webkit-keyframes animated-text1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 750px;
+    }
+  }
   @keyframes animated-text1 {
     from {
       width: 0;
     }
     to {
       width: 750px;
+    }
+  }
+
+  @-webkit-keyframes animated-text2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 790px;
     }
   }
 
