@@ -535,13 +535,16 @@ layout: default
     <div
       class="col is-8 is-offset-2 has-text-centered padding--top--xl margin--top--xl"
     >
-      <p class="margin--bottom eyebrow is-uppercase has-text-white">
+      <p
+        class="margin--bottom eyebrow is-uppercase has-text-white"
+        id="contact_us_trigger"
+      >
         CHAT WITH US
       </p>
       <h1 class="margin--bottom--lg has-text-white"><b>Contact Us</b></h1>
     </div>
     <div
-      class="row text-mobile-center is-centered padding--top--lg padding--bottom--lg"
+      class="row text-mobile-center is-centered padding--top--lg padding--bottom--lg hinge-in"
     >
       <img
         class="contact-image padding--top--lg"
@@ -566,7 +569,7 @@ layout: default
       </div>
     </div>
     <div
-      class="row text-mobile-center is-centered padding--top--lg padding--bottom--lg"
+      class="row text-mobile-center is-centered padding--top--lg padding--bottom--lg hinge-in"
     >
       <img
         class="contact-image padding--top--lg"
@@ -598,10 +601,36 @@ layout: default
     firstSection.scrollIntoView({ behavior: "smooth" });
   };
 
+  window.onload = function () {
+    contactUsHingeAnimation();
+  };
+
   window.onscroll = function () {
     const html = document.getElementsByTagName("html")[0];
     if (html.scrollTop > 200)
       document.getElementById("navbar").classList.add("show");
     else document.getElementById("navbar").classList.remove("show");
+
+    contactUsHingeAnimation();
   };
+
+  function contactUsHingeAnimation() {
+    var contactUsSection = document.getElementById("contact_us_trigger");
+    if (isScrolledIntoView(contactUsSection)) {
+      var elements = document.getElementsByClassName("hinge-in");
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].classList.add("active");
+      }
+    }
+  }
+
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return elemBottom <= docViewBottom && elemTop >= docViewTop;
+  }
 </script>

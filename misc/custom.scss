@@ -841,3 +841,18 @@ details summary {
     }
   }
 }
+
+/*
+* CONTACT US HINGE ANIMATION
+*/
+
+.hinge-in {
+  transform: perspective(2000px) rotateX(-90deg);
+  transform-origin: top;
+  transition-property: transform;
+  transition: transform 1s;
+}
+
+.hinge-in.active {
+  transform: perspective(2000px) rotate(0deg);
+}
