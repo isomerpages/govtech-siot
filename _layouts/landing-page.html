@@ -35,8 +35,8 @@ layout: default
   }
   .bp-hero {
     /* tried downloading the img file locally, but safari doesn't support webp and the workaround
-       is annoying. let's just leave it as the unsplash url for now, which automatically serves the
-       appropriate img format based on browser */
+           is annoying. let's just leave it as the unsplash url for now, which automatically serves the
+           appropriate img format based on browser */
     background: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80")
       no-repeat center center;
     -webkit-background-size: cover;
@@ -84,7 +84,14 @@ layout: default
         /> -->
         <!-- <p class="margin--bottom--lg">Sensors & IoT, GovTech</p> -->
         <h1 class="display padding--bottom--lg margin--none">
-          <b>Sensing Singapore,<br />Connecting Citizens</b>
+          <div id="headline1" class="headline">
+            Sensing Singapore,
+            <div id="cursor1" class="cursor"></div>
+          </div>
+          <div id="headline2" class="headline">
+            Connecting Citizens
+            <div id="cursor2" class="cursor"></div>
+          </div>
         </h1>
         <p class="margin--bottom--xl">
           We are developers, engineers, and creatives building IoT products in

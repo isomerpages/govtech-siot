@@ -572,3 +572,148 @@ details summary {
     flex-direction: column-reverse;
   }
 }
+
+/* 
+* TYPE WRITER ANIMATION AND CONFIGURATION 
+*/
+
+.headline {
+  color: white;
+  height: 6rem;
+  margin: 0 auto;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cursor {
+  border-bottom: solid 5px rgba(255, 255, 255, 0.75);
+  position: absolute;
+  right: 0;
+  width: 40px;
+}
+
+#headline1 {
+  animation: animated-text1 1.5s steps(30, end) 1 normal both;
+}
+
+#headline2 {
+  animation: animated-text2 1.5s steps(30, end) 1.5s 1 normal both;
+}
+
+#cursor1 {
+  animation: animated-cursor 500ms steps(30, end) 3 forwards;
+}
+
+#cursor2 {
+  animation: animated-cursor 500ms steps(30, end) 1.5s infinite;
+}
+
+@keyframes animated-cursor {
+  from {
+    border-bottom-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-bottom-color: transparent;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .cursor {
+    width: 20px;
+  }
+
+  .headline {
+    height: 4rem;
+  }
+
+  @keyframes animated-text1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 350px;
+    }
+  }
+
+  @keyframes animated-text2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 370px;
+    }
+  }
+}
+
+@media screen and (min-width: 569px) {
+  .cursor {
+    width: 25px;
+  }
+
+  .headline {
+    height: 5.5rem;
+  }
+
+  @keyframes animated-text1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 430px;
+    }
+  }
+
+  @keyframes animated-text2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 490px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .cursor {
+    width: 40px;
+  }
+
+  @keyframes animated-text1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 520px;
+    }
+  }
+
+  @keyframes animated-text2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 590px;
+    }
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  @keyframes animated-text1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 750px;
+    }
+  }
+
+  @keyframes animated-text2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 790px;
+    }
+  }
+}
