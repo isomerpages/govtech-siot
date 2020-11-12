@@ -53,6 +53,13 @@ layout: default
     height: 200px;
     padding: 0 2rem 2rem 2rem !important;
   }
+  .people-image {
+    max-height: 20rem;
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+    margin-right: 0;
+  }
   .contact-image {
     height: 200px;
     padding: 0 2rem 0 2rem !important;
@@ -62,8 +69,14 @@ layout: default
 <!-- Section 1 (Intro) -->
 <section class="bp-hero bg-hero">
   <div class="bp-hero-body padding--none">
-    <div class="row is-vcentered is-centered ma" style="margin: 0 auto; display: flex; height: 100%;">
-      <div class="col has-text-white has-text-centered" style="margin-top: -100px;">
+    <div
+      class="row is-vcentered is-centered ma"
+      style="margin: 0 auto; display: flex; height: 100%"
+    >
+      <div
+        class="col has-text-white has-text-centered"
+        style="margin-top: -100px"
+      >
         <!-- logo -->
         <!-- <img
           src="{{ site.baseurl }}/images/logo_w_gt.png"
@@ -74,12 +87,14 @@ layout: default
           <b>Sensing Singapore,<br />Connecting Citizens</b>
         </h1>
         <p class="margin--bottom--xl">
-          We are developers, engineers, and creatives building IoT products in cross-functional teams.
+          We are developers, engineers, and creatives building IoT products in
+          cross-functional teams.
         </p>
         <button
           id="read-more"
           class="bp-button is-white is-outlined is-uppercase search-button"
-          >Read More
+        >
+          Read More
         </button>
       </div>
     </div>
@@ -90,10 +105,9 @@ layout: default
 <section class="bp-section" id="philosophy">
   <div class="bp-container padding--bottom--xl">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
-      <p class="margin--bottom eyebrow is-uppercase">About Us</p>
+      <p class="margin--bottom eyebrow is-uppercase">How we work</p>
       <h1 class="margin--bottom--lg has-text-primary"><b>Our Vision</b></h1>
     </div>
-
     <div class="row">
       <div class="col is-one-third padding has-text-centered">
         <img
@@ -102,9 +116,7 @@ layout: default
           alt=""
         />
         <h4 class="margin--bottom"><b>Inspire & Realize Ideas</b></h4>
-        <p>
-          We build IoT solutions where it makes a difference for citizens.
-        </p>
+        <p>We build IoT solutions where it makes a difference for citizens.</p>
       </div>
       <div class="col is-one-third padding has-text-centered">
         <img
@@ -131,31 +143,126 @@ layout: default
   </div>
 </section>
 
-<!-- Section 3 (Projects) -->
-<section class="bp-section padding--left--none padding--right--none relative" style="background-color: #007c89;">
+<!-- Section 3 (People) -->
+<section class="bp-section" id="philosophy">
+  <div class="bp-container padding--bottom--xl">
+    <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
+      <p class="margin--bottom eyebrow is-uppercase">About Us</p>
+      <h1 class="margin--bottom--lg has-text-primary"><b>Our People</b></h1>
+    </div>
+    <div class="row product-row is-centered">
+      <div class="col is-half padding--right--lg">
+        <img
+          class="people-image"
+          src="{{site.baseurl}}/images/siot_group.jpg"
+          alt="siot"
+        />
+      </div>
+      <div class="col is-half">
+        <div class="padding--bottom--lg">
+          <p>
+            We are a fast-growing team of builders who want to use our skills
+            for the public good. We have a flat team structure because everyone
+            can contribute equally to solving hard problems, and believe that to
+            approach the right solutions requires a diversity of experiences,
+            skills, and perspectives.
+          </p>
+        </div>
+        <p>Our work spans the gamut of Internet of Things technologies:</p>
+        <div class="row margin--none">
+          <div class="col">
+            <p>
+              • Embedded Systems Engineers<br />
+              • Software Developers<br />
+              • AI engineers
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              • Mechanical Engineers<br />
+              • System Architects<br />
+              • Project Managers
+            </p>
+          </div>
+        </div>
+        <p>coming together to deliver great solutions.</p>
+      </div>
+    </div>
+    <!-- <div class="has-text-centered padding">
+      <p>Our work spans the gamut of Internet of Things technologies:</p>
+    </div>
+    <div class="row is-centered">
+      <div class="col is-one-third">
+        <p>
+          • Embedded Systems Engineers<br />
+          • Software Developers<br />
+          • AI engineers
+        </p>
+      </div>
+      <div class="col is-one-third">
+        <p>
+          • Mechanical Engineers<br />
+          • System Architects<br />
+          • Project Managers
+        </p>
+      </div>
+    </div>
+    <div class="has-text-centered padding">
+      <p>coming together to deliver great solutions.</p>
+    </div> -->
+  </div>
+</section>
+
+<!-- Section 4 (Projects) -->
+<section
+  class="bp-section padding--left--none padding--right--none relative"
+  style="background-color: #007c89"
+>
   <div class="shape-divider-top-right">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+    >
       <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#FFFFFF"></path>
     </svg>
   </div>
-  <img class="circuit-board-divider" src="{{site.baseurl}}/images/circuit-board/circuit_board_big.svg" width="100%" height="auto">
-  <div class="bp-container padding--bottom--xl padding--left--lg padding--right--lg">
+  <img
+    class="circuit-board-divider"
+    src="{{site.baseurl}}/images/circuit-board/circuit_board_big.svg"
+    width="100%"
+    height="auto"
+  />
+  <div
+    class="bp-container padding--bottom--xl padding--left--lg padding--right--lg"
+  >
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
-      <p class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white">WHAT WE DO</p>
+      <p
+        class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white"
+      >
+        WHAT WE DO
+      </p>
       <h1 class="margin--bottom--lg has-text-white"><b>Our Projects</b></h1>
     </div>
     <div class="row product-row padding--top--lg padding--bottom--lg">
       <div class="col is-half padding--left--lg padding--right--lg">
-        <div class="product-image" style="background-image: url('{{site.baseurl}}/images/project_tt_token.jpg')"></div>
+        <div
+          class="product-image"
+          style="background-image: url('{{site.baseurl}}/images/project_tt_token.jpg')"
+        ></div>
       </div>
       <div class="col is-half padding--left--lg padding--right--lg">
-        <h4 class="padding--bottom has-text-white"><b>TraceTogether Token</b></h4>
+        <h4 class="padding--bottom has-text-white">
+          <b>TraceTogether Token</b>
+        </h4>
         <div>
           <div class="product-tag">SG United</div>
           <div class="product-tag">Bluetooth</div>
           <div class="product-tag">Low-power</div>
         </div>
-        <p class="has-text-white">A bluetooth token that aids contact tracing efforts for COVID-19.</p>
+        <p class="has-text-white">
+          A bluetooth token that aids contact tracing efforts for COVID-19.
+        </p>
         <a
           href="https://www.tracetogether.gov.sg/common/token/"
           class="padding--top--lg padding--bottom is-block no-after"
@@ -182,15 +289,23 @@ layout: default
         </p>
       </div>
       <div class="col is-half padding--left--lg padding--right--lg">
-        <div class="product-image" style="background-image: url('{{site.baseurl}}/images/project_gardens.png')"></div>
+        <div
+          class="product-image"
+          style="background-image: url('{{site.baseurl}}/images/project_gardens.png')"
+        ></div>
       </div>
     </div>
     <div class="row product-row padding--top--lg padding--bottom--lg">
       <div class="col is-half padding--left--lg padding--right--lg">
-        <div class="product-image" style="background-image: url('{{site.baseurl}}/images/project_emeter.png')"></div>
+        <div
+          class="product-image"
+          style="background-image: url('{{site.baseurl}}/images/project_emeter.png')"
+        ></div>
       </div>
       <div class="col is-half padding--left--lg padding--right--lg">
-        <h4 class="padding--bottom has-text-white"><b>Electricity Meters</b></h4>
+        <h4 class="padding--bottom has-text-white">
+          <b>Electricity Meters</b>
+        </h4>
         <div>
           <div class="product-tag">Smart Cities</div>
           <div class="product-tag">Wireless</div>
@@ -213,7 +328,9 @@ layout: default
           <div class="product-tag">Social Good</div>
         </div>
         <p class="has-text-white">
-          A robotics structure with a voice-command interface that allows persons with disabilities to pursue their artistic endeavors independently.
+          A robotics structure with a voice-command interface that allows
+          persons with disabilities to pursue their artistic endeavors
+          independently.
         </p>
         <a
           href="https://www.youtube.com/watch?v=tTio3SsVMvc"
@@ -226,12 +343,18 @@ layout: default
         </a>
       </div>
       <div class="col is-half padding--left--lg padding--right--lg">
-        <div class="product-image" style="background-image: url('{{site.baseurl}}/images/project_ecanvas.png')"></div>
+        <div
+          class="product-image"
+          style="background-image: url('{{site.baseurl}}/images/project_ecanvas.png')"
+        ></div>
       </div>
     </div>
     <div class="row product-row padding--top--lg padding--bottom--lg">
       <div class="col is-half padding--left--lg padding--right--lg">
-        <div class="product-image" style="background-image: url('{{site.baseurl}}/images/project_smartgym.jpg')"></div>
+        <div
+          class="product-image"
+          style="background-image: url('{{site.baseurl}}/images/project_smartgym.jpg')"
+        ></div>
       </div>
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white"><b>Smart Gym</b></h4>
@@ -243,7 +366,8 @@ layout: default
           <div class="product-tag">Health & Wellness</div>
         </div>
         <p class="has-text-white">
-          A network of sensor-integrated gym equipment at community gyms, uplifting the wellness of Singaporeans.
+          A network of sensor-integrated gym equipment at community gyms,
+          uplifting the wellness of Singaporeans.
         </p>
       </div>
     </div>
@@ -272,25 +396,36 @@ layout: default
         </a>
       </div>
       <div class="col is-half padding--left--lg padding--right--lg">
-        <div class="product-image" style="background-image: url('{{site.baseurl}}/images/project_gale.png')"></div>
+        <div
+          class="product-image"
+          style="background-image: url('{{site.baseurl}}/images/project_gale.png')"
+        ></div>
       </div>
     </div>
   </div>
   <div class="shape-divider-bottom-right">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#FFFFFF"></path>
+    <svg
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+    >
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#FFFFFF"></path>
     </svg>
   </div>
 </section>
 
-<!-- Section 4 (Blog) -->
+<!-- Section 5 (Blog) -->
 <section class="bp-section">
   <div class="bp-container padding--bottom--xl">
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
       <p class="margin--bottom eyebrow is-uppercase">READ MORE ABOUT US</p>
       <h1 class="margin--bottom--lg has-text-primary"><b>Our Blog</b></h1>
     </div>
-    <div class="row padding--left--lg padding--right--lg">
+    <h4 class="has-text-secondary has-text-centered">
+      <b>- coming soon -</b>
+    </h4>
+    <!-- <div class="row padding--left--lg padding--right--lg">
       <div class="col is-one-third">
         <h4 class="padding--top--lg has-text-secondary"><b>
           A Day in the Life of a SIOT Software Developer</b></h4>
@@ -316,34 +451,60 @@ layout: default
         <h4 class="padding--top--lg has-text-secondary"><b>Developing Singpore's capability in Sensors & IoTs</b></h5>
         <p class="padding--top--sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis fugiat modi dolor illum temporibus libero, corporis ullam totam quaerat aperiam et enim recusandae velit quas nulla soluta accusantium. Iusto, commodi.</p>
         <a href="{{site.baseurl}}/careers/product-designer/" class="bp-sec-button margin--top padding--bottom">
-            <div>
-                <span>Read More</span>
-                <i class="sgds-icon sgds-icon-arrow-right is-size-4" aria-hidden="true"></i>
-            </div>
+          <div>
+              <span>Read More</span>
+              <i class="sgds-icon sgds-icon-arrow-right is-size-4" aria-hidden="true"></i>
+          </div>
         </a>
       </div>
+    </div> -->
   </div>
 </section>
 
-<!-- Section 5 (Contact Us) -->
-<section class="bp-section padding--left--none padding--right--none relative" style="background-color: #56638a;">
+<!-- Section 6 (Contact Us) -->
+<section
+  class="bp-section padding--left--none padding--right--none relative"
+  style="background-color: #56638a"
+>
   <div class="shape-divider-top-left">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+    >
       <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#FFFFFF"></path>
     </svg>
   </div>
-  <img class="circuit-board-divider" src="{{site.baseurl}}/images/circuit-board/circuit_board_small.svg" width="100%" height="auto">
-  <div class="bp-container padding--bottom--xl padding--left--lg padding--right--lg">
+  <img
+    class="circuit-board-divider"
+    src="{{site.baseurl}}/images/circuit-board/circuit_board_small.svg"
+    width="100%"
+    height="auto"
+  />
+  <div
+    class="bp-container padding--bottom--xl padding--left--lg padding--right--lg"
+  >
     <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
-      <p class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white">CHAT WITH US</p>
+      <p
+        class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white"
+      >
+        CHAT WITH US
+      </p>
       <h1 class="margin--bottom--lg has-text-white"><b>Contact Us</b></h1>
     </div>
-    <div class="row contact-row is-centered padding--top--lg padding--bottom--lg">
-      <img class="contact-image padding--top--lg" src="images/contact_career.svg" alt=""/>
+    <div
+      class="row contact-row is-centered padding--top--lg padding--bottom--lg"
+    >
+      <img
+        class="contact-image padding--top--lg"
+        src="images/contact_career.svg"
+        alt=""
+      />
       <div class="col is-half">
         <h4 class="padding--bottom has-text-white"><b>Career</b></h4>
         <p class="has-text-white">
-          We are constantly looking for skilled and passionate individuals to join us. We have various positions available, including both full and part time positions. 
+          Want to work in a collaborative, friendly environment to build better
+          IoT solutions for Singapore? We would love to hear from you!
         </p>
         <a
           href="https://careers.pageuppeople.com/688/cwlive/en/search/?=&search-keyword=SIOT&brand=government technology agency"
@@ -356,8 +517,14 @@ layout: default
         </a>
       </div>
     </div>
-    <div class="row contact-row is-centered padding--top--lg padding--bottom--lg">
-      <img class="contact-image padding--top--lg" src="images/contact_contact_us.svg" alt=""/>
+    <div
+      class="row contact-row is-centered padding--top--lg padding--bottom--lg"
+    >
+      <img
+        class="contact-image padding--top--lg"
+        src="images/contact_contact_us.svg"
+        alt=""
+      />
       <div class="col is-half">
         <h4 class="padding--bottom has-text-white"><b>Contact Us</b></h4>
         <p class="has-text-white">
@@ -378,11 +545,11 @@ layout: default
 </section>
 
 <script type="text/javascript">
-  document.getElementById("read-more").onclick = function() {
+  document.getElementById("read-more").onclick = function () {
     const firstSection = document.getElementById("philosophy");
-    firstSection.scrollIntoView({behavior: "smooth"});
-  }
-  
+    firstSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   window.onscroll = function () {
     const html = document.getElementsByTagName("html")[0];
     if (html.scrollTop > 200)
