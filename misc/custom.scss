@@ -847,13 +847,25 @@ details summary {
 */
 
 .hinge-in {
+  -webkit-transform: perspective(2000px) rotateX(-90deg);
   transform: perspective(2000px) rotateX(-90deg);
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
   transform-origin: top;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .hinge-in.active {
+  -webkit-transform: perspective(2000px) rotate(0deg);
   transform: perspective(2000px) rotate(0deg);
 }
 
@@ -863,28 +875,62 @@ details summary {
 
 .slide-right {
   opacity: 0;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
   transform: translateX(50%);
 }
 
 .slide-left {
   opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .slide-in-left {
+  -webkit-animation: slideInLeft 0.5s forwards linear;
   animation: slideInLeft 0.5s forwards linear;
 }
 
 .slide-in-right {
+  -webkit-animation: slideInRight 0.5s forwards linear;
   animation: slideInRight 0.5s forwards linear;
 }
 
-@keyframes slideInRight {
+@-webkit-keyframes slideInRight {
   0% {
+    -webkit-transform: translateX(50%);
     transform: translateX(50%);
     opacity: 0;
   }
   100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
@@ -892,10 +938,12 @@ details summary {
 
 @keyframes slideInLeft {
   0% {
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     opacity: 0;
   }
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
