@@ -62,6 +62,46 @@ layout: default
     height: 200px;
     padding: 0 2rem 0 2rem !important;
   }
+
+  .slide-right {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  .slide-left {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 0.5s forwards linear;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.5s forwards linear;
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 </style>
 
 <!-- Section 1 (Intro) -->
@@ -247,6 +287,7 @@ layout: default
 <section
   class="bp-section padding--left--none padding--right--none relative"
   style="background-color: #007c89"
+  id="project_trigger"
 >
   <div class="shape-divider-top-right">
     <svg
@@ -275,7 +316,7 @@ layout: default
       <h1 class="margin--bottom--lg has-text-white"><b>Our Projects</b></h1>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-left"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <div
@@ -307,7 +348,7 @@ layout: default
       </div>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-right"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white"><b>Smart Gardens</b></h4>
@@ -330,7 +371,7 @@ layout: default
       </div>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-left"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <div
@@ -357,7 +398,7 @@ layout: default
       </div>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-right"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white"><b>eCanvas</b></h4>
@@ -392,7 +433,7 @@ layout: default
       </div>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-left"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <div
@@ -418,7 +459,7 @@ layout: default
       </div>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-right"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white">
@@ -513,6 +554,7 @@ layout: default
 <section
   class="bp-section padding--left--none padding--right--none relative"
   style="background-color: #56638a"
+  id="contact_us_trigger"
 >
   <div class="shape-divider-top-left">
     <svg
@@ -535,10 +577,7 @@ layout: default
     <div
       class="col is-8 is-offset-2 has-text-centered padding--top--xl margin--top--xl"
     >
-      <p
-        class="margin--bottom eyebrow is-uppercase has-text-white"
-        id="contact_us_trigger"
-      >
+      <p class="margin--bottom eyebrow is-uppercase has-text-white">
         CHAT WITH US
       </p>
       <h1 class="margin--bottom--lg has-text-white"><b>Contact Us</b></h1>
@@ -603,6 +642,7 @@ layout: default
 
   window.onload = function () {
     contactUsHingeAnimation();
+    productRowTrigger();
   };
 
   window.onscroll = function () {
@@ -612,11 +652,12 @@ layout: default
     else document.getElementById("navbar").classList.remove("show");
 
     contactUsHingeAnimation();
+    productRowTrigger();
   };
 
   function contactUsHingeAnimation() {
     var contactUsSection = document.getElementById("contact_us_trigger");
-    if (isScrolledIntoView(contactUsSection)) {
+    if (isElementInViewport(contactUsSection, 20)) {
       var elements = document.getElementsByClassName("hinge-in");
       for (var i = 0; i < elements.length; i++) {
         elements[i].classList.add("active");
@@ -624,13 +665,40 @@ layout: default
     }
   }
 
-  function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+  function productRowTrigger() {
+    var projectSection = document.getElementById("project_trigger");
+    if (isElementInViewport(projectSection, 20)) {
+      var elements = document.getElementsByClassName("product-row");
+      for (var i = 0; i < elements.length; i++) {
+        if (
+          elements[i].classList.contains("slide-in-left") ||
+          elements[i].classList.contains("slide-in-right")
+        ) {
+          // do nothing, already animated!
+        } else {
+          elements[i].style.animationDelay = i * 0.4 + "s";
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+          if (elements[i].classList.contains("slide-left")) {
+            elements[i].classList.add("slide-in-left");
+          } else {
+            elements[i].classList.add("slide-in-right");
+          }
+        }
+      }
+    }
+  }
 
-    return elemBottom <= docViewBottom && elemTop >= docViewTop;
+  function isElementInViewport(el, percentVisible) {
+    var rect = el.getBoundingClientRect(),
+      windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+
+    return !(
+      Math.floor(
+        100 - ((rect.top >= 0 ? 0 : rect.top) / +-(rect.height / 1)) * 100
+      ) < percentVisible ||
+      Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) <
+        percentVisible
+    );
   }
 </script>

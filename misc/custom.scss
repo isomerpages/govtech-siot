@@ -856,3 +856,47 @@ details summary {
 .hinge-in.active {
   transform: perspective(2000px) rotate(0deg);
 }
+
+/* 
+* PROJECTS SLIDE ANIMATION
+*/
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s forwards linear;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s forwards linear;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
