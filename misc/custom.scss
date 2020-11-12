@@ -573,6 +573,48 @@ details summary {
   }
 }
 
+/*
+* PHILOSOPHY SECTION
+*/
+
+.philosophy-image {
+  height: 500px;
+  padding: 0 2rem 2rem 2rem !important;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  transition: transform 0.2s;
+}
+
+.philosophy-image:hover {
+  transform: scale(1.3);
+}
+
+#community_image {
+  background-image: url(../images/philosophy_communities.svg);
+}
+
+#community_image:hover {
+  background-image: url(../images/philosophy_communities_hover.svg);
+}
+
+#nation_image {
+  background-image: url(../images/philosophy_nation.svg);
+}
+
+#nation_image:hover {
+  background-image: url(../images/philosophy_nation_hover.svg);
+}
+
+#inspire_image {
+  background-image: url(../images/philosophy_inspire.svg);
+}
+
+#inspire_image:hover {
+  background-image: url(../images/philosophy_inspire_hover.svg);
+}
+
 /* 
 * TYPE WRITER ANIMATION AND CONFIGURATION 
 */
