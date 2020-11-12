@@ -147,11 +147,25 @@ layout: default
 </section>
 
 <!-- Section 3 (People) -->
-<section class="bp-section" id="philosophy">
+<section
+  class="bp-section relative"
+  style="background-color: #56638a; z-index: -99"
+>
+  <div class="shape-divider-top-left">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+    >
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#FFFFFF"></path>
+    </svg>
+  </div>
   <div class="bp-container padding--bottom--xl">
-    <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
-      <p class="margin--bottom eyebrow is-uppercase">About Us</p>
-      <h1 class="margin--bottom--lg has-text-primary"><b>Our People</b></h1>
+    <div
+      class="col is-8 is-offset-2 has-text-centered padding--top--xl margin--top--xl"
+    >
+      <p class="margin--bottom eyebrow is-uppercase has-text-white">About Us</p>
+      <h1 class="margin--bottom--lg has-text-white"><b>Our People</b></h1>
     </div>
     <div class="row product-row is-centered margin--bottom--xl">
       <div class="col is-half padding--right--lg">
@@ -161,7 +175,18 @@ layout: default
           alt="siot"
         />
       </div>
-      <div class="col is-half">
+      <div
+        class="col is-half has-text-white padding--left--lg padding--right--lg relative text-mobile-center"
+      >
+        <div class="floating-image">
+          <svg viewBox="12 20 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#445176"
+              d="M37.7,-58C51.2,-50.1,65.9,-43.4,75.9,-31.7C86,-19.9,91.4,-3,89.1,12.8C86.8,28.5,76.7,43.1,64.2,53.2C51.7,63.2,36.7,68.7,22.4,70C8.1,71.2,-5.5,68.3,-20,65.3C-34.5,62.3,-49.8,59.4,-58.9,50.3C-68.1,41.1,-71.1,25.9,-73.3,10.6C-75.5,-4.8,-76.9,-20.3,-72,-33.7C-67.1,-47.1,-56,-58.5,-43,-66.6C-29.9,-74.7,-15,-79.5,-1.4,-77.3C12.2,-75.2,24.3,-66,37.7,-58Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
         <div class="padding--bottom--lg">
           <p>
             We are a fast-growing team of builders who want to use our skills
@@ -171,24 +196,26 @@ layout: default
             skills, and perspectives.
           </p>
         </div>
-        <p>Our work spans the gamut of Internet of Things technologies:</p>
-        <div class="row margin--none">
-          <div class="col">
-            <p>
-              • Embedded Systems Engineers<br />
-              • Software Developers<br />
-              • AI engineers
-            </p>
+        <div class="padding--bottom--lg">
+          <p>Our work spans the gamut of Internet of Things technologies:</p>
+          <div class="row margin--none">
+            <div class="col">
+              <p>
+                • Embedded Systems Engineers<br />
+                • Software Developers<br />
+                • AI engineers
+              </p>
+            </div>
+            <div class="col">
+              <p>
+                • Mechanical Engineers<br />
+                • System Architects<br />
+                • Project Managers
+              </p>
+            </div>
           </div>
-          <div class="col">
-            <p>
-              • Mechanical Engineers<br />
-              • System Architects<br />
-              • Project Managers
-            </p>
-          </div>
+          <p>coming together to deliver great solutions.</p>
         </div>
-        <p>coming together to deliver great solutions.</p>
       </div>
     </div>
     <!-- <div class="has-text-centered padding">
@@ -227,7 +254,7 @@ layout: default
       viewBox="0 0 1200 120"
       preserveAspectRatio="none"
     >
-      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#FFFFFF"></path>
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="#56638A"></path>
     </svg>
   </div>
   <img
@@ -239,10 +266,10 @@ layout: default
   <div
     class="bp-container padding--bottom--xl padding--left--lg padding--right--lg"
   >
-    <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
-      <p
-        class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white"
-      >
+    <div
+      class="col is-8 is-offset-2 has-text-centered padding--top--xl margin--top--xl"
+    >
+      <p class="margin--bottom eyebrow is-uppercase has-text-white">
         WHAT WE DO
       </p>
       <h1 class="margin--bottom--lg has-text-white"><b>Our Projects</b></h1>
@@ -505,16 +532,16 @@ layout: default
   <div
     class="bp-container padding--bottom--xl padding--left--lg padding--right--lg"
   >
-    <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
-      <p
-        class="margin--top--xl margin--bottom eyebrow is-uppercase has-text-white"
-      >
+    <div
+      class="col is-8 is-offset-2 has-text-centered padding--top--xl margin--top--xl"
+    >
+      <p class="margin--bottom eyebrow is-uppercase has-text-white">
         CHAT WITH US
       </p>
       <h1 class="margin--bottom--lg has-text-white"><b>Contact Us</b></h1>
     </div>
     <div
-      class="row contact-row is-centered padding--top--lg padding--bottom--lg"
+      class="row text-mobile-center is-centered padding--top--lg padding--bottom--lg"
     >
       <img
         class="contact-image padding--top--lg"
@@ -539,7 +566,7 @@ layout: default
       </div>
     </div>
     <div
-      class="row contact-row is-centered padding--top--lg padding--bottom--lg"
+      class="row text-mobile-center is-centered padding--top--lg padding--bottom--lg"
     >
       <img
         class="contact-image padding--top--lg"

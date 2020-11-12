@@ -20,7 +20,6 @@
 
 - title: Contact Us
   url: /contact-us/
-
-- title: Blog
-  url: https://medium.com/siot
-  external: true
+# - title: Blog
+#   url: https://medium.com/siot
+#   external: true
