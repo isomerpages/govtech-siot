@@ -101,11 +101,8 @@ details summary {
 .floating-image {
   svg {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 20rem;
-    width: auto;
-    transform: translate(-50%, -50%);
+    transform: scale(1.2, 1.1);
+    z-index: -1;
   }
 }
 
@@ -560,8 +557,9 @@ details summary {
 
 @include mobile {
   .product-row,
-  .contact-row {
+  .text-mobile-center {
     padding: 1rem 0 !important;
+    text-align: center;
   }
 
   .product-row:nth-child(even) {
