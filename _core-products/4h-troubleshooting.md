@@ -19,7 +19,7 @@ collection_name: core-products
   </tr>
   <tr>
     <td>My MANUCA OS is unable to compile</td>
-    <td><details> <summary> Error: No module named fuzzywuzzy </summary> Check your mbed-os version by entering in the Terminal window in your repository folder: <br> <code>cd mbed-os/</code><br> <code>git branch</code> <br> It should show <code>* (HEAD detached at 1bf6b20df9)</code> <br> If it does not, enter <code>git checkout 1bf6b20df9 </code> </details></td>
+    <td><details> <summary> Error: No module named fuzzywuzzy </summary> Check your mbed-os version by entering in the Terminal window in your repository folder: <br> <code>cd mbed-os/</code><br> <code>git branch</code> <br> It should show <code>* (HEAD detached at cf4f12a123)</code> <br> If it does not, enter <code>git checkout cf4f12a123 </code> </details></td>
   </tr>
   <tr>
     <td>My MANUCA DK is unable to connect to the internet</td>
