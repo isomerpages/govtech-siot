@@ -842,31 +842,48 @@ details summary {
   }
 }
 
-/*
-* CONTACT US HINGE ANIMATION
+/* 
+* SCROLL INDICATOR (IN HERO) ANIMATION
 */
 
-.hinge-in {
-  -webkit-transform: perspective(2000px) rotateX(-90deg);
-  transform: perspective(2000px) rotateX(-90deg);
-  -webkit-transform-origin: top;
-  -ms-transform-origin: top;
-  transform-origin: top;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  -o-transition-property: transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  -o-transition: transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+#scroll-down {
+  position: absolute;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite 3s;
+  animation: sdb05 1.5s infinite 3s;
+  box-sizing: border-box;
 }
-
-.hinge-in.active {
-  -webkit-transform: perspective(2000px) rotate(0deg);
-  transform: perspective(2000px) rotate(0deg);
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
 
 /* 

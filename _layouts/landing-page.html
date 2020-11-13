@@ -7,7 +7,7 @@ layout: default
     font-family: Lato, sans-serif;
   }
   html.has-navbar-fixed-top-widescreen {
-    padding-top: 28px !important;
+    padding-top: 128px !important;
   }
   @media screen and (max-width: 570px) {
     .display {
@@ -18,17 +18,6 @@ layout: default
   #navbar {
     position: fixed;
     top: 0;
-  }
-  .navbar {
-    visibility: hidden;
-    position: fixed;
-    opacity: 0;
-    width: 100%;
-    transition: opacity 0.2s ease-in;
-  }
-  #navbar.show .navbar {
-    visibility: visible;
-    opacity: 100%;
   }
   .bp-masthead {
     overflow: hidden;
@@ -43,9 +32,10 @@ layout: default
     background-size: cover;
   }
   .bp-hero-body .row {
-    height: 700px;
-    min-height: calc(100vh - 28px);
+    height: 600px;
+    min-height: calc(100vh - 128px);
   }
+
   .no-after::after {
     display: none !important;
   }
@@ -99,12 +89,14 @@ layout: default
           We are developers, engineers, and creatives building IoT products in
           cross-functional teams.
         </p>
-        <button
-          id="read-more"
-          class="bp-button is-white is-outlined is-uppercase search-button"
-        >
-          Read More
-        </button>
+        <!-- <a href="#philosophy">
+          <button
+            class="bp-button is-white is-outlined is-uppercase search-button"
+          >
+            Read More
+          </button>
+        </a> -->
+        <div id="scroll-down"></div>
       </div>
     </div>
   </div>
@@ -206,8 +198,8 @@ layout: default
             <div class="col padding--top--none padding--bottom--none">
               <p>
                 • Embedded Systems Engineers<br />
-                • Software Developers<br />
-                • AI engineers
+                • Software Engineers<br />
+                • AI Engineers
               </p>
             </div>
             <div class="col padding--top--none padding--bottom--none">
@@ -222,28 +214,6 @@ layout: default
         </div>
       </div>
     </div>
-    <!-- <div class="has-text-centered padding">
-      <p>Our work spans the gamut of Internet of Things technologies:</p>
-    </div>
-    <div class="row is-centered">
-      <div class="col is-one-third">
-        <p>
-          • Embedded Systems Engineers<br />
-          • Software Developers<br />
-          • AI engineers
-        </p>
-      </div>
-      <div class="col is-one-third">
-        <p>
-          • Mechanical Engineers<br />
-          • System Architects<br />
-          • Project Managers
-        </p>
-      </div>
-    </div>
-    <div class="has-text-centered padding">
-      <p>coming together to deliver great solutions.</p>
-    </div> -->
   </div>
 </section>
 
@@ -280,7 +250,8 @@ layout: default
       <h1 class="margin--bottom--lg has-text-white"><b>Our Projects</b></h1>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-left"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-left slide-in-left"
+      style="animation-delay: 0ms"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <div
@@ -312,7 +283,8 @@ layout: default
       </div>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-right"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-right slide-in-right"
+      style="animation-delay: 400ms"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white"><b>Smart Gardens</b></h4>
@@ -335,7 +307,8 @@ layout: default
       </div>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-left"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-left slide-in-left"
+      style="animation-delay: 800ms"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <div
@@ -362,7 +335,8 @@ layout: default
       </div>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-right"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-right slide-in-right"
+      style="animation-delay: 1200ms"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white"><b>eCanvas</b></h4>
@@ -397,7 +371,8 @@ layout: default
       </div>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-left"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-left slide-in-left"
+      style="animation-delay: 1600ms"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <div
@@ -423,7 +398,8 @@ layout: default
       </div>
     </div>
     <div
-      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-right"
+      class="row product-row padding--top--lg padding--bottom--lg margin--bottom--xl slide-right slide-in-right"
+      style="animation-delay: 2000ms"
     >
       <div class="col is-half padding--left--lg padding--right--lg">
         <h4 class="padding--bottom has-text-white">
@@ -476,7 +452,7 @@ layout: default
       <h1 class="margin--bottom--lg has-text-primary"><b>Our Blog</b></h1>
     </div>
     <h4 class="has-text-secondary has-text-centered">
-      <b>- coming soon -</b>
+      <b>Coming soon!</b>
     </h4>
     <!-- <div class="row padding--left--lg padding--right--lg">
       <div class="col is-one-third">
@@ -547,7 +523,7 @@ layout: default
       <h1 class="margin--bottom--lg has-text-white"><b>Contact Us</b></h1>
     </div>
     <div
-      class="row text-mobile-center is-centered padding--top--lg padding--bottom--lg hinge-in"
+      class="row text-mobile-center is-centered padding--top--lg padding--bottom--lg"
     >
       <img
         class="contact-image padding--top--lg"
@@ -572,7 +548,7 @@ layout: default
       </div>
     </div>
     <div
-      class="row text-mobile-center is-centered padding--top--lg padding--bottom--lg hinge-in"
+      class="row text-mobile-center is-centered padding--top--lg padding--bottom--lg"
     >
       <img
         class="contact-image padding--top--lg"
@@ -597,72 +573,3 @@ layout: default
     </div>
   </div>
 </section>
-
-<script type="text/javascript">
-  document.getElementById("read-more").onclick = function () {
-    const firstSection = document.getElementById("philosophy");
-    firstSection.scrollIntoView({ behavior: "smooth" });
-  };
-
-  window.onload = function () {
-    contactUsHingeAnimation();
-    productRowTrigger();
-  };
-
-  window.onscroll = function () {
-    const html = document.getElementsByTagName("html")[0];
-    if (html.scrollTop > 200)
-      document.getElementById("navbar").classList.add("show");
-    else document.getElementById("navbar").classList.remove("show");
-
-    contactUsHingeAnimation();
-    productRowTrigger();
-  };
-
-  function contactUsHingeAnimation() {
-    var contactUsSection = document.getElementById("contact_us_trigger");
-    if (isElementInViewport(contactUsSection, 40)) {
-      var elements = document.getElementsByClassName("hinge-in");
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].classList.add("active");
-      }
-    }
-  }
-
-  function productRowTrigger() {
-    var projectSection = document.getElementById("project_trigger");
-    if (isElementInViewport(projectSection, 20)) {
-      var elements = document.getElementsByClassName("product-row");
-      for (var i = 0; i < elements.length; i++) {
-        if (
-          elements[i].classList.contains("slide-in-left") ||
-          elements[i].classList.contains("slide-in-right")
-        ) {
-          // do nothing, already animated!
-        } else {
-          elements[i].style.animationDelay = i * 0.4 + "s";
-
-          if (elements[i].classList.contains("slide-left")) {
-            elements[i].classList.add("slide-in-left");
-          } else {
-            elements[i].classList.add("slide-in-right");
-          }
-        }
-      }
-    }
-  }
-
-  function isElementInViewport(el, percentVisible) {
-    var rect = el.getBoundingClientRect(),
-      windowHeight =
-        window.innerHeight || document.documentElement.clientHeight;
-
-    return !(
-      Math.floor(
-        100 - ((rect.top >= 0 ? 0 : rect.top) / +-(rect.height / 1)) * 100
-      ) < percentVisible ||
-      Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) <
-        percentVisible
-    );
-  }
-</script>
