@@ -576,13 +576,13 @@ details summary {
 */
 
 .philosophy-image {
-  height: 500px;
-  padding: 0 2rem 2rem 2rem !important;
   width: 100%;
+  padding-top: 60%;
   background-repeat: no-repeat;
   background-position: center;
-  background-origin: content-box;
+  background-origin: border-box;
   transition: transform 0.2s;
+  margin: 2rem auto;
 }
 
 .philosophy-image:hover {
