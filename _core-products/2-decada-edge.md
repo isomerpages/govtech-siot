@@ -1,12 +1,13 @@
 ---
 layout: leftnav-page-content
 title: DECADA Edge
-permalink: /tech-stack/decada-edge/
+permalink: /core-products/decada-edge/
 breadcrumb: DECADA Edge
-collection_name: tech-stack
+collection_name: core-products
 ---
 
 ![DECADA Edge LOGO](/images/decada-edge/intro/decada_edge_logo.png)
+
 # Introduction to DECADA Edge Gateway
 
 **DECADA Edge Gateway** is a product and software solution to onboard new and existing sensor nodes to DECADA securely with ease. It is both a Gateway to DECADA and an Edge to process and aggregate sensor nodes data to reduce data traffic to DECADA. It also provides the capability to make agile onsite decisions.
@@ -16,19 +17,21 @@ As part of the Singapore Government Tech Stack, DECADA Edge Gateway is open to b
 DECADA Edge Gateway software can be deployed on a variety of hardware, ranging from low-power ARM Single-Board-Computer(SBC)s to full fledged Intel i7 gateways, with the hardware and the residing operating system environment conforming to the Singapore Government's security guidelines.
 
 <a id="DECADA-EDGE-Product-Features"></a>
+
 ## Product Features
 
 The DECADA Edge Gateway supports the following features:
 
-* Secured connection to DECADA Cloud
-* Firmware Over-The-Air (FOTA) update capability
-* Transformation between communication protocols
-* Web User Interface configuration
-* Data Resiliency
-* Data Aggregation
-* Data Analytics
+- Secured connection to DECADA Cloud
+- Firmware Over-The-Air (FOTA) update capability
+- Transformation between communication protocols
+- Web User Interface configuration
+- Data Resiliency
+- Data Aggregation
+- Data Analytics
 
 <a id="DECADA-EDGE-Design-Overview"></a>
+
 ### Design Overview
 
 **DECADA Edge Gateway** software is written on top of open source QT C++ framework. There are two main parts in the software - **Core** modules and **Plugins**. Core modules compromises of managers that provides services for plugins to function.
@@ -36,9 +39,10 @@ The DECADA Edge Gateway supports the following features:
 <img class="large" src="/images/decada-edge/design/decada-edge-design-overview.png" alt="DECADA Edge Design Overview">
 
 <a id="DECADA-EDGE-Plugins"></a>
+
 ### Plugins
 
-DECADA Edge Gateway software supports plugins from its plugin ecosystem.  Each individual plugin can be viewed as a single function to achieve a single task.
+DECADA Edge Gateway software supports plugins from its plugin ecosystem. Each individual plugin can be viewed as a single function to achieve a single task.
 
 Plugins enable adaptive and fast deployment, reducing the need to redevelop existing software in order to fulfil the unique requirements of different systems. New and existing plugins can be added and replaced without affecting existing Edge Gateway Software instances. Plugins are delayed loaded into DECADA Edge Gateway using the QT Plugins' architecture.
 

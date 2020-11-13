@@ -2,12 +2,13 @@
 layout: leftnav-page-content
 title: Send Cloud Commands
 permalink: /starter-kit/send-cloud-commands/
-breadcrumb: Send Cloud Commands
-collection_name: starter-kit
+second_nav_title: Starter Kit
+collection_name: core-products
 ---
 
 # Sending service request
-*These steps will demonstrate how to send commands from DECADA Cloud to your device through a service request*
+
+_These steps will demonstrate how to send commands from DECADA Cloud to your device through a service request_
 
 1. Login to DECADA
 
@@ -21,7 +22,7 @@ collection_name: starter-kit
 
 <img class="large" src="/images/manuca/cloud-commands/service_request_1.png" alt="service-request">
 
-5. Make sure your device is connected to DECADA (you will see Device is online like shown below) 
+5. Make sure your device is connected to DECADA (you will see Device is online like shown below)
 
 <img src="/images/manuca/cloud-commands/service_request_2.png" alt="service-request">
 

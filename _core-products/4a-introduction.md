@@ -1,13 +1,14 @@
 ---
 layout: leftnav-page-content
 title: Introduction
-permalink: /starter-kit/introduction/
-breadcrumb: Introduction
-collection_name: starter-kit
+permalink: /starter-kit
+second_nav_title: Starter Kit
+collection_name: core-products
 ---
 
-## Sypnosis
-The starter kit uses both [MANUCA](/tech-stack/manuca/overview) and [DECADA Cloud](/tech-stack/decada-cloud/) Tech Stack. It is designed to help you get started with sending data from a sensor node, MANUCA, to the government cloud, DECADA Cloud.
+## Synopsis
+
+The starter kit uses both [MANUCA](/core-products/manuca/) and [DECADA Cloud](/core-products/decada-cloud/) Tech Stack. It is designed to help you get started with sending data from a sensor node, MANUCA, to the government cloud, DECADA Cloud.
 
 ![System](/images/manuca/intro/starter_kit_system.png)
 
@@ -43,6 +44,7 @@ At the end of this getting started guide, you would be pumping ambient temperatu
 </table>
 
 **Additional Tools** (not included in Starter Kit)
+
 <table>
   <tr>
     <th>Components</th>
