@@ -80,7 +80,7 @@ details summary {
 }
 
 .shape-divider-bottom-right {
-  @extend .shape-divider-top-left;
+  @extend .shape-divider;
   bottom: -1px;
   transform: rotate(180deg);
   svg {
