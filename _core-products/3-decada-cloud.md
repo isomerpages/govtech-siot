@@ -1,12 +1,13 @@
 ---
 layout: leftnav-page-content
 title: DECADA Cloud
-permalink: /tech-stack/decada-cloud/
+permalink: /core-products/decada-cloud/
 breadcrumb: DECADA Cloud
-collection_name: tech-stack
+collection_name: core-products
 ---
 
 ![DECADA](/images/decada/intro/decada_cloud_logo.png)
+
 # Introduction to DECADA Cloud
 
 **DECADA** (Device Management, Control and Data Acquisition Systems) is a multi-tenant cloud platform by GovTech that provides support for device management, data acquisition and data analytics of IoT devices.
@@ -16,17 +17,19 @@ The platform supports an ecosystem of applications that facilitate the acquisiti
 DECADA is part of the Singapore Government’s [Smart Nation Sensor Platform](https://www.tech.gov.sg/products-and-services/smart-nation-sensor-platform/) initiative. It is deployed on the Government Commercial Cloud (GCC). Plans are also underway to deploy the solution on the Government Digital Cloud (GDC).
 
 <a id="DECADA-Product-Features"></a>
+
 # Main Product Features
 
 The DECADA Edge Gateway supports the following features:
-* Asset Management
-* Data Acquisition
-* **Event Triggers**
-* Stream Processing
-* **Data Analytics**
-* APIs and SDKs
-* Generation of Reports
-* **Application Framework**
+
+- Asset Management
+- Data Acquisition
+- **Event Triggers**
+- Stream Processing
+- **Data Analytics**
+- APIs and SDKs
+- Generation of Reports
+- **Application Framework**
 
 We will be elaborating on three of our features **bolded** above.
 
@@ -41,12 +44,13 @@ Services can be created within DECADA to enable organisations to define, receive
 DECADA provides a series of toolkits for data analytics. Users can utilize data querying services to extract, cleanse and perform analysis for business decisions.
 
 The main tools provided are:
-* Data Integration
-* Data IDE
-* Workflow Operation
-* Cluster Monitoring
-* Data Explorer
-* Metadata Explorer
+
+- Data Integration
+- Data IDE
+- Workflow Operation
+- Cluster Monitoring
+- Data Explorer
+- Metadata Explorer
 
 <img class="large" src="/images/decada/features/data_ide.png" alt="DECADA Data Analytics IDE">
 
@@ -59,9 +63,11 @@ DECADA empowers developers with the ability to easily deploy and manage web appl
 Internally, applications are containerised and isolated in production.
 
 <a id="DECADA-Connecting-To-DECADA-Cloud"></a>
+
 # Connecting to DECADA Cloud
 
 We offer 3 different ways of connecting to the cloud:
+
 1. Direct Connection
 2. DECADA Edge
 3. Cloud-to-cloud
@@ -77,25 +83,28 @@ GovTech maintains SDKs that contain implementation for device registration, devi
 ### Vanilla Connection
 
 In the event that the solutions provided by GovTech cannot meet the unique requirements of certain systems, clients can still interface with DECADA using supported device communication protocols such as:
-* MQTT
-* Constrained Application Protocol (CoAP)
-* RESTful API via HTTPS
+
+- MQTT
+- Constrained Application Protocol (CoAP)
+- RESTful API via HTTPS
 
 ## DECADA Edge
 
-GovTech provides a software solution that is x86/ARM architecture compatible. The solution can be deployed either on-premise, or as a virtual instance on the cloud. Please see [DECADA Edge](/tech-stack/decada-edge/) for more information.
+GovTech provides a software solution that is x86/ARM architecture compatible. The solution can be deployed either on-premise, or as a virtual instance on the cloud. Please see [DECADA Edge](/core-products/decada-edge/) for more information.
 
 ## Cloud-to-Cloud
 
 As some agencies might have existing infrastructure in place, GovTech provides customised cloud-to-cloud connection options that can integrate seamlessly with different implementations.
 
 Examples of cloud-to-cloud connections include:
-* Pushing - Forwarding data to a 3rd party cloud deployed by an agency
-* Pulling - Retrieving data from an agency’s cloud system
+
+- Pushing - Forwarding data to a 3rd party cloud deployed by an agency
+- Pulling - Retrieving data from an agency’s cloud system
 
 In the above examples, the described data might be raw, filtered or even aggregated from the sensors.
 
 <a id="DECADA-Device Lifecycle Management"></a>
+
 # Device Lifecycle Management
 
 <img class="large" src="/images/decada/lifecycle/device_lifecycle_management.png" alt="Device Lifecycle Management Screenshot">
@@ -112,9 +121,9 @@ The model is a template that describes the device. This template will contain at
 
 Asset trees can be arranged in a hierarchical form to better manage assets. Users can organize the assets according to:
 
-* Geographical location: country, state, city, district, etc.
-* Industry domain: wind power, photovoltaic, energy storage, etc.
-* Device type: fan, inverter, combiner box, etc.
+- Geographical location: country, state, city, district, etc.
+- Industry domain: wind power, photovoltaic, energy storage, etc.
+- Device type: fan, inverter, combiner box, etc.
 
 ### Connection Scheme
 
@@ -130,21 +139,24 @@ In a device-end development scenario, users can utilise the SDK provided by GovT
 
 Methods to provision devices are as follows:
 
-* Provisioning individual devices
-  1. A user will create the *Model*, *Product* and *Device* in DECADA to obtain the device triple to be burned onto the device
+- Provisioning individual devices
+
+  1. A user will create the _Model_, _Product_ and _Device_ in DECADA to obtain the device triple to be burned onto the device
   2. Devices will use the device triple to connect to DECADA cloud using the GovTech's SDK. Data can be transferred between devices and DECADA
 
-* Provisioning Edge for multiple devices provisioning
-  1. A user will create the *Edge Model*, *Product* and *Device* in DECADA to obtain its device triple
-  2. A user will also create the *Model*, *Product* and *Device* of the sub-devices. The sub-devices are placed under the *Edge*
-  3. Once the sub-devices are placed under the *Edge*, the user will use the *Edge* device triple to connect to DECADA cloud. Data can be transferred to cloud via Edge
+- Provisioning Edge for multiple devices provisioning
 
-* Provisioning application to enable multiple devices registration
+  1. A user will create the _Edge Model_, _Product_ and _Device_ in DECADA to obtain its device triple
+  2. A user will also create the _Model_, _Product_ and _Device_ of the sub-devices. The sub-devices are placed under the _Edge_
+  3. Once the sub-devices are placed under the _Edge_, the user will use the _Edge_ device triple to connect to DECADA cloud. Data can be transferred to cloud via Edge
+
+- Provisioning application to enable multiple devices registration
+
   1. A user can register an application that used to provision devices onto DECADA. Upon registration, the user will be provided with the application's access key and secret key
   2. The application will call the API to register and provision the new device and obtain the device triple
   3. The application will then use the device triple to connect to DECADA. Data can be transferred between devices and cloud
 
-* Provisioning 3rd-party cloud
+- Provisioning 3rd-party cloud
   1. The 3rd-party cloud will need to have an application to forward the device data to DECADA. The application will be registered to DECADA to obtain the access key and secret key
   2. The device connected to the 3rd-party cloud will be detected by the application. It will call the API to register and obtain the device triple for the new device
   3. The application will then use the device triple to connect to DECADA. Data can be transferred between devices and cloud
@@ -153,10 +165,10 @@ Methods to provision devices are as follows:
 
 Once the devices are provisioned, DECADA will be able to receive and monitor data transmitted. Other functionalities provided include:
 
-* Monitoring of data from devices to cloud - The monitoring can be done through DECADA or external applications
-* Enabling and disabling remotely - Services defined by the devices' models can be triggered
-* Monitoring alerts sent via email or SMS. Alert triggering rules can be set up to react to real-time measure point telemetry
-* Managing, consuming and storing data according to business needs
+- Monitoring of data from devices to cloud - The monitoring can be done through DECADA or external applications
+- Enabling and disabling remotely - Services defined by the devices' models can be triggered
+- Monitoring alerts sent via email or SMS. Alert triggering rules can be set up to react to real-time measure point telemetry
+- Managing, consuming and storing data according to business needs
 
 ## Maintenance Phase
 
@@ -168,11 +180,12 @@ Certificates will be renewed upon expiry for devices that require certificate au
 
 When devices are scheduled to be decommissioned, users can use the DECADA to:
 
-* Disable and delete devices
-* Revoke certificates of devices that were issued
-* Archive data
+- Disable and delete devices
+- Revoke certificates of devices that were issued
+- Archive data
 
 <a id="DECADA-Service-Level-Agreement"></a>
+
 # Service Level Agreement
 
 ## Infrastructure and Service Guarantee
@@ -183,8 +196,8 @@ When two or more role instances are deployed in different fault and upgrade doma
 
 ### Virtual Machines
 
-* For any single instance Virtual Machine using premium storage for all disks, the Virtual Machine Connectivity is at least 99.9%.
-* For all Virtual Machines that have two or more instances deployed in the same Availability Set, the Virtual Machine Connectivity to at least one instance is at least 99.95% of the time.
+- For any single instance Virtual Machine using premium storage for all disks, the Virtual Machine Connectivity is at least 99.9%.
+- For all Virtual Machines that have two or more instances deployed in the same Availability Set, the Virtual Machine Connectivity to at least one instance is at least 99.95% of the time.
 
 ### DNS
 
