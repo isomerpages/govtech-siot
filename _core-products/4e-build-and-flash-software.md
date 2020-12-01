@@ -111,7 +111,7 @@ Hit the spacebar while in your serial debug program, and you should see the Boot
 
 ![boot](/images/manuca/build-and-flash/flash_success.png)
 
-3. Enter the passphrase `stackx2019` to login to the Boot Manager.
+3. Enter the passphrase `stack2020` (for [R2.1.0](https://github.com/GovTechSIOT/stack-manuca-os/releases/tag/R2.1.0) builds onwards) to login to the Boot Manager.
 
 4. After successfully logging into Boot Manager:
 
