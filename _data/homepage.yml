@@ -5,16 +5,16 @@
 ##################################
 
 # Favicon
-favicon: /images/siot.ico
+favicon: /images/siot_logo_ico.ico
 
 # Agency logo
-agency-logo: /images/logo_w_gt.png
+agency-logo: /images/siot_logo_combi_side_color.png
 
 # Hero Banner
 hero-title: Sensors and<br>Internet of Things
 hero-subtitle: Capability Centre | GovTech
 hero-banner: /images/banner.jpg
-    
+
 key-highlights:
   - title: MANUCA
     description: Sensor Node
@@ -25,9 +25,9 @@ key-highlights:
   - title: DECADA Cloud
     description: Cloud
     url: /tech-stack/decada-edge
-    
+
 # Resources Section
-resources-title: 
+resources-title:
 resources-subtitle: Latest News
 resources-more-button: More Media
 resources-more-button-url: media-centre/
