@@ -61,7 +61,7 @@ The main tools provided are:
 
 DECADA empowers developers with the ability to easily deploy and manage web applications through the Application Framework. The Framework includes a web portal for end users to log in and access applications that they are authorized for.
 
-APIs are also provided so data ingested by the platform can be consumed in other ways. For instance, a service is able to perform time series queries on sensor data and expose a secondary API for another data source.
+APIs are also provided so that data ingested by the platform can be consumed and used in other ways. For instance, a service is able to perform time series queries on sensor data and provide a dashboard interface for agencies to query aggregated data.
 
 <a id="DECADA-Connecting-To-DECADA-Cloud"></a>
 
