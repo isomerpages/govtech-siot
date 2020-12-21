@@ -6,8 +6,6 @@ breadcrumb: DECADA Cloud
 collection_name: core-products
 ---
 
-![DECADA](/images/decada/intro/decada_cloud_logo.png)
-
 # Introduction to DECADA Cloud
 
 **DECADA** (Device Management, Control and Data Acquisition Systems) is a multi-tenant cloud platform by GovTech that provides support for device management, data acquisition and data analytics of IoT devices.
@@ -20,24 +18,29 @@ DECADA is part of the Singapore Government’s [Smart Nation Sensor Platform](ht
 
 # Main Product Features
 
-The DECADA Edge Gateway supports the following features:
+The DECADA product supports the following features:
 
 - Asset Management
 - Data Acquisition
 - **Event Triggers**
 - Stream Processing
 - **Data Analytics**
-- APIs and SDKs
 - Generation of Reports
-- **Application Framework**
+- **APIs & Application Framework**
 
 We will be elaborating on three of our features **bolded** above.
 
 ## Event Triggers
 
-Services can be created within DECADA to enable organisations to define, receive, and process alerts for their assets. Alert triggering rules can be defined against asset data to achieve responsive troubleshooting when anomalies occur.
+Alerts can be created within DECADA to enable organisations to define, receive, and process events for their assets. Alert triggering rules can be defined against asset data to achieve responsive troubleshooting when anomalies occur.
 
 ![DECADA Event Alert Message Flow](/images/decada/features/alert_message_flow.png)
+
+Monitoring events of interest is a crucial capability when managing large fleets of sensors.
+
+A deployed device or sensor might experience events that the maintainence team needs to be notifed of, including when a device is disconnected or when values beyond the expected range are detected.
+
+Events can be consumed via a email notification, or via an API for monitoring via a dashboard or external tool.
 
 ## Data Analytics
 
@@ -54,13 +57,11 @@ The main tools provided are:
 
 <img class="large" src="/images/decada/features/data_ide.png" alt="DECADA Data Analytics IDE">
 
-## Application Framework
+## APIs & Application Framework
 
 DECADA empowers developers with the ability to easily deploy and manage web applications through the Application Framework. The Framework includes a web portal for end users to log in and access applications that they are authorized for.
 
-<img class="large" src="/images/decada/features/app_framework.png" alt="DECADA Application Framework screenshot">
-
-Internally, applications are containerised and isolated in production.
+APIs are also provided so data ingested by the platform can be consumed in other ways. For instance, a service is able to perform time series queries on sensor data and expose a secondary API for another data source.
 
 <a id="DECADA-Connecting-To-DECADA-Cloud"></a>
 
@@ -137,26 +138,26 @@ If certificate authentication is required, a client can request for a certificat
 
 In a device-end development scenario, users can utilise the SDK provided by GovTech to perform authentication with DECADA. DECADA will then validate the device triple. Upon verification, devices will be able to send data to DECADA.
 
-Methods to provision devices are as follows:
+Methods to provision devices are described below.
 
-- Provisioning individual devices
+### Provisioning individual devices
 
   1. A user will create the _Model_, _Product_ and _Device_ in DECADA to obtain the device triple to be burned onto the device
   2. Devices will use the device triple to connect to DECADA cloud using the GovTech's SDK. Data can be transferred between devices and DECADA
 
-- Provisioning Edge for multiple devices provisioning
+### Provisioning Edge for multiple devices provisioning
 
   1. A user will create the _Edge Model_, _Product_ and _Device_ in DECADA to obtain its device triple
   2. A user will also create the _Model_, _Product_ and _Device_ of the sub-devices. The sub-devices are placed under the _Edge_
   3. Once the sub-devices are placed under the _Edge_, the user will use the _Edge_ device triple to connect to DECADA cloud. Data can be transferred to cloud via Edge
 
-- Provisioning application to enable multiple devices registration
+### Provisioning application to enable multiple devices registration
 
   1. A user can register an application that used to provision devices onto DECADA. Upon registration, the user will be provided with the application's access key and secret key
   2. The application will call the API to register and provision the new device and obtain the device triple
   3. The application will then use the device triple to connect to DECADA. Data can be transferred between devices and cloud
 
-- Provisioning 3rd-party cloud
+### Provisioning 3rd-party cloud
   1. The 3rd-party cloud will need to have an application to forward the device data to DECADA. The application will be registered to DECADA to obtain the access key and secret key
   2. The device connected to the 3rd-party cloud will be detected by the application. It will call the API to register and obtain the device triple for the new device
   3. The application will then use the device triple to connect to DECADA. Data can be transferred between devices and cloud
