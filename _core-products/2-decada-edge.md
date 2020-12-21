@@ -6,11 +6,9 @@ breadcrumb: DECADA Edge
 collection_name: core-products
 ---
 
-![DECADA Edge LOGO](/images/decada-edge/intro/decada_edge_logo.png)
-
 # Introduction to DECADA Edge Gateway
 
-**DECADA Edge Gateway** is a product and software solution to onboard new and existing sensor nodes to DECADA securely with ease. It is both a Gateway to DECADA and an Edge to process and aggregate sensor nodes data to reduce data traffic to DECADA. It also provides the capability to make agile onsite decisions.
+**DECADA Edge Gateway** is a product and software solution to onboard new and existing sensor nodes to DECADA securely with ease. It is both a Gateway to DECADA and an Edge to process and aggregate sensor nodes data to reduce data traffic to DECADA. It also relays information to sensors that might be unable to store a X.509 certifcate or sensors that reside in a secure network.
 
 As part of the Singapore Government Tech Stack, DECADA Edge Gateway is open to be configured through its web user interface, allowing different combinations of sensor nodes connection and data processing. Partners can also develop and contribute their own [Edge Gateway plugin modules](#DECADA-EDGE-Plugins) to connect and process their sensors' data before sending it to DECADA.
 
