@@ -9,7 +9,7 @@ collection_name: core-products
 
 # Introduction to DECADA Embedded
 
-DECADA Embedded is a family of microcontroller-class devices that are capable of communicating directly to DECADA Cloud.
+**DECADA Embedded** (formally known as MANUCA) is a family of microcontroller-class devices that are capable of communicating directly to DECADA Cloud.
 
 As part of the Singapore Government Tech Stack, DECADA Embedded provides software reference designs to hasten development time. By extending the reference examples, developers will be able to add their custom application logics for their use cases, while not having to fret over how onboarding and communication is done with DECADA Cloud in the software.
 
