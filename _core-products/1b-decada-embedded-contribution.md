@@ -1,9 +1,9 @@
 ---
 layout: leftnav-page-content
 title: Contributing
-permalink: /core-products/manuca/manuca-os-contribution/
-breadcrumb: MANUCA - Contributing
-second_nav_title: "MANUCA"
+permalink: /core-products/decada-embedded/decada-embedded-contribution/
+breadcrumb: DECADA Embedded - Contributing
+second_nav_title: "DECADA Embedded"
 collection_name: core-products
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: leftnav-page-content
 title: Dev Kit Collaboration
-permalink: /core-products/manuca/dev-kit-collaboration/
-breadcrumb: MANUCA - Dev Kit Collaboration
-second_nav_title: "MANUCA"
+permalink: /core-products/decada-embedded/dev-kit-collaboration/
+breadcrumb: DECADA Embedded - Dev Kit Collaboration
+second_nav_title: "DECADA Embedded"
 collection_name: core-products
 ---
 
