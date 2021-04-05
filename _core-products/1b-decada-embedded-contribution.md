@@ -1,23 +1,23 @@
 ---
 layout: leftnav-page-content
 title: Contributing
-permalink: /core-products/manuca/manuca-os-contribution/
-breadcrumb: MANUCA - Contributing
-second_nav_title: "MANUCA"
+permalink: /core-products/decada-embedded/decada-embedded-contribution/
+breadcrumb: DECADA Embedded - Contributing
+second_nav_title: "DECADA Embedded"
 collection_name: core-products
 ---
 
-# Contributing to MANUCA OS
+# Contributing to DECADA Embedded
 
-MANUCA OS is an open-sourced RTOS that is designed to work with the MANUCA DK. Contributions are an important part of the MANUCA ecosystem, and the wider Singapore Government Tech Stack. Our goal is to make it as simple as possible to become a contributor.
+decada-embedded-example-* are open-sourced examples using an RTOS on microcontroller-class devices to connect to DECADA Cloud. Contributions are an important part of the DECADA Embedded ecosystem, and the wider Singapore Government Tech Stack. Our goal is to make it as simple as possible to become a contributor.
 
 You can make contributions to the source code hosted on GitHub. All contributions will be bounded by an Apache License version 2.0 (Apache-2.0).
 
-To encourage collaboration, as well as robust, consistent and maintainable code, we have built a set of guidelines for contributing to MANUCA OS.
+To encourage collaboration, as well as robust, consistent and maintainable code, we have built a set of guidelines for contributing.
 
 ## How to contribute
 
-MANUCA OS has a team of maintainers ([@lauleehong](https://github.com/lauleehong), [@ziqiyap](https://github.com/ziqiyap), [@gohkokboon](https://github.com/gohkokboon)). This team is responsible for helping you get your changes in, as well as controlling the overall quality and consistency of the software.
+decada-embedded-example-* has a team of maintainers ([@lauleehong](https://github.com/lauleehong), [@ziqiyap](https://github.com/ziqiyap), [@gohkokboon](https://github.com/gohkokboon)). This team is responsible for helping you get your changes in, as well as controlling the overall quality and consistency of the software.
 
 We accept contributions in the form of pull requests. Each pull request must be reviewed by at least one other developer experienced with the functionality. For contributions that span multiple functionalities, multiple reviewers may be necessary. After reviews are complete, we test the changes as part of a larger system. The testing includes but is not limited to: functional correctness, integration with other parts of the system, code style or formatting and regressions, such as code size increase or performance degredation. If any of the tests fail, more work will be needed before we accept the contribution.
 
@@ -37,4 +37,4 @@ All functions and methods must include a corresponding doxygen-styled API docume
 
 ## GitHub Pull Request Workflow
 
-![PR Flowchart](/images/manuca/intro/manuca_os_github_pr_sm.png)
+![PR Flowchart](/images/manuca/intro/github_pr_sm.png)

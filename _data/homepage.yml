@@ -16,9 +16,9 @@ hero-subtitle: Capability Centre | GovTech
 hero-banner: /images/banner.jpg
 
 key-highlights:
-  - title: MANUCA
-    description: Sensor Node
-    url: /tech-stack/manuca/overview
+  - title: DECADA Embedded
+    description: Microcontroller-class Devices
+    url: /tech-stack/decada-embedded/overview
   - title: DECADA Edge
     description: Gateway
     url: /tech-stack/decada-edge

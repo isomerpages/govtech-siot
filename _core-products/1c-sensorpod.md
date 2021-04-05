@@ -1,9 +1,9 @@
 ---
 layout: leftnav-page-content
 title: SensorPod
-permalink: /core-products/manuca/sensorpod/
-breadcrumb: MANUCA - SensorPod
-second_nav_title: "MANUCA"
+permalink: /core-products/decada-embedded/sensorpod/
+breadcrumb: DECADA Embedded - SensorPod
+second_nav_title: "DECADA Embedded"
 collection_name: core-products
 ---
 
@@ -11,7 +11,7 @@ collection_name: core-products
 
 ![Customers](/images/products/sensorpod/sensorpod.png)
 
-The SensorPod is GovTech's flagship IoT sensor node, built using the [MANUCA](/core-products/manuca/) Tech Stack. It offers secured connectivity to either DECADA Edge or directly to DECADA Cloud.
+SensorPod is GovTech's flagship IoT embedded gateway, built using the [DECADA Embedded](/core-products/decada-embedded/) Tech Stack. Designed to operate in outdoor environments, it extracts data as well as controls sensor nodes in its network, and publishes these data directly to DECADA Cloud.
 
 Core Features:
 
@@ -19,6 +19,7 @@ Core Features:
 - Intelligent Tamper Sensing
 - Plug and Play (PnP) of External Sensors
 - IP65 Water Resistence, suitable for prolonged outdoor deployments
+- Secure Element
 
 ### Deployments
 

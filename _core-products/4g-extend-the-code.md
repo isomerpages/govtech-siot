@@ -6,17 +6,17 @@ second_nav_title: Starter Kit
 collection_name: core-products
 ---
 
-Now that you know how to build the MANUCA OS and flash it into your MANUCA DK, you can further extend your system for your use cases.
+Now that you know how to build [decada-embedded-example-mbedos](https://github.com/GovTechSIOT/decada-embedded-example-mbedos) and flash it into your MANUCA DK, you can further extend your system for your use cases.
 
-An example case-study is [SensorPod](/products/sensorpod/), a product deployed at CETRAN in NTU, which was built on the MANUCA DK.
+An example is GovTech's [SensorPod](/core-products/decada-embedded/sensorpod/), a product deployed at multiple locations islandwide, which was built using `decada-embedded-example-mbedos`.
 
-We have extended MANUCA OS to include advanced features like physical tamper sensing, hot plug for sensors, bootloader, and over-the-air updating for environmental sensing of the vehicle test track. The possibilities enabled by building on the MANUCA DK are boundless.
+We have extended `decada-embedded-example-mbedos` to include advanced features like cellular CAT-M1, hot plug for sensors, bootloader, and over-the-air updates. The possibilities enabled by building on the example software are boundless.
 
-Below are simple guides to help users get started with connecting to external sensors via MANUCA OS.
+Below are simple guides to help users get started with interfacing to external sensors using mbedos rtos via `decada-embedded-example-mbedos`.
 
-## Adding external sensors onto MANUCA
+## Adding external sensors
 
-We will demonstrate this feature of the MANUCA DK by using a CO<sub>2</sub> and RH/T Sensor Module, named SCD30. More details can be found on [Sensirion's website for SCD30](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors-co2/).
+We will demonstrate this feature using the MANUCA DK by using SCD30, a CO<sub>2</sub> and RH/T Sensor Module. More details can be found [here](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors-co2/).
 
 ### Connection Diagram
 
@@ -29,7 +29,7 @@ We will demonstrate this feature of the MANUCA DK by using a CO<sub>2</sub> and 
    a. If the sensor is active, you should see values of CO<sub>2</sub>, temperature and humidity printed out like this:
    ![Serial Log of SCD30](/images/manuca/extend-the-code/ext_sensor_2_serial_log.png)
 
-3. The Sensor Driver for SCD30 is provided in MANUCA OS, under **sensors-lib**. It is written as a derived class of the base class called SensorType. This is to provide a common interface between the sensors and sensor thread.
+3. The driver for SCD30 is provided in the GitHub source code, under **sensors-lib**. It is written as a derived class of the base class called SensorType. This is to provide a common interface between the sensors and sensor thread.
 
 ![SCD30 driver directory](/images/manuca/extend-the-code/ext_sensor_3_directory.png)
 
@@ -113,19 +113,14 @@ We will demonstrate this feature of the MANUCA DK by using a CO<sub>2</sub> and 
     <br>
 
 7.  Before you can see the new measure points being streamed to your DECADA Cloud platform, you will need to configure the new measure points onto DECADA Cloud.
-    The following steps are similar to **(2) DECADA setup: Creating your Measure Point(s)**.
+    The following steps are similar to **(2) Setup your Cloud Service: Creating your Measurement Point(s)**.
 
-        a. Login to your DECADA dashboard
-
-        b. Go to **Model** and select **edit** on the rightmost column.
-
-        c. Go to **Feature Definitions** and click **Add**
-
-        d. Fill up the fields for your CO<sub>2</sub> measure point. An example looks like this:
-
-        ![CO2 measure point](/images/manuca/extend-the-code/ext_sensor_4_decada.png)
-
-        e. Repeat the previous step the other measure points; temperature and humidity.
+      a. Login to your DECADA dashboard <br>
+      b. Go to **Model** and select **edit** on the rightmost column. <br>
+      c. Go to **Feature Definitions** and click **Add** <br>
+      d. Fill up the fields for your CO<sub>2</sub> measure point. An example looks like this:
+      ![CO2 measure point](/images/manuca/extend-the-code/ext_sensor_4_decada.png) <br>
+      e. Repeat the previous step the other measure points; temperature and humidity. <br>
 
 8.  Now compile the code and flash the binary file into your MANUCA DK. You should see data updates for the three new measure points on your DECADA Cloud platform when the board is running.
 
