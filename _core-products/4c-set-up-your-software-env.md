@@ -12,7 +12,7 @@ Proceed with the following steps, depending on which Operating System your devel
 
 **Available Integrated Development Environments (IDEs):**
 
-1. Mbed Studio _(Recommended)_ - MacOS and Windows
+1. Mbed Studio _(Recommended)_ - macOS, Windows and Linux
 2. Visual Studio Code (VS Code) - Ubuntu Setup Included Only
 
 <br>
@@ -40,7 +40,7 @@ Proceed with the following steps, depending on which Operating System your devel
    ```bash
    sudo apt-get install python-pip
    ```
-5. Download gcc-arm-embedded-6-2017-q2 Toolchain; download the toolchain **6-2017-q2** from [here](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads), and decompress the folder
+5. Download gcc-arm-embedded-9-2020-q2-update Toolchain; download the toolchain **9-2020-q2-update** from [here](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads), and decompress the folder
 6. Install mbed client by entering the following line in Terminal:
    ```bash
    sudo pip install mbed-cli
@@ -51,7 +51,7 @@ Proceed with the following steps, depending on which Operating System your devel
    ```
 7. Add gcc-arm toolchain to mbed-cli compiler by entering the following line in Terminal:
    ```bash
-   mbed config -G GCC_ARM_PATH <path to GCC_ARM bin\>   # path example: ~/gcc-arm/gcc-arm-none-eabi-6-2017-q2-update/bin/
+   mbed config -G GCC_ARM_PATH <path to GCC_ARM bin\>   # path example: ~/gcc-arm/gcc-arm-none-eabi-9-2020-q2-update/bin/
    ```
    _Replace `<path to GCC_ARM bin\>` with the file path of the downloaded GCC ARM toolchain._  
    Enter the following line in Terminal to show the toolchain attached to mbed-cli compiler.
@@ -70,7 +70,8 @@ Proceed with the following steps, depending on which Operating System your devel
 
 <a id="Workspace"></a>
 
-## 2. Pulling the MANUCA OS Repository into your IDE
+## 2. Downloading the example code onto your local machine
+We will be using [decada-embedded-example-mbedos](https://github.com/GovTechSIOT/decada-embedded-example-mbedos) in this guide.
 
 **Development Machine Pre-requisite(s):**  
  \> [Git](https://git-scm.com/downloads) installed
@@ -89,11 +90,11 @@ Proceed with the following steps, depending on which Operating System your devel
    ```
 4. Then, enter the following line to download pull the remote repository to your development machine.
    ```bash
-   git clone --recurse-submodules https://github.com/GovTechSIOT/stack-manuca-os.git
+   git clone --recurse-submodules https://github.com/GovTechSIOT/decada-embedded-example-mbedos.git
    ```
 5. For **non-Mbed Studio users**, install the required python modules by running the following code lines in Terminal:
    ```bash
-   cd stack-manuca-os/mbed-os/
+   cd decada-embedded-example-mbedos/mbed-os/
    sudo pip install -r requirements.txt
    ```
 
@@ -103,24 +104,10 @@ Proceed with the following steps, depending on which Operating System your devel
 
 ## 3. Installing your Serial Debug Program
 
-This program will allow you to read the serial debug output from the MANUCA DK. Proceed with the following steps to install your serial debug program, depending on which OS your computer is running on.
+This program will allow you to read the serial debug output from the MANUCA DK. Proceed with the following steps to install your serial debug program, depending on which OS your local machine is running on.
 
 <details>
-  
-  <summary>Linux</summary>
-
-1. Install minicom by entering the following line into Terminal. This step will install minicom if not installed yet.
-
-```bash
-sudo apt-get install minicom
-```
-
-</details>
-
-<br>
-<details>
-  
-  <summary>MacOS</summary>
+  <summary>macOS</summary>
 
 1. Install minicom using the following commands in Terminal:
 
@@ -128,16 +115,26 @@ sudo apt-get install minicom
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
 brew install minicom
 ```
-
 </details>
 
 <br>
+
 <details>
-  
   <summary>Windows</summary>
   
   1. Download [Tera Term](https://osdn.net/projects/ttssh2/releases/) for Windows.
 
 2. Run the Tera Term `.exe` file and install the software.
+</details>
 
+<br>
+
+<details>
+  <summary>Linux</summary>
+
+1. Install minicom by entering the following line into Terminal. This step will install minicom if not installed yet.
+
+```bash
+sudo apt-get install minicom
+```
 </details>

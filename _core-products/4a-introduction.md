@@ -8,13 +8,13 @@ collection_name: core-products
 
 ## Synopsis
 
-The starter kit uses both [MANUCA](/core-products/manuca/) and [DECADA Cloud](/core-products/decada-cloud/) Tech Stack. It is designed to help you get started with sending data from a sensor node, MANUCA, to the government cloud, DECADA Cloud.
+The SIOT Starter Kit uses both [DECADA Embedded](/core-products/decada-embedded/) and [DECADA Cloud](/core-products/decada-cloud/) Tech Stack. It is designed to help you get started with sending data from an embedded device, DECADA Embedded, to the government IoT cloud, DECADA Cloud.
 
 ![System](/images/manuca/intro/starter_kit_system.png)
 
-At the end of this getting started guide, you would be pumping ambient temperature data using the on-board temperature sensor to your DECADA Cloud account, and be able to see it on your DECADA dashboard.
+At the end of this getting started guide, you would be sending ambient temperature data using the on-board temperature sensor to your DECADA Cloud account, and be able to see it on your DECADA Cloud dashboard.
 
-[Express your interest now.](https://go.gov.sg/iotkit-eoi)
+This kit was used in both STACK-X 2019 and STACK2020 conference workshops.
 
 ## Contents of Starter Kit
 
@@ -42,6 +42,8 @@ At the end of this getting started guide, you would be pumping ambient temperatu
     <td>To on-board MANUCA DK to DECADA Cloud</td>
   </tr>
 </table>
+
+User Guide to the MANUCA DK Hardware can be downloaded [here](https://www.siot.gov.sg/files/MANUCA_User_Manual_V1.pdf); you may use it as a reference to your own PCB board design (see [Terms & Conditions](/starter-kit/terms-and-conditions/)).
 
 **Additional Tools** (not included in Starter Kit)
 

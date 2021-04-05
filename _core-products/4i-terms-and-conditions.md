@@ -185,6 +185,6 @@ Terms and Conditions of Use
 
 </details>
 
-### MANUCA OS - Source Code
+### DECADA Embedded Example Source Code
 
-Unless specifically indicated otherwise in a file, the repository manuca-os-example is licensed under the Apache 2.0 license, as can be found in [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
+Unless specifically indicated otherwise in a file, the repository `decada-embedded-example-mbedos` is licensed under the Apache 2.0 license, as can be found in [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).

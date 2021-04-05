@@ -12,8 +12,8 @@ collection_name: core-products
   <summary>Mbed Studio</summary>
 
 1. Open Mbed Studio and login using your Mbed account
-2. Go to File → Open Workspace → \<workspace_directory> (the workspace you have created in [Set up your Software Environment: Pulling the MANUCA OS into your IDE](/starter-kit/set-up-your-software-env/#Workspace))
-3. On the top left, select **stack-manuca-os** as the Active program
+2. Go to File → Open Workspace → \<workspace_directory> (the workspace you have created in [Set up your Software Environment: Downloading the example code onto your local machine](/starter-kit/set-up-your-software-env/#Workspace))
+3. On the top left, select **decada-embedded-example-mbedos** as the Active program
 </details>
 
 <br>
@@ -27,7 +27,7 @@ collection_name: core-products
 
 ### 2.1 Input DECADA Credentials into Source Code
 
-1. On your IDE (mbed studio/vs code), open the mbed_app.json file and go to **line 44** (as seen below) to add in your DECADA Credentials (which is obtained from [Set up your Cloud Service: Configuring your Device(s)](/starter-kit/set-up-your-cloud-service/#DecadaCredentials)).
+1. On your IDE (mbed studio/vs code), open the mbed_app.json file and go to **line 41** (as seen below) to add in your DECADA Credentials (which is obtained from [Set up your Cloud Service: Configuring your Device(s)](/starter-kit/set-up-your-cloud-service/#DecadaCredentials)).
 
 ```json
 "decada-ou-id": {
@@ -60,43 +60,35 @@ collection_name: core-products
   <summary>Mbed Studio</summary>
 
 1. In Mbed Studio, ensure target is set to **NUCLEO-F767ZI (NUCLEO_F767ZI)**
-2. We use C++11 as the standard for software development. Under Build profile, select **Import custom profiles**.  
-   Go to stack-manuca-os > tools > profile then select **mbedstudio_debug.json**.  
-   The screenshot below shows how it looks like on Windows OS.
-   ![mbed-studio](/images/manuca/build-and-flash/mbed_studio_setup_1.png)
-
-On mbed studio, select the **mbedstudio_debug.json** build profile. There will be a tick beside the selected profile.
-![mbed-studio](/images/manuca/build-and-flash/mbed_studio_setup_2.png)
+2. We use C++14 as the standard for software development, which is included in mbedos's default build profiles.
+   Select **Release** under build profile, for the smallest compiled binary.
 
 3. Click on the blue hammer icon on the left to build the source code.  
-   ![mbed-studio](/images/manuca/build-and-flash/mbed_studio_setup_3.png)
 
-If your build is successful, you should see the line `Image: BUILD/NUCLEO_F767ZI/ARMC6/stack-manuca-os.bin`, where the binary image is located.
-![mbed-studio](/images/manuca/build-and-flash/mbed_studio_setup_4.png)
+
+If your build is successful, you should see the line `Image: BUILD/NUCLEO_F767ZI/ARMC6/decada-embedded-example-mbedos.bin`, where the binary image is located.
 
 </details>
 
 <br>
+
 <details>
   <summary>Visual Studio Code</summary>
 
 2. In VS Code's terminal (or your regular terminal) enter the following line to compile:
 
 ```bash
-mbed compile --target NUCLEO_F767ZI --toolchain GCC_ARM --profile ./tools/profiles/tiny_debug.json
+mbed compile --target NUCLEO_F767ZI --toolchain GCC_ARM --profile release
 ```
-
-![vscode](/images/manuca/build-and-flash/vscode_setup_1.png)
 
 If your build was successful, you should see something similar to the screenshot below:
 ![vscode](/images/manuca/build-and-flash/vscode_setup_2.png)
-The binary image will be located in `./BUILD/NUCLEO_F767ZI/GCC_ARM-TINY_DEBUG/stack-manuca-os.bin`
-
+The binary image will be located in `./BUILD/NUCLEO_F767ZI/GCC_ARM-TINY_DEBUG/decada-embedded-example-mbedos.bin`
 </details>
 
 # 4. Flash the binary into MANUCA DK
 
-1. Locate the binary file in the BUILD folder e.g. `./BUILD/NUCLEO_F767ZI/ARMC6/stack-manuca-os.bin`
+1. Locate the binary file in the BUILD folder i.e. `./BUILD/NUCLEO_F767ZI/ARMC6/decada-embedded-example-mbedos.bin`
 2. Using ST-Link V3 programmer, simply drag-and-drop the binary into the hardware folder (similar to copying a file into a USB stick).
 
 # 5. Configure WiFi SSID, and verify flash success
