@@ -23,6 +23,6 @@ The RTOS reference examples follow the following model:
 2. Process and Analyze
 3. Respond
 
-MQTT over TLS is the standard communication protocol to interact with DECADA Cloud. Several software modules are also included to help kick start your DECADA Embedded device development.
+MQTT over TLS is the de facto standard to interact with DECADA Cloud. Several software modules are also included to help kick start your DECADA Embedded device development.
 
 The golden public release repository can be found [here](https://github.com/GovTechSIOT/decada-embedded-example-mbedos), and would work almost off-the-shelf once the user has configured their personal DECADA credentials into the software. Besides Mbed OS RTOS, we are working to provide reference examples for other popular RTOS as well.

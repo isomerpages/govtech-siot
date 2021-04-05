@@ -123,6 +123,8 @@ _Application gives devices access to DECADA APIs._
 
 <img class="large" src="/images/manuca/decada-setup/decada_setup_application_4.png" alt="app">
 
+5. You need to give authorization to the Application created. To do so, navigate on the side bar to Identity and Access Management --> Service Account. Click on the shield icon on the right, and attach `Device Management Administrator` policy.
+
 <a id="DecadaCredentials"></a>
 
 ## 6. Configuring your Device(s)
